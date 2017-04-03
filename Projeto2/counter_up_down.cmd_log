@@ -1,0 +1,2 @@
+vhdtdtfi -lib work counter_up_down.vhd -prj Projeto2 -o counter_up_down.spl -module counter_up_down -template C:/Xilinx/14.5/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e counter_up_down.spl C:/TEMP/Projeto2/counter_up_down.sym 

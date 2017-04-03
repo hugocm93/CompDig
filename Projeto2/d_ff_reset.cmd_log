@@ -1,0 +1,3 @@
+vhdtdtfi -lib work d_ff_reset.vhd -prj Projeto2 -o d_ff_reset.spl -module d_ff_reset -template C:/Xilinx/14.5/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e d_ff_reset.spl C:/TEMP/Projeto2/d_ff_reset.sym 
+vhdtdtfi -prj Projeto2 -o C:/temp/Projeto2/d_ff_reset.vhi -module d_ff_reset -template C:/Xilinx/14.5/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work d_ff_reset.vhd 

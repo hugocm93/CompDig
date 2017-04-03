@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# PlanAhead v14.5 (64-bit)
+# Build 247527 by xbuild on Mon Mar 25 17:13:07 MDT 2013
+# Start of session at: Mon Mar 27 12:23:27 2017
+# Process ID: 8096
+# Log file: C:/temp/Projeto2/planAhead_run_5/planAhead.log
+# Journal file: C:/temp/Projeto2/planAhead_run_5/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/temp/Projeto2/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  {hex_out[0]}]]
+update_compile_order -fileset sim_1

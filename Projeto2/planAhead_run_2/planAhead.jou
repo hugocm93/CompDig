@@ -1,0 +1,66 @@
+#-----------------------------------------------------------
+# PlanAhead v14.5 (64-bit)
+# Build 247527 by xbuild on Mon Mar 25 17:13:07 MDT 2013
+# Start of session at: Mon Mar 27 13:00:08 2017
+# Process ID: 8952
+# Log file: C:/temp/Projeto2/planAhead_run_2/planAhead.log
+# Journal file: C:/temp/Projeto2/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/temp/Projeto2/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin N17 [get_ports {hex1[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  {hex1[1]}]]
+set_property package_pin "" [get_ports [list  {hex1[3]}]]
+set_property package_pin "" [get_ports [list  {hex1[0]}]]
+startgroup
+set_property package_pin N17 [get_ports {hex1[3]}]
+endgroup
+startgroup
+set_property package_pin H18 [get_ports {hex1[2]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {hex1[1]}]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports {hex1[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  {hex_out[0]}]]
+set_property package_pin "" [get_ports [list  {hex_out[6]}]]
+startgroup
+set_property package_pin B4 [get_ports {hex_out[0]}]
+endgroup
+startgroup
+set_property package_pin A4 [get_ports {hex_out[1]}]
+endgroup
+startgroup
+set_property package_pin D5 [get_ports {hex_out[2]}]
+endgroup
+startgroup
+set_property package_pin C5 [get_ports {hex_out[3]}]
+endgroup
+startgroup
+set_property package_pin A6 [get_ports {hex_out[4]}]
+endgroup
+startgroup
+set_property package_pin B6 [get_ports {hex_out[5]}]
+endgroup
+startgroup
+set_property package_pin E7 [get_ports {hex_out[6]}]
+endgroup
+set_property package_pin "" [get_ports [list  c]]
+startgroup
+set_property package_pin C9 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin K17 [get_ports reset]
+endgroup
+set_property package_pin "" [get_ports [list  c]]
+set_property pulltype PULLDOWN [get_ports [list reset]]
+save_constraints
+startgroup
+set_property package_pin F7 [get_ports c]
+endgroup
+save_constraints

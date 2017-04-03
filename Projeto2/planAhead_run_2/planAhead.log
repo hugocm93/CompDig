@@ -1,0 +1,127 @@
+#-----------------------------------------------------------
+# PlanAhead v14.5 (64-bit)
+# Build 247527 by xbuild on Mon Mar 25 17:13:07 MDT 2013
+# Start of session at: Mon Mar 27 13:00:08 2017
+# Process ID: 8952
+# Log file: C:/temp/Projeto2/planAhead_run_2/planAhead.log
+# Journal file: C:/temp/Projeto2/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/temp/Projeto2/pa.fromHdl.tcl
+# create_project -name Projeto2 -dir "C:/temp/Projeto2/planAhead_run_2" -part xc3s500efg320-4
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "Modulo_display.ucf" [current_fileset -constrset]
+Adding file 'C:/TEMP/Projeto2/Modulo_display.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {mod_m_counter.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {d_ff_reset.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {display_7_seg.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Modulo_display.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top Modulo_display $srcset
+# add_files [list {Modulo_display.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s500efg320-4
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/TEMP/Projeto2/mod_m_counter.vhd" into library work
+Parsing VHDL file "C:/TEMP/Projeto2/d_ff_reset.vhd" into library work
+Parsing VHDL file "C:/TEMP/Projeto2/display_7_seg.vhd" into library work
+Parsing VHDL file "C:/TEMP/Projeto2/Modulo_display.vhd" into library work
+WARNING: [HDL 9-946] Actual for formal port d is neither a static name nor a globally static expression [C:/TEMP/Projeto2/Modulo_display.vhd:24]
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.5/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.5/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.5/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from C:/Xilinx/14.5/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.5/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockBuffers.xml
+Loading package from C:/Xilinx/14.5/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/Package.xml
+Loading io standards from C:/Xilinx/14.5/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.5/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.5/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.5/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.5/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [C:/TEMP/Projeto2/Modulo_display.ucf]
+Finished Parsing UCF File [C:/TEMP/Projeto2/Modulo_display.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 8b60f3e7
+open_rtl_design: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 593.383 ; gain = 135.645
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin N17 [get_ports {hex1[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  {hex1[1]}]]
+set_property package_pin "" [get_ports [list  {hex1[3]}]]
+set_property package_pin "" [get_ports [list  {hex1[0]}]]
+startgroup
+set_property package_pin N17 [get_ports {hex1[3]}]
+endgroup
+startgroup
+set_property package_pin H18 [get_ports {hex1[2]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {hex1[1]}]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports {hex1[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  {hex_out[0]}]]
+set_property package_pin "" [get_ports [list  {hex_out[6]}]]
+startgroup
+set_property package_pin B4 [get_ports {hex_out[0]}]
+endgroup
+startgroup
+set_property package_pin A4 [get_ports {hex_out[1]}]
+endgroup
+startgroup
+set_property package_pin D5 [get_ports {hex_out[2]}]
+endgroup
+startgroup
+set_property package_pin C5 [get_ports {hex_out[3]}]
+endgroup
+startgroup
+set_property package_pin A6 [get_ports {hex_out[4]}]
+endgroup
+startgroup
+set_property package_pin B6 [get_ports {hex_out[5]}]
+endgroup
+startgroup
+set_property package_pin E7 [get_ports {hex_out[6]}]
+endgroup
+set_property package_pin "" [get_ports [list  c]]
+startgroup
+set_property package_pin C9 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin K17 [get_ports reset]
+endgroup
+set_property package_pin "" [get_ports [list  c]]
+set_property pulltype PULLDOWN [get_ports [list reset]]
+save_constraints
+startgroup
+set_property package_pin F7 [get_ports c]
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See C:/TEMP/Projeto2\planAhead_pid8952.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Mar 27 13:08:33 2017...
+INFO: [Common 17-83] Releasing license: PlanAhead

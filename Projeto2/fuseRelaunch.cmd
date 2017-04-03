@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/temp/Projeto2/tb_Modulo_display_isim_beh.exe" -prj "C:/temp/Projeto2/tb_Modulo_display_beh.prj" "work.tb_Modulo_display" 

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\temp\Projeto2\vhdl_c.ncd
+OUTFILE=C:\temp\Projeto2\vhdl_c.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\temp\Projeto2
+LICENSE=WebPack
+USER_INFO=__0_0_0

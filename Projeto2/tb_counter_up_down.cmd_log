@@ -1,0 +1,3 @@
+vhdtdtfi -lib work counter_up_down.vhd -lib work tb_counter_up_down.vhd -prj Projeto2 -o tb_counter_up_down.spl -module tb_counter_up_down -template C:/Xilinx/14.5/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e tb_counter_up_down.spl C:/TEMP/Projeto2/tb_counter_up_down.sym 
+vhdtdtfi -prj Projeto2 -o C:/temp/Projeto2/tb_counter_up_down.vhi -module tb_counter_up_down -template C:/Xilinx/14.5/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work counter_up_down.vhd -lib work tb_counter_up_down.vhd 
