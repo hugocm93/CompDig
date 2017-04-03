@@ -1,0 +1,115 @@
+#-----------------------------------------------------------
+# PlanAhead v14.5 (64-bit)
+# Build 247527 by xbuild on Mon Mar 25 17:13:07 MDT 2013
+# Start of session at: Mon Apr 03 11:25:30 2017
+# Process ID: 8176
+# Log file: C:/Users/aula/Downloads/CompDig/Projeto2/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/aula/Downloads/CompDig/Projeto2/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -2 day(s)
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/aula/Downloads/CompDig/Projeto2/pa.fromHdl.tcl
+# create_project -name Projeto2 -dir "C:/Users/aula/Downloads/CompDig/Projeto2/planAhead_run_1" -part xc3s500efg320-4
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "Sche.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/aula/Downloads/CompDig/Projeto2/Sche.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {mod_m_counter.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {d_ff_reset.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {display_7_seg.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Sche.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top Sche $srcset
+# add_files [list {Sche.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s500efg320-4
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.5/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Users/aula/Downloads/CompDig/Projeto2/mod_m_counter.vhd" into library work
+Parsing VHDL file "C:/Users/aula/Downloads/CompDig/Projeto2/d_ff_reset.vhd" into library work
+Parsing VHDL file "C:/Users/aula/Downloads/CompDig/Projeto2/display_7_seg.vhd" into library work
+Parsing VHDL file "C:/Users/aula/Downloads/CompDig/Projeto2/Sche.vhf" into library work
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.5/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.5/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.5/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from C:/Xilinx/14.5/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.5/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockBuffers.xml
+Loading package from C:/Xilinx/14.5/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/Package.xml
+Loading io standards from C:/Xilinx/14.5/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.5/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.5/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.5/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.5/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [C:/Users/aula/Downloads/CompDig/Projeto2/Sche.ucf]
+Finished Parsing UCF File [C:/Users/aula/Downloads/CompDig/Projeto2/Sche.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 62878f47
+open_rtl_design: Time (s): elapsed = 00:00:11 . Memory (MB): peak = 577.785 ; gain = 127.695
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin L13 [get_ports {hex2[0]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {hex2[1]}]
+endgroup
+startgroup
+set_property package_pin H18 [get_ports {hex2[2]}]
+endgroup
+startgroup
+set_property package_pin N17 [get_ports {hex2[3]}]
+endgroup
+startgroup
+set_property package_pin B4 [get_ports {hex_out[0]}]
+endgroup
+startgroup
+set_property package_pin A4 [get_ports {hex_out[1]}]
+endgroup
+startgroup
+set_property package_pin D5 [get_ports {hex_out[2]}]
+endgroup
+startgroup
+set_property package_pin C5 [get_ports {hex_out[3]}]
+endgroup
+startgroup
+set_property package_pin A6 [get_ports {hex_out[4]}]
+endgroup
+startgroup
+set_property package_pin B6 [get_ports {hex_out[5]}]
+endgroup
+startgroup
+set_property package_pin E7 [get_ports {hex_out[6]}]
+endgroup
+startgroup
+set_property package_pin F12 [get_ports c]
+endgroup
+startgroup
+set_property package_pin C9 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin D18 [get_ports Reset]
+endgroup
+save_constraints
+startgroup
+set_property package_pin K17 [get_ports Reset]
+endgroup
+set_property pulltype PULLDOWN [get_ports [list Reset]]
+save_constraints
+refresh_design
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.5/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.5/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [C:/Users/aula/Downloads/CompDig/Projeto2/Sche.ucf]
+Finished Parsing UCF File [C:/Users/aula/Downloads/CompDig/Projeto2/Sche.ucf]

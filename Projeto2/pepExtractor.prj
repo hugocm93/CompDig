@@ -1,4 +1,1 @@
-work	"Modulo_display.vhd"
-work	"d_ff_reset.vhd"
-work	"display_7_seg.vhd"
 work	"mod_m_counter.vhd"

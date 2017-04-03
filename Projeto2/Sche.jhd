@@ -1,0 +1,7 @@
+MODULE Sche
+	SUBMODULE display_7_seg
+		INSTANCE XLXI_6
+	SUBMODULE d_ff_reset
+		INSTANCE XLXI_5
+	SUBMODULE mod_m_counter
+		INSTANCE XLXI_10

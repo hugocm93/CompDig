@@ -4,8 +4,8 @@ use ieee.numeric_std.all;
 
 entity mod_m_counter is
 	generic( 
-		N: integer := 4; --no. of bits
-		M: integer := 10); --mod m
+		N: integer := 19; --no. of bits
+		M: integer := 500000); --mod m
 	port( 
 		clk, reset : in  std_logic; 
 		max_tick : out  std_logic;

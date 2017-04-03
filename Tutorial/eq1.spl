@@ -1,0 +1,6 @@
+[Inputs]
+i0
+i1
+[Outputs]
+eq
+[BiDir]

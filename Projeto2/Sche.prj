@@ -1,0 +1,4 @@
+vhdl work "mod_m_counter.vhd"
+vhdl work "d_ff_reset.vhd"
+vhdl work "display_7_seg.vhd"
+vhdl work "Sche.vhf"

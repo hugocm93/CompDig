@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "D:/Tutorial/eq1.xst" -ofn "D:/Tutorial/eq1.syr" 
+xst -intstyle ise -ifn "D:/Tutorial/eq1.xst" -ofn "D:/Tutorial/eq1.syr" 
+xst -intstyle ise -ifn "D:/Tutorial/eq1.xst" -ofn "D:/Tutorial/eq1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc eq1.ucf -p xc3s500e-fg320-4 eq1.ngc eq1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o eq1_map.ncd eq1.ngd eq1.pcf 
+par -w -intstyle ise -ol high -t 1 eq1_map.ncd eq1.ncd eq1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml eq1.twx eq1.ncd -o eq1.twr eq1.pcf -ucf eq1.ucf 
+bitgen -intstyle ise -f eq1.ut eq1.ncd 
+vhdtdtfi -lib work eq1.vhd -prj Tutorial -o eq1.spl -module eq1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e eq1.spl D:/Tutorial/eq1.sym 

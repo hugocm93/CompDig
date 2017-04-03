@@ -1,0 +1,9 @@
+V3 6
+FL D:/Tutorial/eq1.vhd 2017/03/13.11:07:59 P.20131013
+EN work/eq1 1489416767 FL D:/Tutorial/eq1.vhd PB ieee/std_logic_1164 1381692176
+AR work/eq1/sop_arch 1489416768 \
+      FL D:/Tutorial/eq1.vhd EN work/eq1 1489416767
+FL D:/Tutorial/eq2.vhd 2017/03/13.11:52:41 P.20131013
+EN work/eq2 1489416769 FL D:/Tutorial/eq2.vhd PB ieee/std_logic_1164 1381692176
+AR work/eq2/sop_arch 1489416770 \
+      FL D:/Tutorial/eq2.vhd EN work/eq2 1489416769 AR work/eq1/sop_arch 1489416768

@@ -1,0 +1,8 @@
+AR mod_m_counter arch C:/Users/aula/Downloads/CompDig/Projeto2/mod_m_counter.vhd sub00/vhpl05 1491232944
+AR d_ff_reset arch C:/Users/aula/Downloads/CompDig/Projeto2/d_ff_reset.vhd sub00/vhpl01 1491232940
+EN display_7_seg NULL C:/Users/aula/Downloads/CompDig/Projeto2/display_7_seg.vhd sub00/vhpl02 1491232941
+AR display_7_seg arch C:/Users/aula/Downloads/CompDig/Projeto2/display_7_seg.vhd sub00/vhpl03 1491232942
+EN sche NULL C:/Users/aula/Downloads/CompDig/Projeto2/Sche.vhf sub00/vhpl06 1491232945
+AR sche behavioral C:/Users/aula/Downloads/CompDig/Projeto2/Sche.vhf sub00/vhpl07 1491232946
+EN mod_m_counter NULL C:/Users/aula/Downloads/CompDig/Projeto2/mod_m_counter.vhd sub00/vhpl04 1491232943
+EN d_ff_reset NULL C:/Users/aula/Downloads/CompDig/Projeto2/d_ff_reset.vhd sub00/vhpl00 1491232939

@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/Projeto2/Sche.xst" -ofn "C:/Users/aula/Downloads/CompDig/Projeto2/Sche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sche.ucf -p xc3s500e-fg320-4 Sche.ngc Sche.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Sche_map.ncd Sche.ngd Sche.pcf 
+par -w -intstyle ise -ol high -t 1 Sche_map.ncd Sche.ncd Sche.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Sche.twx Sche.ncd -o Sche.twr Sche.pcf -ucf Sche.ucf 
+bitgen -intstyle ise -f Sche.ut Sche.ncd 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/Projeto2/Sche.xst" -ofn "C:/Users/aula/Downloads/CompDig/Projeto2/Sche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sche.ucf -p xc3s500e-fg320-4 Sche.ngc Sche.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Sche_map.ncd Sche.ngd Sche.pcf 
+par -w -intstyle ise -ol high -t 1 Sche_map.ncd Sche.ncd Sche.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Sche.twx Sche.ncd -o Sche.twr Sche.pcf -ucf Sche.ucf 
+bitgen -intstyle ise -f Sche.ut Sche.ncd 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/Projeto2/Sche.xst" -ofn "C:/Users/aula/Downloads/CompDig/Projeto2/Sche.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sche.ucf -p xc3s500e-fg320-4 Sche.ngc Sche.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Sche_map.ncd Sche.ngd Sche.pcf 
+par -w -intstyle ise -ol high -t 1 Sche_map.ncd Sche.ncd Sche.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Sche.twx Sche.ncd -o Sche.twr Sche.pcf -ucf Sche.ucf 
+bitgen -intstyle ise -f Sche.ut Sche.ncd 
