@@ -1,0 +1,3 @@
+vhdl work "PROCESADOR_LCD4BITS.vhd"
+vhdl work "COMMANDS_LCD4BITS.vhd"
+vhdl work "Exemplo.vhd"

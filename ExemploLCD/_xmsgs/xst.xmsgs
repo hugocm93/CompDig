@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/aula/Downloads/CompDig/ExemploLCD/Exemplo.vhd</arg>&quot; line <arg fmt="%d" index="2">50</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">BD_LCD</arg>&apos; of component &apos;<arg fmt="%s" index="4">PROCESADOR_LCD4BITS</arg>&apos;.
+</msg>
+
+<msg type="info" file="Xst" num="1433" delta="old" >Contents of array &lt;<arg fmt="%s" index="1">INST</arg>&gt; may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+</msg>
+
+<msg type="error" file="Xst" num="827" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/aula/Downloads/CompDig/ExemploLCD/Exemplo.vhd</arg>&quot; line <arg fmt="%d" index="2">101</arg>: Signal <arg fmt="%s" index="3">LED</arg> cannot be synthesized, bad synchronous description. The description style you are using to describe a synchronous element (register, memory, etc.) is not supported in the current software release.
+</msg>
+
+</messages>
+
