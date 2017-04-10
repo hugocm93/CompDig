@@ -40,17 +40,25 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
+Setup/Hold to clock CLK
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+SEND_D      |    7.439(R)|   -0.552(R)|CLK_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
 Clock CLK to Pad
 ------------+------------+------------------+--------+
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-DATA_LCD<0> |    9.543(R)|CLK_BUFGP         |   0.000|
-DATA_LCD<1> |    9.564(R)|CLK_BUFGP         |   0.000|
-DATA_LCD<2> |    8.653(R)|CLK_BUFGP         |   0.000|
-DATA_LCD<3> |    8.418(R)|CLK_BUFGP         |   0.000|
-ENA         |    9.386(R)|CLK_BUFGP         |   0.000|
-RS          |    9.361(R)|CLK_BUFGP         |   0.000|
+DATA_LCD<0> |   10.525(R)|CLK_BUFGP         |   0.000|
+DATA_LCD<1> |   10.108(R)|CLK_BUFGP         |   0.000|
+DATA_LCD<2> |   10.003(R)|CLK_BUFGP         |   0.000|
+DATA_LCD<3> |    9.842(R)|CLK_BUFGP         |   0.000|
+ENA         |   10.634(R)|CLK_BUFGP         |   0.000|
+RS          |   10.190(R)|CLK_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
@@ -58,18 +66,18 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |   10.131|         |         |         |
+CLK            |    8.084|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Apr 10 11:49:39 2017 
+Analysis completed Mon Apr 10 12:32:28 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 168 MB
+Peak Memory Usage: 169 MB
 
 
 

@@ -5,7 +5,7 @@ C:\Xilinx\14.5\ISE_DS\ISE\.
    "Exemplo" is an NCD, version 3.2, device xc3s500e, package fg320, speed -4
 Opened constraints file Exemplo.pcf.
 
-Mon Apr 10 11:53:02 2017
+Mon Apr 10 12:32:31 2017
 
 C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:1 -g ProgPin:PullUp -g DonePin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g DCMShutdown:Disable -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:No -g DriveDone:No Exemplo.ncd 
 
@@ -90,10 +90,7 @@ There were 0 CONFIG constraint(s) processed from Exemplo.pcf.
 
 
 Running DRC.
-WARNING:PhysDesignRules:367 - The signal <SEND_D_IBUF> is incomplete. The signal
-   does not drive any load pins in the design.
-DRC detected 0 errors and 1 warnings.  Please see the previously displayed
-individual error or warning messages for more details.
+DRC detected 0 errors and 0 warnings.
 Creating bit map...
 Saving bit stream in "exemplo.bit".
 Bitstream generation is complete.

@@ -6,11 +6,12 @@ use work.COMMANDS_LCD4BITS.ALL;
 entity Exemplo is
 PORT( CLK : IN STD_LOGIC;
 		SEND_D : IN STD_LOGIC;
+		q : out  STD_LOGIC;
 		RS : OUT STD_LOGIC;
 		RW : OUT STD_LOGIC;
 		ENA : OUT STD_LOGIC;
 		DATA_LCD : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
-			
+					
 	  --INPUT : STD_LOGIC_VECTOR(7 DOWNTO 0);
 		);
 		
@@ -46,6 +47,7 @@ COMPONENT PROCESADOR_LCD4BITS
 	SIGNAL INST : RAM;
 
 begin
+
 Inst_PROCESADOR_LCD4BITS: PROCESADOR_LCD4BITS PORT MAP(
 		CLK => CLK,
 		RS => RS,
@@ -69,38 +71,23 @@ VECTOR_MEM_S <= INST(DIR);
 -- Comandos
 
 INST(0) <= LCD_INI("10");
-
 INST(1) <= POS(1,1);
-INST(2) <= CHAR(ML);
-INST(3) <= CHAR(MA);
-INST(4) <= CHAR(MB);
-INST(5) <= CHAR(MO);
-INST(6) <= CHAR(MR);
-INST(7) <= CHAR(MA);
-INST(8) <= CHAR(MT);
-INST(9) <= CHAR(MO);
-INST(10) <= CHAR(MR);
-INST(11) <= CHAR(MI);
-INST(12) <= CHAR(MO);
-INST(13) <= POS(2,5);
-INST(14) <= CHAR(ME);
-INST(15) <= CHAR(N);
-INST(16) <= CHAR(G);
-INST(17) <= INT_NUM(1);
-INST(18) <= INT_NUM(4);
-INST(19) <= INT_NUM(4);
-INST(20) <= INT_NUM(8);
+INST(2) <= LOOP_INI(1);
+INST(3) <= CLEAR_LCD('1') when SEND_D = '1' else CHAR_ASCII(x"04");
+INST(4) <= POS(1,2);
+INST(5) <= 
 
-INST(21) <= LOOP_INI(1);
-INST(22) <= CHAR_ASCII(x"1F");
-INST(23) <= LOOP_END(1);
+INST(4) <= LOOP_END(1);
 
-INST(24) <= CODIGO_END(1);
+INST(5) <= CODIGO_END(1);
 
-process(SEND_D)
+
+	process(SEND_D)
 	begin
 			if(SEND_D = '1') then
-
+				CLEAR_LCD('1');
+			elsif 
+				CLEAR_LCD('0');
 			end if;
 		end process;
 

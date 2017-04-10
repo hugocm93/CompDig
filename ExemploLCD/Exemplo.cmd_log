@@ -61,3 +61,16 @@ bitgen -intstyle ise -f Exemplo.ut Exemplo.ncd
 xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/ExemploLCD/Exemplo.xst" -ofn "C:/Users/aula/Downloads/CompDig/ExemploLCD/Exemplo.syr" 
 bitgen -intstyle ise -f Exemplo.ut Exemplo.ncd 
 xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/ExemploLCD/Exemplo.xst" -ofn "C:/Users/aula/Downloads/CompDig/ExemploLCD/Exemplo.syr" 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/ExemploLCD/Exemplo.xst" -ofn "C:/Users/aula/Downloads/CompDig/ExemploLCD/Exemplo.syr" 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/ExemploLCD/Exemplo.xst" -ofn "C:/Users/aula/Downloads/CompDig/ExemploLCD/Exemplo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Exemplo.ucf -p xc3s500e-fg320-4 Exemplo.ngc Exemplo.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Exemplo_map.ncd Exemplo.ngd Exemplo.pcf 
+par -w -intstyle ise -ol high -t 1 Exemplo_map.ncd Exemplo.ncd Exemplo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Exemplo.twx Exemplo.ncd -o Exemplo.twr Exemplo.pcf -ucf Exemplo.ucf 
+bitgen -intstyle ise -f Exemplo.ut Exemplo.ncd 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/ExemploLCD/Exemplo.xst" -ofn "C:/Users/aula/Downloads/CompDig/ExemploLCD/Exemplo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Exemplo.ucf -p xc3s500e-fg320-4 Exemplo.ngc Exemplo.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Exemplo_map.ncd Exemplo.ngd Exemplo.pcf 
+par -w -intstyle ise -ol high -t 1 Exemplo_map.ncd Exemplo.ncd Exemplo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Exemplo.twx Exemplo.ncd -o Exemplo.twr Exemplo.pcf -ucf Exemplo.ucf 
+bitgen -intstyle ise -f Exemplo.ut Exemplo.ncd 
