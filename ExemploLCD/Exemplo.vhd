@@ -73,13 +73,11 @@ VECTOR_MEM_S <= INST(DIR);
 INST(0) <= LCD_INI("10");
 INST(1) <= POS(1,1);
 INST(2) <= LOOP_INI(1);
-INST(3) <= CLEAR_LCD('1') when SEND_D = '1' else CHAR_ASCII(x"04");
+--INST(3) <= q = CLEAR_LCD('1') when SEND_D = '1' else CHAR_ASCII(q);
 INST(4) <= POS(1,2);
-INST(5) <= 
+INST(5) <= LOOP_END(1);
 
-INST(4) <= LOOP_END(1);
-
-INST(5) <= CODIGO_END(1);
+INST(6) <= CODIGO_END(1);
 
 
 	process(SEND_D)
