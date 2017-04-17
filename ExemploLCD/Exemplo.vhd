@@ -1,93 +1,130 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.NUMERIC_STD.ALL;
-use work.COMMANDS_LCD4BITS.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.commands_lcd4bits.all;
 
-entity Exemplo is
-PORT( CLK : IN STD_LOGIC;
-		SEND_D : IN STD_LOGIC;
-		q : out  STD_LOGIC;
-		RS : OUT STD_LOGIC;
-		RW : OUT STD_LOGIC;
-		ENA : OUT STD_LOGIC;
-		DATA_LCD : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
-					
-	  --INPUT : STD_LOGIC_VECTOR(7 DOWNTO 0);
+entity exemplo is
+port( clk : in std_logic;
+		send_d : in std_logic;
+		reset : in std_logic;
+		rs : out std_logic;
+		rw : out std_logic;
+		ena : out std_logic;
+		data_lcd : out std_logic_vector(3 downto 0);			
+	   input : in std_logic_vector(7 downto 0)
 		);
 		
-end Exemplo;
+end exemplo;
 
-architecture Behavioral of Exemplo is
-COMPONENT PROCESADOR_LCD4BITS
-	PORT(
-		CLK : IN std_logic;
-		VECTOR_MEM : IN std_logic_vector(11 downto 0);
-		C1A : IN std_logic_vector(39 downto 0);
-		C2A : IN std_logic_vector(39 downto 0);
-		C3A : IN std_logic_vector(39 downto 0);
-		C4A : IN std_logic_vector(39 downto 0);
-		C5A : IN std_logic_vector(39 downto 0);
-		C6A : IN std_logic_vector(39 downto 0);
-		C7A : IN std_logic_vector(39 downto 0);
-		C8A : IN std_logic_vector(39 downto 0);          
-		RS : OUT std_logic;
-		RW : OUT std_logic;
-		ENA : OUT std_logic;
-		INC_DIR : OUT INTEGER RANGE 0 TO 1024;
-		BD_LCD : OUT std_logic_vector(7 downto 0);
-		DATA : OUT std_logic_vector(3 downto 0)
+architecture behavioral of exemplo is
+   COMPONENT db_fsm
+   PORT( button	:	IN	STD_LOGIC; 
+          result	:	OUT	STD_LOGIC; 
+          clk	:	IN	STD_LOGIC);
+   END COMPONENT;
+	
+component procesador_lcd4bits
+	port(
+		clk : in std_logic;
+		vector_mem : in std_logic_vector(11 downto 0);
+		c1a : in std_logic_vector(39 downto 0);
+		c2a : in std_logic_vector(39 downto 0);
+		c3a : in std_logic_vector(39 downto 0);
+		c4a : in std_logic_vector(39 downto 0);
+		c5a : in std_logic_vector(39 downto 0);
+		c6a : in std_logic_vector(39 downto 0);
+		c7a : in std_logic_vector(39 downto 0);
+		c8a : in std_logic_vector(39 downto 0);          
+		rs : out std_logic;
+		rw : out std_logic;
+		ena : out std_logic;
+		inc_dir : out integer range 0 to 1024;
+		bd_lcd : out std_logic_vector(7 downto 0);
+		data : out std_logic_vector(3 downto 0)
 		);
-	END COMPONENT;
+	end component;
 	
-	SIGNAL VECTOR_MEM_S : STD_LOGIC_VECTOR(11 DOWNTO 0);
-	SIGNAL DIR : INTEGER RANGE 0 TO 1024 := 0;
+	signal vector_mem_s : std_logic_vector(11 downto 0);
+	signal dir : integer range 0 to 1024 := 0;
+	
+	signal aux : std_logic_vector(7 downto 0);
+	signal resetDebounce : std_logic;
+	signal sendDebounce : std_logic;
+	signal counterRow : integer := 1;
+	signal counterCol : integer := 0;
+	signal newChar : std_logic;
 
 	
-	TYPE RAM IS ARRAY (0 to 60) OF STD_LOGIC_VECTOR(11 DOWNTO 0);
-	SIGNAL INST : RAM;
+	type ram is array (0 to 60) of std_logic_vector(11 downto 0);
+	signal inst : ram;
 
 begin
-
-Inst_PROCESADOR_LCD4BITS: PROCESADOR_LCD4BITS PORT MAP(
-		CLK => CLK,
-		RS => RS,
-		RW => RW,
-		ENA => ENA,
-		VECTOR_MEM => VECTOR_MEM_S,
-		INC_DIR => DIR,
-		C1A => (others => '0'),
-		C2A => (others => '0'),
-		C3A => (others => '0'),
-		C4A => (others => '0'),
-		C5A => (others => '0'),
-		C6A => (others => '0'),
-		C7A => (others => '0'),
-		C8A => (others => '0'),
-		BD_LCD => open,
-		DATA => DATA_LCD 
+   reset_db: db_fsm PORT MAP(
+		button => reset, 
+		result => resetDebounce, 
+		clk => clk 
+   );
+	 envio_db: db_fsm PORT MAP(
+		button => send_d, 
+		result => sendDebounce, 
+		clk => clk 
+   );
+	
+inst_procesador_lcd4bits: procesador_lcd4bits port map(
+		clk => clk,
+		rs => rs,
+		rw => rw,
+		ena => ena,
+		vector_mem => vector_mem_s,
+		inc_dir => dir,
+		c1a => (others => '0'),
+		c2a => (others => '0'),
+		c3a => (others => '0'),
+		c4a => (others => '0'),
+		c5a => (others => '0'),
+		c6a => (others => '0'),
+		c7a => (others => '0'),
+		c8a => (others => '0'),
+		bd_lcd => open,
+		data => data_lcd 
 	);
 	
-VECTOR_MEM_S <= INST(DIR);
--- Comandos
+vector_mem_s <= inst(dir);
+-- comandos
 
-INST(0) <= LCD_INI("10");
-INST(1) <= POS(1,1);
-INST(2) <= LOOP_INI(1);
---INST(3) <= q = CLEAR_LCD('1') when SEND_D = '1' else CHAR_ASCII(q);
-INST(4) <= POS(1,2);
-INST(5) <= LOOP_END(1);
+inst(0) <= lcd_ini("00");
+inst(1) <= pos(1,1);
+inst(2) <= clear_lcd('1');
 
-INST(6) <= CODIGO_END(1);
+inst(3) <= loop_ini(1);
+inst(4) <= pos(counterRow,counterCol);
+inst(5) <= clear_lcd('1') when resetDebounce = '1' else char_ascii(aux);
+inst(6) <= loop_end(1);
 
+inst(7) <= codigo_end(1);
 
-	process(SEND_D)
-	begin
-			if(SEND_D = '1') then
-				CLEAR_LCD('1');
-			elsif 
-				CLEAR_LCD('0');
-			end if;
-		end process;
+process(sendDebounce, resetDebounce,dir)
+begin
 
-end Behavioral;
+if (resetDebounce = '1') then
+	counterCol <= 0;
+	counterRow <= 1;	
+elsif (sendDebounce' event and sendDebounce = '1') then
+	counterCol <= counterCol + 1;
+	if (counterCol = 16) then
+		counterRow <= 2;
+		counterCol <= 1;
+	end if;	
+	
+	newChar <= '1';
+end if;
+
+if (dir = 6 and newChar = '1') then
+	aux <= input;
+	newChar <= '0';
+end if;
+
+end process;
+
+end behavioral;
 

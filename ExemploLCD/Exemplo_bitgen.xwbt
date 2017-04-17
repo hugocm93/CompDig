@@ -1,6 +1,6 @@
 INTSTYLE=ise
-INFILE=C:\Users\aula\Downloads\CompDig\ExemploLCD\Exemplo.ncd
-OUTFILE=C:\Users\aula\Downloads\CompDig\ExemploLCD\Exemplo.bit
+INFILE=C:\Users\aula\Downloads\CompDig\ExemploLCD\exemplo.ncd
+OUTFILE=C:\Users\aula\Downloads\CompDig\ExemploLCD\exemplo.bit
 FAMILY=Spartan3E
 PART=xc3s500e-4fg320
 WORKINGDIR=C:\Users\aula\Downloads\CompDig\ExemploLCD
