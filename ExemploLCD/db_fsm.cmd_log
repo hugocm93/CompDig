@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan3e -refsym db_fsm C:/Users/aula/Downloads/CompDig/ExemploLCD/db_fsm.sch C:/Users/aula/Downloads/CompDig/ExemploLCD/db_fsm.sym 
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl db_fsm_drc.vhf -w C:/Users/aula/Downloads/CompDig/ExemploLCD/db_fsm.sch 
+sch2vhdl -intstyle ise -family spartan3e -tionly -w C:/Users/aula/Downloads/CompDig/ExemploLCD/db_fsm.sch db_fsm.vhi 

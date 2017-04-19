@@ -10,3 +10,17 @@ NET "DATA_LCD[3]" LOC="M15" | IOSTANDARD = LVCMOS33 | DRIVE = 4 | SLEW = SLOW;
 
 NET "SEND_D" LOC = K17;
 NET "SEND_D" PULLDOWN;
+
+NET "RESET" LOC = H13;
+NET "RESET" PULLDOWN;
+
+NET "input[4]" LOC = A6;
+NET "input[5]" LOC = B6;
+NET "input[6]" LOC = E7;
+NET "input[7]" LOC = F7;
+
+
+NET "input[3]" LOC = L13;
+NET "input[2]" LOC = L14;
+NET "input[1]" LOC = H18;
+NET "input[0]" LOC = N17;
