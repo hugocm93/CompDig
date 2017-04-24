@@ -1,0 +1,17 @@
+NET "Row[3]" LOC = F7;
+NET "Row[2]" LOC = B6;
+NET "Row[1]" LOC = C5;
+NET "Row[0]" LOC = A4;
+
+NET "Col[3]" LOC = E7;
+NET "Col[2]" LOC = A6;
+NET "Col[1]" LOC = D5;
+NET "Col[0]" LOC = B4;
+
+NET "clk" LOC = C9;
+NET "DecodeOut[3]" LOC = F12;
+NET "DecodeOut[2]" LOC = E12;
+NET "DecodeOut[1]" LOC = E11;
+NET "DecodeOut[0]" LOC = F11;
+
+NET "new_in" LOC = F9;

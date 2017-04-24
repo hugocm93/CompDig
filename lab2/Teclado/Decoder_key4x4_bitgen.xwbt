@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Repos\compDig\lab2\Teclado\Decoder_key4x4.ncd
+OUTFILE=D:\Repos\compDig\lab2\Teclado\Decoder_key4x4.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=D:\Repos\compDig\lab2\Teclado
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,4 @@
+AR mod_m_counter arch D:/Repos/compDig/lab2/Teclado/mod_m_counter.vhd sub00/vhpl01 1493048732
+AR decoder_key4x4 behavioral D:/Repos/compDig/lab2/Teclado/Decoder_key4x4.vhd sub00/vhpl03 1493048734
+EN decoder_key4x4 NULL D:/Repos/compDig/lab2/Teclado/Decoder_key4x4.vhd sub00/vhpl02 1493048733
+EN mod_m_counter NULL D:/Repos/compDig/lab2/Teclado/mod_m_counter.vhd sub00/vhpl00 1493048731
