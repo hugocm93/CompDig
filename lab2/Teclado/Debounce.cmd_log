@@ -1,0 +1,1 @@
+vhdtdtfi -prj Teclado -o C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/Debounce.vhi -module Debounce -template C:/Xilinx/14.5/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mod_m_counter.vhd -lib work Debounce.vhd 

@@ -5,10 +5,28 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/Modulo_display.vhd</arg>&quot; line <arg fmt="%d" index="2">26</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">q</arg>&apos; of component &apos;<arg fmt="%s" index="4">mod_m_counter</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/Debounce.vhd</arg>&quot; line <arg fmt="%d" index="2">16</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">q</arg>&apos; of component &apos;<arg fmt="%s" index="4">mod_m_counter</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/db_fsm.vhf</arg>&quot; line <arg fmt="%d" index="2">487</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB16CE_MXILINX_db_fsm</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/db_fsm.vhf</arg>&quot; line <arg fmt="%d" index="2">487</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB16CE_MXILINX_db_fsm</arg>&apos;.
+</msg>
+
 <msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">tick1</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">init_val</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">new_key</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 </msg>
 
 </messages>

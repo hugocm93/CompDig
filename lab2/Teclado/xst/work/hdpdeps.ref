@@ -1,13 +1,83 @@
-V3 6
-FL D:/Repos/compDig/lab2/Teclado/Decoder_key4x4.vhd 2017/04/24.12:45:20 P.58f
-EN work/Decoder_key4x4 1493048733 \
-      FL D:/Repos/compDig/lab2/Teclado/Decoder_key4x4.vhd PB ieee/std_logic_1164 1364358218
-AR work/Decoder_key4x4/Behavioral 1493048734 \
-      FL D:/Repos/compDig/lab2/Teclado/Decoder_key4x4.vhd EN work/Decoder_key4x4 1493048733 \
-      AR work/mod_m_counter/arch 1493048732
-FL D:/Repos/compDig/lab2/Teclado/mod_m_counter.vhd 2017/04/24.10:27:06 P.58f
-EN work/mod_m_counter 1493048731 \
-      FL D:/Repos/compDig/lab2/Teclado/mod_m_counter.vhd PB ieee/std_logic_1164 1364358218 \
-      PB ieee/NUMERIC_STD 1364358223
-AR work/mod_m_counter/arch 1493048732 \
-      FL D:/Repos/compDig/lab2/Teclado/mod_m_counter.vhd EN work/mod_m_counter 1493048731
+V3 45
+FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/control_lab2.vhd 2017/05/08.12:57:16 P.58f
+EN work/control_lab2 1494260790 \
+      FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/control_lab2.vhd \
+      PB ieee/std_logic_1164 1364358218
+AR work/control_lab2/Behavioral 1494260791 \
+      FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/control_lab2.vhd \
+      EN work/control_lab2 1494260790
+FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/db_fsm.vhf 2017/05/08.13:13:56 P.58f
+EN work/FTCE_MXILINX_db_fsm 1494260784 \
+      FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/db_fsm.vhf \
+      PB ieee/std_logic_1164 1364358218 PB ieee/NUMERIC_STD 1364358223 LB UNISIM \
+      PH unisim/VCOMPONENTS 1364358225
+AR work/FTCE_MXILINX_db_fsm/BEHAVIORAL 1494260785 \
+      FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/db_fsm.vhf \
+      EN work/FTCE_MXILINX_db_fsm 1494260784 CP XOR2 CP FDCE
+EN work/CB16CE_MXILINX_db_fsm 1494260786 \
+      FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/db_fsm.vhf \
+      PB ieee/std_logic_1164 1364358218 PB ieee/NUMERIC_STD 1364358223 LB UNISIM \
+      PH unisim/VCOMPONENTS 1364358225
+AR work/CB16CE_MXILINX_db_fsm/BEHAVIORAL 1494260787 \
+      FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/db_fsm.vhf \
+      EN work/CB16CE_MXILINX_db_fsm 1494260786 CP FTCE_MXILINX_db_fsm CP AND3 \
+      CP AND2 CP VCC CP AND4 CP AND5
+EN work/db_fsm 1494260788 \
+      FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/db_fsm.vhf \
+      PB ieee/std_logic_1164 1364358218 PB ieee/NUMERIC_STD 1364358223 LB UNISIM \
+      PH unisim/VCOMPONENTS 1364358225
+AR work/db_fsm/BEHAVIORAL 1494260789 \
+      FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/db_fsm.vhf \
+      EN work/db_fsm 1494260788 CP XOR2 CP FD CP FDE CP INV CP CB16CE_MXILINX_db_fsm
+FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/Debounce.vhd 2017/05/08.11:17:54 P.58f
+EN work/Debounce 1494260782 \
+      FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/Debounce.vhd \
+      PB ieee/std_logic_1164 1364358218
+AR work/Debounce/Behavioral 1494260783 \
+      FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/Debounce.vhd \
+      EN work/Debounce 1494260782 AR work/mod_m_counter/arch 1494260773
+FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/Decoder_key4x4.vhd 2017/05/08.11:03:30 P.58f
+EN work/Decoder_key4x4 1494260778 \
+      FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/Decoder_key4x4.vhd \
+      PB ieee/std_logic_1164 1364358218
+AR work/Decoder_key4x4/Behavioral 1494260779 \
+      FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/Decoder_key4x4.vhd \
+      EN work/Decoder_key4x4 1494260778 AR work/mod_m_counter/arch 1494260773
+FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/display_7_seg.vhd 2017/05/08.11:00:32 P.58f
+EN work/display_7_seg 1494260776 \
+      FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/display_7_seg.vhd \
+      PB ieee/std_logic_1164 1364358218 PB ieee/NUMERIC_STD 1364358223
+AR work/display_7_seg/arch 1494260777 \
+      FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/display_7_seg.vhd \
+      EN work/display_7_seg 1494260776
+FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/d_ff_reset.vhd 2017/05/08.11:00:32 P.58f
+EN work/d_ff_reset 1494260774 \
+      FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/d_ff_reset.vhd \
+      PB ieee/std_logic_1164 1364358218
+AR work/d_ff_reset/arch 1494260775 \
+      FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/d_ff_reset.vhd \
+      EN work/d_ff_reset 1494260774
+FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/main_lab_2.vhd 2017/05/08.13:21:49 P.58f
+EN work/main_lab_2 1494260792 \
+      FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/main_lab_2.vhd \
+      PB ieee/std_logic_1164 1364358218
+AR work/main_lab_2/Behavioral 1494260793 \
+      FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/main_lab_2.vhd \
+      EN work/main_lab_2 1494260792 AR work/Decoder_key4x4/Behavioral 1494260779 \
+      AR work/Modulo_display/Behavioral 1494260781 AR work/Debounce/Behavioral 1494260783 \
+      CP db_fsm AR work/control_lab2/Behavioral 1494260791
+FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/Modulo_display.vhd 2017/05/08.12:07:17 P.58f
+EN work/Modulo_display 1494260780 \
+      FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/Modulo_display.vhd \
+      PB ieee/std_logic_1164 1364358218 PB ieee/NUMERIC_STD 1364358223
+AR work/Modulo_display/Behavioral 1494260781 \
+      FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/Modulo_display.vhd \
+      EN work/Modulo_display 1494260780 AR work/d_ff_reset/arch 1494260775 \
+      AR work/mod_m_counter/arch 1494260773 AR work/display_7_seg/arch 1494260777
+FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/mod_m_counter.vhd 2017/05/08.11:00:32 P.58f
+EN work/mod_m_counter 1494260772 \
+      FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/mod_m_counter.vhd \
+      PB ieee/std_logic_1164 1364358218 PB ieee/NUMERIC_STD 1364358223
+AR work/mod_m_counter/arch 1494260773 \
+      FL C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/mod_m_counter.vhd \
+      EN work/mod_m_counter 1494260772

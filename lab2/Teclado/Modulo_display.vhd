@@ -5,6 +5,7 @@ use ieee.numeric_std.all;
 entity Modulo_display is
 	port(   clk, reset : in std_logic;
 		hex1: in std_logic_vector (3 downto 0);
+		hex2: in std_logic_vector (3 downto 0);
 		hex_out: out std_logic_vector (6 downto 0);
 		c: out std_logic);
 end Modulo_display;
@@ -12,10 +13,7 @@ end Modulo_display;
 architecture behavioral of Modulo_display is
 	signal clk_aux: std_logic := '0';
 	signal tick: std_logic := '0';
-	signal hex2: std_logic_vector (3 downto 0);
 begin
-
-hex2 <= not  hex1;
 
 fd : entity work.d_ff_reset(arch)
 	port map(

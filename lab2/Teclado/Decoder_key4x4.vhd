@@ -32,15 +32,6 @@ counter : entity work.mod_m_counter(arch)
         max_tick => tick
 	);
 
---Inst_Modulo_Display : entity work.Modulo_display(behavioral)
---    port map(
---        clk => clk,
---        reset => '0',
---        hex1 => DecodeOut,
---        hex2 => DecodeOut,
---        hex_out => hex_out,
---        c => c
---    );
 	
 process(clk, tick)
 begin
