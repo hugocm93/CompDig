@@ -1,8 +1,0 @@
-
-
-NET "i0" LOC = L14;
-NET "i1" LOC = L13;
-NET "s" LOC = F12;
-NET "cin" LOC = N17;
-NET "cout" LOC = F9;
-
