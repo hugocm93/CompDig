@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\aula\Desktop\hugo_1212984\SomadorModular\somador2bit.ncd
-OUTFILE=C:\Users\aula\Desktop\hugo_1212984\SomadorModular\somador2bit.bit
-FAMILY=Spartan3E
-PART=xc3s500e-4fg320
-WORKINGDIR=C:\Users\aula\Desktop\hugo_1212984\SomadorModular
-LICENSE=WebPack
-USER_INFO=__0_0_0
