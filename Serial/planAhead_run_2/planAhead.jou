@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.5 (64-bit)
+# Build 247527 by xbuild on Mon Mar 25 17:13:07 MDT 2013
+# Start of session at: Mon May 22 11:48:58 2017
+# Process ID: 4888
+# Log file: C:/Users/aula/Downloads/CompDig/Serial/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/aula/Downloads/CompDig/Serial/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/aula/Downloads/CompDig/Serial/pa.fromNetlist.tcl

@@ -1,0 +1,16 @@
+//! **************************************************************************
+// Written by: Map P.58f on Mon May 22 12:44:49 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "oldClk" LOCATE = SITE "C9" LEVEL 1;
+COMP "serial_out" LOCATE = SITE "M14" LEVEL 1;
+COMP "send" LOCATE = SITE "D18" LEVEL 1;
+COMP "b0" LOCATE = SITE "L13" LEVEL 1;
+COMP "b1" LOCATE = SITE "L14" LEVEL 1;
+COMP "b2" LOCATE = SITE "H18" LEVEL 1;
+COMP "b3" LOCATE = SITE "N17" LEVEL 1;
+COMP "reset" LOCATE = SITE "K17" LEVEL 1;
+NET "oldClk_BUFGP/IBUFG" BEL "oldClk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

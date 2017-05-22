@@ -1,0 +1,55 @@
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/Serial/Transmissor.xst" -ofn "C:/Users/aula/Downloads/CompDig/Serial/Transmissor.syr" 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/Serial/Transmissor.xst" -ofn "C:/Users/aula/Downloads/CompDig/Serial/Transmissor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Transmissor.ucf -p xc3s500e-fg320-4 Transmissor.ngc Transmissor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Transmissor_map.ncd Transmissor.ngd Transmissor.pcf 
+par -w -intstyle ise -ol high -t 1 Transmissor_map.ncd Transmissor.ncd Transmissor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Transmissor.twx Transmissor.ncd -o Transmissor.twr Transmissor.pcf -ucf Transmissor.ucf 
+bitgen -intstyle ise -f Transmissor.ut Transmissor.ncd 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/Serial/Transmissor.xst" -ofn "C:/Users/aula/Downloads/CompDig/Serial/Transmissor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Transmissor.ucf -p xc3s500e-fg320-4 Transmissor.ngc Transmissor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Transmissor_map.ncd Transmissor.ngd Transmissor.pcf 
+par -w -intstyle ise -ol high -t 1 Transmissor_map.ncd Transmissor.ncd Transmissor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Transmissor.twx Transmissor.ncd -o Transmissor.twr Transmissor.pcf -ucf Transmissor.ucf 
+bitgen -intstyle ise -f Transmissor.ut Transmissor.ncd 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/Serial/Transmissor.xst" -ofn "C:/Users/aula/Downloads/CompDig/Serial/Transmissor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Transmissor.ucf -p xc3s500e-fg320-4 Transmissor.ngc Transmissor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Transmissor_map.ncd Transmissor.ngd Transmissor.pcf 
+par -w -intstyle ise -ol high -t 1 Transmissor_map.ncd Transmissor.ncd Transmissor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Transmissor.twx Transmissor.ncd -o Transmissor.twr Transmissor.pcf -ucf Transmissor.ucf 
+bitgen -intstyle ise -f Transmissor.ut Transmissor.ncd 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/Serial/Transmissor.xst" -ofn "C:/Users/aula/Downloads/CompDig/Serial/Transmissor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Transmissor.ucf -p xc3s500e-fg320-4 Transmissor.ngc Transmissor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Transmissor_map.ncd Transmissor.ngd Transmissor.pcf 
+par -w -intstyle ise -ol high -t 1 Transmissor_map.ncd Transmissor.ncd Transmissor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Transmissor.twx Transmissor.ncd -o Transmissor.twr Transmissor.pcf -ucf Transmissor.ucf 
+bitgen -intstyle ise -f Transmissor.ut Transmissor.ncd 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/Serial/Transmissor.xst" -ofn "C:/Users/aula/Downloads/CompDig/Serial/Transmissor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Transmissor.ucf -p xc3s500e-fg320-4 Transmissor.ngc Transmissor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Transmissor_map.ncd Transmissor.ngd Transmissor.pcf 
+par -w -intstyle ise -ol high -t 1 Transmissor_map.ncd Transmissor.ncd Transmissor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Transmissor.twx Transmissor.ncd -o Transmissor.twr Transmissor.pcf -ucf Transmissor.ucf 
+bitgen -intstyle ise -f Transmissor.ut Transmissor.ncd 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/Serial/Transmissor.xst" -ofn "C:/Users/aula/Downloads/CompDig/Serial/Transmissor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Transmissor.ucf -p xc3s500e-fg320-4 Transmissor.ngc Transmissor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Transmissor_map.ncd Transmissor.ngd Transmissor.pcf 
+par -w -intstyle ise -ol high -t 1 Transmissor_map.ncd Transmissor.ncd Transmissor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Transmissor.twx Transmissor.ncd -o Transmissor.twr Transmissor.pcf -ucf Transmissor.ucf 
+bitgen -intstyle ise -f Transmissor.ut Transmissor.ncd 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/Serial/Transmissor.xst" -ofn "C:/Users/aula/Downloads/CompDig/Serial/Transmissor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Transmissor.ucf -p xc3s500e-fg320-4 Transmissor.ngc Transmissor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Transmissor_map.ncd Transmissor.ngd Transmissor.pcf 
+par -w -intstyle ise -ol high -t 1 Transmissor_map.ncd Transmissor.ncd Transmissor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Transmissor.twx Transmissor.ncd -o Transmissor.twr Transmissor.pcf -ucf Transmissor.ucf 
+bitgen -intstyle ise -f Transmissor.ut Transmissor.ncd 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/Serial/Transmissor.xst" -ofn "C:/Users/aula/Downloads/CompDig/Serial/Transmissor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Transmissor.ucf -p xc3s500e-fg320-4 Transmissor.ngc Transmissor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Transmissor_map.ncd Transmissor.ngd Transmissor.pcf 
+par -w -intstyle ise -ol high -t 1 Transmissor_map.ncd Transmissor.ncd Transmissor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Transmissor.twx Transmissor.ncd -o Transmissor.twr Transmissor.pcf -ucf Transmissor.ucf 
+bitgen -intstyle ise -f Transmissor.ut Transmissor.ncd 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/Serial/Transmissor.xst" -ofn "C:/Users/aula/Downloads/CompDig/Serial/Transmissor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Transmissor.ucf -p xc3s500e-fg320-4 Transmissor.ngc Transmissor.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Transmissor_map.ncd Transmissor.ngd Transmissor.pcf 
+par -w -intstyle ise -ol high -t 1 Transmissor_map.ncd Transmissor.ncd Transmissor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Transmissor.twx Transmissor.ncd -o Transmissor.twr Transmissor.pcf -ucf Transmissor.ucf 
+bitgen -intstyle ise -f Transmissor.ut Transmissor.ncd 

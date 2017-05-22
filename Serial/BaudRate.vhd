@@ -20,7 +20,7 @@ begin
         contagem := 0;
     elsif(clk'event and clk = '1') then -- funcao principal 
         contagem := contagem + 1;
-        if(contagem = BaudRate) then
+        if(contagem = BaudDivisor) then
             contagem := 0;
             clkOut <= not clkOut;
         end if;

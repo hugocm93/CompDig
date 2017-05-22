@@ -1,0 +1,3 @@
+vhdl isim_temp "BaudRate.vhd"
+vhdl isim_temp "Transmissor.vhd"
+vhdl isim_temp "Transmissor_tb.vhd"

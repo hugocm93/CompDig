@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="send" Dir="IN"/>
+		<Port Id="reset" Dir="IN"/>
+		<Port Id="oldClk" Dir="IN"/>
+		<Port Id="serial_out" Dir="OUT"/>
+		<Port Id="b0" Dir="IN"/>
+		<Port Id="b1" Dir="IN"/>
+		<Port Id="b2" Dir="IN"/>
+		<Port Id="b3" Dir="IN"/>
+	</Ifc>
+</Interface>
+

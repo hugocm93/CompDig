@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# PlanAhead v14.5 (64-bit)
+# Build 247527 by xbuild on Mon Mar 25 17:13:07 MDT 2013
+# Start of session at: Mon May 22 11:48:15 2017
+# Process ID: 6260
+# Log file: C:/Users/aula/Downloads/CompDig/Serial/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/aula/Downloads/CompDig/Serial/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/aula/Downloads/CompDig/Serial/pa.fromNetlist.tcl
+startgroup
+set_property package_pin L13 [get_ports b0]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports b1]
+endgroup
+startgroup
+set_property package_pin H18 [get_ports b2]
+endgroup
+startgroup
+set_property package_pin N17 [get_ports b3]
+endgroup
+startgroup
+set_property package_pin C9 [get_ports oldClk]
+endgroup
+startgroup
+set_property package_pin K17 [get_ports reset]
+endgroup
+startgroup
+set_property package_pin D18 [get_ports send]
+endgroup
+save_constraints

@@ -1,0 +1,34 @@
+V3 27
+FL C:/Users/aula/Downloads/CompDig/Serial/BaudRate.vhd 2017/05/22.11:43:00 P.58f
+EN work/BaudRate 1495467876 \
+      FL C:/Users/aula/Downloads/CompDig/Serial/BaudRate.vhd \
+      PB ieee/std_logic_1164 1364358218
+AR work/BaudRate/arch_br 1495467877 \
+      FL C:/Users/aula/Downloads/CompDig/Serial/BaudRate.vhd EN work/BaudRate 1495467876
+FL C:/Users/aula/Downloads/CompDig/Serial/db_fsm.vhf 2017/05/22.12:34:18 P.58f
+EN work/FTCE_MXILINX_db_fsm 1495467878 \
+      FL C:/Users/aula/Downloads/CompDig/Serial/db_fsm.vhf PB ieee/std_logic_1164 1364358218 \
+      PB ieee/NUMERIC_STD 1364358223 LB UNISIM PH unisim/VCOMPONENTS 1364358225
+AR work/FTCE_MXILINX_db_fsm/BEHAVIORAL 1495467879 \
+      FL C:/Users/aula/Downloads/CompDig/Serial/db_fsm.vhf \
+      EN work/FTCE_MXILINX_db_fsm 1495467878 CP XOR2 CP FDCE
+EN work/CB16CE_MXILINX_db_fsm 1495467880 \
+      FL C:/Users/aula/Downloads/CompDig/Serial/db_fsm.vhf PB ieee/std_logic_1164 1364358218 \
+      PB ieee/NUMERIC_STD 1364358223 LB UNISIM PH unisim/VCOMPONENTS 1364358225
+AR work/CB16CE_MXILINX_db_fsm/BEHAVIORAL 1495467881 \
+      FL C:/Users/aula/Downloads/CompDig/Serial/db_fsm.vhf \
+      EN work/CB16CE_MXILINX_db_fsm 1495467880 CP FTCE_MXILINX_db_fsm CP AND3 \
+      CP AND2 CP VCC CP AND4 CP AND5
+EN work/db_fsm 1495467882 \
+      FL C:/Users/aula/Downloads/CompDig/Serial/db_fsm.vhf PB ieee/std_logic_1164 1364358218 \
+      PB ieee/NUMERIC_STD 1364358223 LB UNISIM PH unisim/VCOMPONENTS 1364358225
+AR work/db_fsm/BEHAVIORAL 1495467883 \
+      FL C:/Users/aula/Downloads/CompDig/Serial/db_fsm.vhf EN work/db_fsm 1495467882 \
+      CP XOR2 CP FD CP FDE CP INV CP CB16CE_MXILINX_db_fsm
+FL C:/Users/aula/Downloads/CompDig/Serial/Transmissor.vhd 2017/05/22.12:44:05 P.58f
+EN work/Transmissor 1495467884 \
+      FL C:/Users/aula/Downloads/CompDig/Serial/Transmissor.vhd \
+      PB ieee/std_logic_1164 1364358218
+AR work/Transmissor/ArchTX 1495467885 \
+      FL C:/Users/aula/Downloads/CompDig/Serial/Transmissor.vhd \
+      EN work/Transmissor 1495467884 AR work/BaudRate/arch_br 1495467877 CP db_fsm

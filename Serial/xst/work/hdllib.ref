@@ -1,0 +1,10 @@
+AR transmissor archtx C:/Users/aula/Downloads/CompDig/Serial/Transmissor.vhd sub00/vhpl03 1495467885
+AR cb16ce_mxilinx_db_fsm behavioral C:/Users/aula/Downloads/CompDig/Serial/db_fsm.vhf sub00/vhpl07 1495467881
+EN ftce_mxilinx_db_fsm NULL C:/Users/aula/Downloads/CompDig/Serial/db_fsm.vhf sub00/vhpl04 1495467878
+AR ftce_mxilinx_db_fsm behavioral C:/Users/aula/Downloads/CompDig/Serial/db_fsm.vhf sub00/vhpl05 1495467879
+EN cb16ce_mxilinx_db_fsm NULL C:/Users/aula/Downloads/CompDig/Serial/db_fsm.vhf sub00/vhpl06 1495467880
+AR db_fsm behavioral C:/Users/aula/Downloads/CompDig/Serial/db_fsm.vhf sub00/vhpl09 1495467883
+EN db_fsm NULL C:/Users/aula/Downloads/CompDig/Serial/db_fsm.vhf sub00/vhpl08 1495467882
+EN transmissor NULL C:/Users/aula/Downloads/CompDig/Serial/Transmissor.vhd sub00/vhpl02 1495467884
+EN baudrate NULL C:/Users/aula/Downloads/CompDig/Serial/BaudRate.vhd sub00/vhpl00 1495467876
+AR baudrate arch_br C:/Users/aula/Downloads/CompDig/Serial/BaudRate.vhd sub00/vhpl01 1495467877

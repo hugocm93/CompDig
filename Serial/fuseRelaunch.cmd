@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/aula/Downloads/CompDig/Serial/Transmissor_tb_isim_beh.exe" -prj "C:/Users/aula/Downloads/CompDig/Serial/Transmissor_tb_beh.prj" "work.Transmissor_tb" 

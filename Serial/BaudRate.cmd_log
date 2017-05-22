@@ -1,0 +1,1 @@
+vhdtdtfi -prj Serial -o C:/Users/aula/Downloads/CompDig/Serial/BaudRate.vhi -module BaudRate -template C:/Xilinx/14.5/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work BaudRate.vhd 

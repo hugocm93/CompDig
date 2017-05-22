@@ -1,0 +1,584 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Transmissor.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Transmissor.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Transmissor"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Transmissor
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/aula/Downloads/CompDig/Serial/BaudRate.vhd" in Library work.
+Architecture arch_br of Entity baudrate is up to date.
+Compiling vhdl file "C:/Users/aula/Downloads/CompDig/Serial/db_fsm.vhf" in Library work.
+Architecture behavioral of Entity ftce_mxilinx_db_fsm is up to date.
+Architecture behavioral of Entity cb16ce_mxilinx_db_fsm is up to date.
+Architecture behavioral of Entity db_fsm is up to date.
+Compiling vhdl file "C:/Users/aula/Downloads/CompDig/Serial/Transmissor.vhd" in Library work.
+Entity <transmissor> compiled.
+Entity <transmissor> (Architecture <archtx>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Transmissor> in library <work> (architecture <archtx>).
+
+Analyzing hierarchy for entity <BaudRate> in library <work> (architecture <arch_br>) with generics.
+	BaudDivisor = 2604
+
+Analyzing hierarchy for entity <db_fsm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CB16CE_MXILINX_db_fsm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FTCE_MXILINX_db_fsm> in library <work> (architecture <behavioral>) with generics.
+	INIT = '0'
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Transmissor> in library <work> (Architecture <archtx>).
+INFO:Xst:2679 - Register <pkg<0>> in unit <Transmissor> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <pkg<7>> in unit <Transmissor> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <pkg<8>> in unit <Transmissor> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <Transmissor> analyzed. Unit <Transmissor> generated.
+
+Analyzing generic Entity <BaudRate> in library <work> (Architecture <arch_br>).
+	BaudDivisor = 2604
+Entity <BaudRate> analyzed. Unit <BaudRate> generated.
+
+Analyzing Entity <db_fsm> in library <work> (Architecture <behavioral>).
+    Set user-defined property "INIT =  0" for instance <XLXI_30> in unit <db_fsm>.
+    Set user-defined property "INIT =  0" for instance <XLXI_31> in unit <db_fsm>.
+    Set user-defined property "INIT =  0" for instance <XLXI_40> in unit <db_fsm>.
+WARNING:Xst:753 - "C:/Users/aula/Downloads/CompDig/Serial/db_fsm.vhf" line 487: Unconnected output port 'CEO' of component 'CB16CE_MXILINX_db_fsm'.
+WARNING:Xst:753 - "C:/Users/aula/Downloads/CompDig/Serial/db_fsm.vhf" line 487: Unconnected output port 'Q' of component 'CB16CE_MXILINX_db_fsm'.
+    Set user-defined property "HU_SET =  XLXI_46_16" for instance <XLXI_46> in unit <db_fsm>.
+Entity <db_fsm> analyzed. Unit <db_fsm> generated.
+
+Analyzing Entity <CB16CE_MXILINX_db_fsm> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  I_Q0_1" for instance <I_Q0> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q1_0" for instance <I_Q1> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q2_3" for instance <I_Q2> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q3_2" for instance <I_Q3> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q4_7" for instance <I_Q4> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q5_6" for instance <I_Q5> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q6_5" for instance <I_Q6> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q7_4" for instance <I_Q7> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q8_8" for instance <I_Q8> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q9_9" for instance <I_Q9> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q10_10" for instance <I_Q10> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q11_11" for instance <I_Q11> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q12_12" for instance <I_Q12> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q13_13" for instance <I_Q13> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q14_14" for instance <I_Q14> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q15_15" for instance <I_Q15> in unit <CB16CE_MXILINX_db_fsm>.
+Entity <CB16CE_MXILINX_db_fsm> analyzed. Unit <CB16CE_MXILINX_db_fsm> generated.
+
+Analyzing generic Entity <FTCE_MXILINX_db_fsm> in library <work> (Architecture <behavioral>).
+	INIT = '0'
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_db_fsm>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_db_fsm>.
+Entity <FTCE_MXILINX_db_fsm> analyzed. Unit <FTCE_MXILINX_db_fsm> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <BaudRate>.
+    Related source file is "C:/Users/aula/Downloads/CompDig/Serial/BaudRate.vhd".
+    Found 1-bit register for signal <clkOut>.
+    Found 12-bit adder for signal <clkOut$add0000> created at line 22.
+    Found 12-bit up counter for signal <contagem>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <BaudRate> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_db_fsm>.
+    Related source file is "C:/Users/aula/Downloads/CompDig/Serial/db_fsm.vhf".
+Unit <FTCE_MXILINX_db_fsm> synthesized.
+
+
+Synthesizing Unit <CB16CE_MXILINX_db_fsm>.
+    Related source file is "C:/Users/aula/Downloads/CompDig/Serial/db_fsm.vhf".
+Unit <CB16CE_MXILINX_db_fsm> synthesized.
+
+
+Synthesizing Unit <db_fsm>.
+    Related source file is "C:/Users/aula/Downloads/CompDig/Serial/db_fsm.vhf".
+Unit <db_fsm> synthesized.
+
+
+Synthesizing Unit <Transmissor>.
+    Related source file is "C:/Users/aula/Downloads/CompDig/Serial/Transmissor.vhd".
+    Register <pkg<6>> equivalent to <pkg<5>> has been removed
+    Register <pkg<9>> equivalent to <pkg<5>> has been removed
+    Found finite state machine <FSM_0> for signal <ESTADO>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | disponivel                                     |
+    | Power Up State     | disponivel                                     |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <serial_out>.
+    Found 32-bit comparator lessequal for signal <ESTADO$cmp_le0000> created at line 67.
+    Found 5-bit register for signal <pkg<5:1>>.
+    Found 32-bit register for signal <pos>.
+    Found 32-bit adder for signal <pos$addsub0000> created at line 69.
+    Found 32-bit comparator greater for signal <serial_out$cmp_gt0000> created at line 67.
+    Found 1-bit 10-to-1 multiplexer for signal <serial_out$mux0000> created at line 68.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  38 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <Transmissor> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 12-bit adder                                          : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 1
+ 12-bit up counter                                     : 1
+# Registers                                            : 8
+ 1-bit register                                        : 7
+ 32-bit register                                       : 1
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 1
+# Multiplexers                                         : 1
+ 1-bit 10-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <ESTADO/FSM> on signal <ESTADO[1:2]> with gray encoding.
+--------------------------
+ State        | Encoding
+--------------------------
+ disponivel   | 00
+ transmitindo | 01
+ espera       | 11
+--------------------------
+WARNING:Xst:1426 - The value init of the FF/Latch pkg_5 hinder the constant cleaning in the block Transmissor.
+   You should achieve better results by setting this init to 1.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 2
+ 12-bit adder                                          : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 1
+ 12-bit up counter                                     : 1
+# Registers                                            : 58
+ Flip-Flops                                            : 58
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 1
+# Multiplexers                                         : 1
+ 1-bit 10-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch pkg_5 hinder the constant cleaning in the block Transmissor.
+   You should achieve better results by setting this init to 1.
+
+Optimizing unit <Transmissor> ...
+
+Optimizing unit <FTCE_MXILINX_db_fsm> ...
+
+Optimizing unit <CB16CE_MXILINX_db_fsm> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Transmissor, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 72
+ Flip-Flops                                            : 72
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Transmissor.ngr
+Top Level Output File Name         : Transmissor
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 8
+
+Cell Usage :
+# BELS                             : 287
+#      AND2                        : 5
+#      AND3                        : 4
+#      AND4                        : 4
+#      AND5                        : 3
+#      GND                         : 1
+#      INV                         : 7
+#      LUT1                        : 54
+#      LUT2                        : 3
+#      LUT3                        : 5
+#      LUT3_D                      : 1
+#      LUT4                        : 55
+#      LUT4_D                      : 4
+#      MUXCY                       : 63
+#      MUXF5                       : 2
+#      MUXF6                       : 1
+#      VCC                         : 2
+#      XOR2                        : 17
+#      XORCY                       : 56
+# FlipFlops/Latches                : 72
+#      FD                          : 2
+#      FDC                         : 14
+#      FDCE                        : 16
+#      FDE                         : 40
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 7
+#      IBUF                        : 6
+#      OBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       65  out of   4656     1%  
+ Number of Slice Flip Flops:             72  out of   9312     0%  
+ Number of 4 input LUTs:                129  out of   9312     1%  
+ Number of IOs:                           8
+ Number of bonded IOBs:                   8  out of    232     3%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Inst_BaudRate/clkOut1              | BUFG                   | 40    |
+oldClk                             | BUFGP                  | 32    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+-------------------------------+-------+
+Control Signal                     | Buffer(FF name)               | Load  |
+-----------------------------------+-------------------------------+-------+
+UUT/XLXN_7(UUT/XLXI_9:O)           | NONE(UUT/XLXI_46/I_Q0/I_36_35)| 16    |
+reset                              | IBUF                          | 14    |
+-----------------------------------+-------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 8.780ns (Maximum Frequency: 113.895MHz)
+   Minimum input arrival time before clock: 5.343ns
+   Maximum output required time after clock: 4.283ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Inst_BaudRate/clkOut1'
+  Clock period: 7.392ns (frequency: 135.283MHz)
+  Total number of paths / destination ports: 2827 / 41
+-------------------------------------------------------------------------
+Delay:               7.392ns (Levels of Logic = 13)
+  Source:            pos_1 (FF)
+  Destination:       pos_1 (FF)
+  Source Clock:      Inst_BaudRate/clkOut1 rising
+  Destination Clock: Inst_BaudRate/clkOut1 rising
+
+  Data Path: pos_1 to pos_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              7   0.591   0.883  pos_1 (pos_1)
+     LUT2:I0->O            1   0.704   0.000  Mcompar_ESTADO_cmp_le0000_lut<0> (Mcompar_ESTADO_cmp_le0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_ESTADO_cmp_le0000_cy<0> (Mcompar_ESTADO_cmp_le0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_ESTADO_cmp_le0000_cy<1> (Mcompar_ESTADO_cmp_le0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_ESTADO_cmp_le0000_cy<2> (Mcompar_ESTADO_cmp_le0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_ESTADO_cmp_le0000_cy<3> (Mcompar_ESTADO_cmp_le0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_ESTADO_cmp_le0000_cy<4> (Mcompar_ESTADO_cmp_le0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_ESTADO_cmp_le0000_cy<5> (Mcompar_ESTADO_cmp_le0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_ESTADO_cmp_le0000_cy<6> (Mcompar_ESTADO_cmp_le0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_ESTADO_cmp_le0000_cy<7> (Mcompar_ESTADO_cmp_le0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_ESTADO_cmp_le0000_cy<8> (Mcompar_ESTADO_cmp_le0000_cy<8>)
+     MUXCY:CI->O           4   0.459   0.666  Mcompar_ESTADO_cmp_le0000_cy<9> (ESTADO_cmp_le0000)
+     LUT4_D:I1->O         31   0.704   1.437  pos_mux0000<0>11 (N01)
+     LUT4:I0->O            1   0.704   0.000  pos_mux0000<30>1 (pos_mux0000<30>)
+     FDE:D                     0.308          pos_1
+    ----------------------------------------
+    Total                      7.392ns (4.406ns logic, 2.986ns route)
+                                       (59.6% logic, 40.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'oldClk'
+  Clock period: 8.780ns (frequency: 113.895MHz)
+  Total number of paths / destination ports: 1503 / 49
+-------------------------------------------------------------------------
+Delay:               8.780ns (Levels of Logic = 7)
+  Source:            UUT/XLXI_46/I_Q0/I_36_35 (FF)
+  Destination:       UUT/XLXI_46/I_Q15/I_36_35 (FF)
+  Source Clock:      oldClk rising
+  Destination Clock: oldClk rising
+
+  Data Path: UUT/XLXI_46/I_Q0/I_36_35 to UUT/XLXI_46/I_Q15/I_36_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.591   0.633  I_36_35 (Q)
+     end scope: 'I_Q0'
+     AND4:I3->O            5   0.704   0.633  I_36_10 (T4)
+     AND5:I4->O            5   0.704   0.633  I_36_14 (T8)
+     AND5:I4->O            5   0.704   0.633  I_36_29 (T12)
+     AND5:I4->O            3   0.704   0.531  I_36_22 (TC)
+     end scope: 'UUT/XLXI_46'
+     INV:I->O             17   0.704   1.051  UUT/XLXI_41 (UUT/XLXN_23)
+     begin scope: 'UUT/XLXI_46'
+     begin scope: 'I_Q15'
+     FDCE:CE                   0.555          I_36_35
+    ----------------------------------------
+    Total                      8.780ns (4.666ns logic, 4.114ns route)
+                                       (53.1% logic, 46.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_BaudRate/clkOut1'
+  Total number of paths / destination ports: 42 / 42
+-------------------------------------------------------------------------
+Offset:              4.807ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       pos_0 (FF)
+  Destination Clock: Inst_BaudRate/clkOut1 rising
+
+  Data Path: reset to pos_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   1.218   1.068  reset_IBUF (reset_IBUF)
+     INV:I->O             32   0.704   1.262  reset_inv1_INV_0 (reset_inv)
+     FDE:CE                    0.555          pos_0
+    ----------------------------------------
+    Total                      4.807ns (2.477ns logic, 2.330ns route)
+                                       (51.5% logic, 48.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'oldClk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              5.343ns (Levels of Logic = 3)
+  Source:            reset (PAD)
+  Destination:       Inst_BaudRate/clkOut (FF)
+  Destination Clock: oldClk rising
+
+  Data Path: reset to Inst_BaudRate/clkOut
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   1.218   1.243  reset_IBUF (reset_IBUF)
+     LUT4:I0->O            1   0.704   0.499  Inst_BaudRate/clkOut_and00001_SW0 (N55)
+     LUT4:I1->O            1   0.704   0.420  Inst_BaudRate/clkOut_and00001 (Inst_BaudRate/clkOut_and0000)
+     FDE:CE                    0.555          Inst_BaudRate/clkOut
+    ----------------------------------------
+    Total                      5.343ns (3.181ns logic, 2.162ns route)
+                                       (59.5% logic, 40.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_BaudRate/clkOut1'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            serial_out (FF)
+  Destination:       serial_out (PAD)
+  Source Clock:      Inst_BaudRate/clkOut1 rising
+
+  Data Path: serial_out to serial_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.591   0.420  serial_out (serial_out_OBUF)
+     OBUF:I->O                 3.272          serial_out_OBUF (serial_out)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.52 secs
+ 
+--> 
+
+Total memory usage is 268168 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+
