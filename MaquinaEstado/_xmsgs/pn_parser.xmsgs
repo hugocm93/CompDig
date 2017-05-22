@@ -14,5 +14,17 @@
 <msg type="error" file="ProjectMgmt" num="849" >&quot;<arg fmt="%s" index="1">C:/Users/aula/Downloads/CompDig/MaquinaEstado/Me_cont.vhd</arg>&quot; Line <arg fmt="%d" index="2">46</arg>. <arg fmt="%s" index="3">Unexpected EOF.</arg>
 </msg>
 
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/aula/Downloads/CompDig/MaquinaEstado/maqEstados.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/aula/Downloads/CompDig/Projeto2/Modulo_display.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/aula/Downloads/CompDig/Projeto2/counter_up_down.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/aula/Downloads/CompDig/Projeto2/mod_m_counter.vhd&quot; into library work</arg>
+</msg>
+
 </messages>
 
