@@ -1,0 +1,21 @@
+V3 10
+FL C:/Users/aula/Downloads/COMMANDS_LCD4BITS.vhd 2017/04/10.11:37:05 P.58f
+PH work/COMMANDS_LCD4BITS 1491836082 \
+      FL C:/Users/aula/Downloads/COMMANDS_LCD4BITS.vhd PB ieee/std_logic_1164 1364358218 \
+      PB ieee/NUMERIC_STD 1364358223 PB ieee/STD_LOGIC_UNSIGNED 1364358221
+PB work/COMMANDS_LCD4BITS 1491836083 \
+      FL C:/Users/aula/Downloads/COMMANDS_LCD4BITS.vhd PH work/COMMANDS_LCD4BITS 1491836082
+FL C:/Users/aula/Downloads/CompDig/laboratorio1/lab1.vhd 2017/04/10.11:54:38 P.58f
+EN work/lab1 1491836086 FL C:/Users/aula/Downloads/CompDig/laboratorio1/lab1.vhd \
+      PB ieee/std_logic_1164 1364358218 PB ieee/NUMERIC_STD 1364358223 \
+      PB work/COMMANDS_LCD4BITS 1491836083
+AR work/lab1/Behavioral 1491836087 \
+      FL C:/Users/aula/Downloads/CompDig/laboratorio1/lab1.vhd EN work/lab1 1491836086 \
+      CP PROCESADOR_LCD4BITS
+FL C:/Users/aula/Downloads/PROCESADOR_LCD4BITS.vhd 2017/04/10.11:37:42 P.58f
+EN work/PROCESADOR_LCD4BITS 1491836084 \
+      FL C:/Users/aula/Downloads/PROCESADOR_LCD4BITS.vhd PB ieee/std_logic_1164 1364358218 \
+      PB ieee/NUMERIC_STD 1364358223 PB ieee/STD_LOGIC_UNSIGNED 1364358221
+AR work/PROCESADOR_LCD4BITS/Behavioral 1491836085 \
+      FL C:/Users/aula/Downloads/PROCESADOR_LCD4BITS.vhd \
+      EN work/PROCESADOR_LCD4BITS 1491836084

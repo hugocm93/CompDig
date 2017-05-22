@@ -1,0 +1,6 @@
+EN exmplolcd NULL C:/Users/aula/Downloads/exemplo.vhd sub00/vhpl04 1491839921
+EN procesador_lcd4bits NULL C:/Users/aula/Downloads/PROCESADOR_LCD4BITS.vhd sub00/vhpl02 1491839919
+AR procesador_lcd4bits behavioral C:/Users/aula/Downloads/PROCESADOR_LCD4BITS.vhd sub00/vhpl03 1491839920
+PH commands_lcd4bits NULL C:/Users/aula/Downloads/COMMANDS_LCD4BITS.vhd sub00/vhpl00 1491839917
+AR exmplolcd behavioral C:/Users/aula/Downloads/exemplo.vhd sub00/vhpl05 1491839922
+PB commands_lcd4bits commands_lcd4bits C:/Users/aula/Downloads/COMMANDS_LCD4BITS.vhd sub00/vhpl01 1491839918

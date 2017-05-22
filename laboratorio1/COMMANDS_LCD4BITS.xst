@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/aula/Downloads/CompDig/laboratorio1/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/aula/Downloads/CompDig/laboratorio1/xst"
+elaborate
+-ifn COMMANDS_LCD4BITS.prj
+-ifmt mixed

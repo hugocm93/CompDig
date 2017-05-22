@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\aula\Desktop\CompDig\CompDig\lab2\Teclado\main_lab_2.ncd
+OUTFILE=C:\Users\aula\Desktop\CompDig\CompDig\lab2\Teclado\main_lab_2.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\aula\Desktop\CompDig\CompDig\lab2\Teclado
+LICENSE=WebPack
+USER_INFO=211165492_176193773_0_658

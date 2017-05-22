@@ -1,0 +1,2 @@
+sch2vhdl -intstyle ise -family spartan3e -tionly -w C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/db_fsm.sch db_fsm.vhi 
+sch2vhdl -intstyle ise -family spartan3e -tionly -w C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/db_fsm.sch db_fsm.vhi 

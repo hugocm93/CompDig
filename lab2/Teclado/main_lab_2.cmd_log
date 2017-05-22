@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/main_lab_2.xst" -ofn "C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/main_lab_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main_lab_2.ucf -p xc3s500e-fg320-4 main_lab_2.ngc main_lab_2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o main_lab_2_map.ncd main_lab_2.ngd main_lab_2.pcf 
+par -w -intstyle ise -ol high -t 1 main_lab_2_map.ncd main_lab_2.ncd main_lab_2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml main_lab_2.twx main_lab_2.ncd -o main_lab_2.twr main_lab_2.pcf -ucf main_lab_2.ucf 
+bitgen -intstyle ise -f main_lab_2.ut main_lab_2.ncd 
+xst -intstyle ise -ifn "C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/main_lab_2.xst" -ofn "C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/main_lab_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main_lab_2.ucf -p xc3s500e-fg320-4 main_lab_2.ngc main_lab_2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o main_lab_2_map.ncd main_lab_2.ngd main_lab_2.pcf 
+par -w -intstyle ise -ol high -t 1 main_lab_2_map.ncd main_lab_2.ncd main_lab_2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml main_lab_2.twx main_lab_2.ncd -o main_lab_2.twr main_lab_2.pcf -ucf main_lab_2.ucf 
+bitgen -intstyle ise -f main_lab_2.ut main_lab_2.ncd 
+xst -intstyle ise -ifn "C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/main_lab_2.xst" -ofn "C:/Users/aula/Desktop/CompDig/CompDig/lab2/Teclado/main_lab_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main_lab_2.ucf -p xc3s500e-fg320-4 main_lab_2.ngc main_lab_2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o main_lab_2_map.ncd main_lab_2.ngd main_lab_2.pcf 
+par -w -intstyle ise -ol high -t 1 main_lab_2_map.ncd main_lab_2.ncd main_lab_2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml main_lab_2.twx main_lab_2.ncd -o main_lab_2.twr main_lab_2.pcf -ucf main_lab_2.ucf 
+bitgen -intstyle ise -f main_lab_2.ut main_lab_2.ncd 

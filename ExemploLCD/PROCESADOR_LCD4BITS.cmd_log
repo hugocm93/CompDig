@@ -1,0 +1,3 @@
+vhdtdtfi -lib work PROCESADOR_LCD4BITS.vhd -prj ExemploLCD -o PROCESADOR_LCD4BITS.spl -module PROCESADOR_LCD4BITS -template C:/Xilinx/14.5/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e PROCESADOR_LCD4BITS.spl C:/Users/aula/Downloads/CompDig/ExemploLCD/PROCESADOR_LCD4BITS.sym 
+vhdtdtfi -prj ExemploLCD -o C:/Users/aula/Downloads/CompDig/ExemploLCD/PROCESADOR_LCD4BITS.vhi -module PROCESADOR_LCD4BITS -template C:/Xilinx/14.5/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work PROCESADOR_LCD4BITS.vhd 
