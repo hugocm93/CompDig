@@ -8,7 +8,19 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Usuarios/marcos/Documentos/Faculdade/CompDig/CompDig/CPU/Lab04/CPU.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/Lab04/CPU.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/Lab04/IR.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/Lab04/MEM.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/Lab04/PC.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/Lab04/PC_3_State.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
