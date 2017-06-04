@@ -1,0 +1,5 @@
+work	"CPU.vhd"
+work	"alu8bit.vhd"
+work	"register8.vhd"
+work	"tri_state_buffer.vhd"
+work	"up_counter_load.vhd"

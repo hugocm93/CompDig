@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-06-04T18:21:54</DateModified>
+  <DateModified>2017-06-04T18:25:22</DateModified>
   <ModuleName>CPU</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/Lab04/iseconfig/CPU.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/Lab04\</ImplementationReportsDirectory>
-  <DateInitialized>2017-06-02T10:12:34</DateInitialized>
+  <SavedFilePath>D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/LabCPU/iseconfig/CPU.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/LabCPU</ImplementationReportsDirectory>
+  <DateInitialized>2017-06-04T18:25:21</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>
