@@ -1,0 +1,10 @@
+EN up_counter_load NULL C:/Users/aula/Downloads/CompDig/CPU/LabCPU/up_counter_load.vhd sub00/vhpl04 1496669145
+EN cpu NULL C:/Users/aula/Downloads/CompDig/CPU/LabCPU/CPU.vhd sub00/vhpl08 1496669149
+AR up_counter_load rtl C:/Users/aula/Downloads/CompDig/CPU/LabCPU/up_counter_load.vhd sub00/vhpl05 1496669146
+AR cpu behavioral C:/Users/aula/Downloads/CompDig/CPU/LabCPU/CPU.vhd sub00/vhpl09 1496669150
+AR tri_state_buffer behavioral C:/Users/aula/Downloads/CompDig/CPU/LabCPU/tri_state_buffer.vhd sub00/vhpl01 1496669142
+AR alu8bit behavioral C:/Users/aula/Downloads/CompDig/CPU/LabCPU/alu8bit.vhd sub00/vhpl07 1496669148
+EN register8 NULL C:/Users/aula/Downloads/CompDig/CPU/LabCPU/register8.vhd sub00/vhpl02 1496669143
+AR register8 behavioral C:/Users/aula/Downloads/CompDig/CPU/LabCPU/register8.vhd sub00/vhpl03 1496669144
+EN alu8bit NULL C:/Users/aula/Downloads/CompDig/CPU/LabCPU/alu8bit.vhd sub00/vhpl06 1496669147
+EN tri_state_buffer NULL C:/Users/aula/Downloads/CompDig/CPU/LabCPU/tri_state_buffer.vhd sub00/vhpl00 1496669141

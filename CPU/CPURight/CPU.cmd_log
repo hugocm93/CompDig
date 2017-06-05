@@ -1,0 +1,39 @@
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CPU_map.ncd CPU.ngd CPU.pcf 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CPU_map.ncd CPU.ngd CPU.pcf 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CPU_map.ncd CPU.ngd CPU.pcf 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CPU_map.ncd CPU.ngd CPU.pcf 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CPU_map.ncd CPU.ngd CPU.pcf 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CPU_map.ncd CPU.ngd CPU.pcf 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.syr" 

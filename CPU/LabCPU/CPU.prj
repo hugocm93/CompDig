@@ -1,0 +1,5 @@
+vhdl work "up_counter_load.vhd"
+vhdl work "tri_state_buffer.vhd"
+vhdl work "register8.vhd"
+vhdl work "alu8bit.vhd"
+vhdl work "CPU.vhd"

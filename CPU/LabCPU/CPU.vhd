@@ -1,20 +1,9 @@
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 
 entity CPU is
     Port ( reset : in  STD_LOGIC);
---           LoadPC : in  STD_LOGIC;
---           EnMEM : in  STD_LOGIC;
---           clkAC : in  STD_LOGIC;
---           EnPC : in  STD_LOGIC;
---           clkIR : in  STD_LOGIC;
---           IncPC : in  STD_LOGIC;
---           EnMBR : in  STD_LOGIC;
---           clkMBR : in  STD_LOGIC;
---           EnALU : in  STD_LOGIC;
---          RESETAC : in  STD_LOGIC);
 end CPU;
 
 architecture Behavioral of CPU is
@@ -91,7 +80,7 @@ begin
         D   => data_bus,
         MReset => reset,
         CP => clkIR
---        Q   => '0' -- nao usado por enquanto
+--      Q   => '0' -- nao usado por enquanto
     );
 
     MBR : entity work.register8(Behavioral) PORT MAP(
@@ -121,7 +110,7 @@ begin
         a => auxAC,
         b => data_bus,
         f => auxALU, 
---        zero => '0', --nao usado por enquanto
+--      zero => '0', --nao usado por enquanto
         op => "010" --soma por enquanto
     );
 

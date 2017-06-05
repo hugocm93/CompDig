@@ -1,0 +1,5 @@
+vhdl work "C:\Users\aula\Downloads\CompDig\CPU\LabCPU\up_counter_load.vhd"
+vhdl work "C:\Users\aula\Downloads\CompDig\CPU\LabCPU\tri_state_buffer.vhd"
+vhdl work "C:\Users\aula\Downloads\CompDig\CPU\LabCPU\register8.vhd"
+vhdl work "C:\Users\aula\Downloads\CompDig\CPU\LabCPU\alu8bit.vhd"
+vhdl work "C:\Users\aula\Downloads\CompDig\CPU\LabCPU\CPU.vhd"

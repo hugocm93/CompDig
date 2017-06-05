@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU_tb_isim_beh.exe" -prj "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU_tb_beh.prj" "work.CPU_tb" 
