@@ -1,16 +1,16 @@
-Release 14.5 - xst P.58f (nt64)
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: CPU.prj
 
@@ -68,7 +68,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -104,11 +104,10 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Rom_asyn.vhd" in Library work.
+Compiling vhdl file "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Rom_asyn.vhd" in Library work.
 Architecture arch_rom of Entity rom_asyn is up to date.
-Compiling vhdl file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.vhd" in Library work.
-Entity <cpu> compiled.
-Entity <cpu> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU.vhd" in Library work.
+Architecture behavioral of Entity cpu is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -122,14 +121,12 @@ Analyzing hierarchy for entity <Rom_asyn> in library <work> (architecture <arch_
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <CPU> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.vhd" line 41: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <clk>
-WARNING:Xst:819 - "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.vhd" line 36: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <input>, <rom_data>
+WARNING:Xst:819 - "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU.vhd" line 41: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <isUpdate>, <instruction>, <instAux>, <input>, <rom_data>
 Entity <CPU> analyzed. Unit <CPU> generated.
 
 Analyzing Entity <Rom_asyn> in library <work> (Architecture <arch_rom>).
-WARNING:Xst:790 - "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Rom_asyn.vhd" line 38: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Rom_asyn.vhd" line 38: Index value(s) does not match array range, simulation mismatch.
 Entity <Rom_asyn> analyzed. Unit <Rom_asyn> generated.
 
 
@@ -140,7 +137,7 @@ Entity <Rom_asyn> analyzed. Unit <Rom_asyn> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <Rom_asyn>.
-    Related source file is "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Rom_asyn.vhd".
+    Related source file is "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Rom_asyn.vhd".
 WARNING:Xst:647 - Input <addr<7:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 16x8-bit ROM for signal <data$rom0000> created at line 38.
     Summary:
@@ -149,20 +146,25 @@ Unit <Rom_asyn> synthesized.
 
 
 Synthesizing Unit <CPU>.
-    Related source file is "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.vhd".
+    Related source file is "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU.vhd".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:1780 - Signal <writeEn> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <IR_reg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 8-bit latch for signal <instOld>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 8-bit latch for signal <rom_addr>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 8-bit latch for signal <instAux>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 WARNING:Xst:737 - Found 8-bit latch for signal <PC_reg>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 WARNING:Xst:737 - Found 8-bit latch for signal <AC_reg$mux0001>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
-    Found 8-bit adder for signal <AC_reg$addsub0000> created at line 52.
+    Found 8-bit adder for signal <AC_reg$addsub0000> created at line 63.
+    Found 8-bit comparator equal for signal <isUpdate$cmp_eq0000> created at line 23.
     Found 8-bit adder for signal <PC_reg$addsub0000>.
     Summary:
 	inferred   2 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
 Unit <CPU> synthesized.
 
 INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -175,8 +177,10 @@ Macro Statistics
  16x8-bit ROM                                          : 1
 # Adders/Subtractors                                   : 1
  8-bit adder                                           : 1
-# Latches                                              : 3
- 8-bit latch                                           : 3
+# Latches                                              : 5
+ 8-bit latch                                           : 5
+# Comparators                                          : 1
+ 8-bit comparator equal                                : 1
 
 =========================================================================
 
@@ -195,16 +199,18 @@ Macro Statistics
  16x8-bit ROM                                          : 1
 # Adders/Subtractors                                   : 1
  8-bit adder                                           : 1
-# Latches                                              : 3
- 8-bit latch                                           : 3
+# Latches                                              : 5
+ 8-bit latch                                           : 5
+# Comparators                                          : 1
+ 8-bit comparator equal                                : 1
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_19> is equivalent to the following 7 FFs/Latches, which will be removed : <6> <5> <4> <3> <2> <1> <0> 
-WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <LPM_LATCH_19>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_37> is equivalent to the following 7 FFs/Latches, which will be removed : <6> <5> <4> <3> <2> <1> <0> 
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <LPM_LATCH_37>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <PC_reg_0> of sequential type is unconnected in block <CPU>.
 WARNING:Xst:2677 - Node <PC_reg_1> of sequential type is unconnected in block <CPU>.
 WARNING:Xst:2677 - Node <PC_reg_2> of sequential type is unconnected in block <CPU>.
@@ -213,6 +219,14 @@ WARNING:Xst:2677 - Node <PC_reg_4> of sequential type is unconnected in block <C
 WARNING:Xst:2677 - Node <PC_reg_5> of sequential type is unconnected in block <CPU>.
 WARNING:Xst:2677 - Node <PC_reg_6> of sequential type is unconnected in block <CPU>.
 WARNING:Xst:2677 - Node <PC_reg_7> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <instAux_0> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <instAux_1> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <instAux_2> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <instAux_3> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <instAux_4> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <instAux_5> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <instAux_6> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <instAux_7> of sequential type is unconnected in block <CPU>.
 WARNING:Xst:2677 - Node <rom_addr_0> of sequential type is unconnected in block <CPU>.
 WARNING:Xst:2677 - Node <rom_addr_1> of sequential type is unconnected in block <CPU>.
 WARNING:Xst:2677 - Node <rom_addr_2> of sequential type is unconnected in block <CPU>.
@@ -221,6 +235,14 @@ WARNING:Xst:2677 - Node <rom_addr_4> of sequential type is unconnected in block 
 WARNING:Xst:2677 - Node <rom_addr_5> of sequential type is unconnected in block <CPU>.
 WARNING:Xst:2677 - Node <rom_addr_6> of sequential type is unconnected in block <CPU>.
 WARNING:Xst:2677 - Node <rom_addr_7> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <instOld_0> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <instOld_1> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <instOld_2> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <instOld_3> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <instOld_4> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <instOld_5> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <instOld_6> of sequential type is unconnected in block <CPU>.
+WARNING:Xst:2677 - Node <instOld_7> of sequential type is unconnected in block <CPU>.
 
 Optimizing unit <CPU> ...
 
@@ -313,13 +335,13 @@ All values displayed in nanoseconds (ns)
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.76 secs
+Total CPU time to Xst completion: 4.19 secs
  
 --> 
 
-Total memory usage is 255944 kilobytes
+Total memory usage is 297908 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   28 (   0 filtered)
-Number of infos    :    5 (   0 filtered)
+Number of warnings :   45 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
 

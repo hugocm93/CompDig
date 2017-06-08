@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Rom_asyn.vhd";
+static const char *ng0 = "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Rom_asyn.vhd";
 extern char *IEEE_P_1242562249;
 
 int ieee_p_1242562249_sub_1657552908_1035706684(char *, char *, char *);
@@ -51,7 +51,7 @@ LAB3:    t1 = (t0 + 1728U);
     t2 = *((char **)t1);
     t1 = (t0 + 1032U);
     t3 = *((char **)t1);
-    t1 = (t0 + 5260U);
+    t1 = (t0 + 5540U);
     t4 = ieee_p_1242562249_sub_1657552908_1035706684(IEEE_P_1242562249, t3, t1);
     t5 = (t4 - 0);
     t6 = (t5 * 1);

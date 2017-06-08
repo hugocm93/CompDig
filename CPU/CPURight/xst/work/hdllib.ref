@@ -1,6 +1,4 @@
-AR singleram_syn ram_arch C:/Users/aula/Downloads/CompDig/CPU/CPURight/SingleRAM_syn.vhd sub00/vhpl01 1496671534
-EN cpu NULL C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.vhd sub00/vhpl02 1496678119
-AR cpu behavioral C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.vhd sub00/vhpl03 1496678120
-AR rom_asyn arch_rom C:/Users/aula/Downloads/CompDig/CPU/CPURight/Rom_asyn.vhd sub00/vhpl05 1496678118
-EN rom_asyn NULL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Rom_asyn.vhd sub00/vhpl04 1496678117
-EN singleram_syn NULL C:/Users/aula/Downloads/CompDig/CPU/CPURight/SingleRAM_syn.vhd sub00/vhpl00 1496671533
+EN cpu NULL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU.vhd sub00/vhpl02 1496954268
+AR cpu behavioral D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU.vhd sub00/vhpl03 1496954269
+AR rom_asyn arch_rom D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Rom_asyn.vhd sub00/vhpl01 1496954267
+EN rom_asyn NULL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Rom_asyn.vhd sub00/vhpl00 1496954266

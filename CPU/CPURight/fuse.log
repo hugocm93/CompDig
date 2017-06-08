@@ -1,11 +1,11 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU_tb_isim_beh.exe" -prj "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU_tb_beh.prj" "work.CPU_tb" 
-ISim P.58f (signature 0x7708f090)
-Number of CPUs detected in this system: 8
-Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU_tb_isim_beh.exe" -prj "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU_tb_beh.prj" "work.CPU_tb" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Rom_asyn.vhd" into library work
-Parsing VHDL file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.vhd" into library work
-Parsing VHDL file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU_tb.vhd" into library work
+Parsing VHDL file "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Rom_asyn.vhd" into library work
+Parsing VHDL file "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU.vhd" into library work
+Parsing VHDL file "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU_tb.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
@@ -16,6 +16,6 @@ Compiling architecture behavioral of entity CPU [cpu_default]
 Compiling architecture behavior of entity cpu_tb
 Time Resolution for simulation is 1ps.
 Compiled 8 VHDL Units
-Built simulation executable C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU_tb_isim_beh.exe
-Fuse Memory Usage: 36472 KB
-Fuse CPU Usage: 561 ms
+Built simulation executable D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU_tb_isim_beh.exe
+Fuse Memory Usage: 35520 KB
+Fuse CPU Usage: 593 ms

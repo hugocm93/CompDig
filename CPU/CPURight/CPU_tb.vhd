@@ -51,13 +51,29 @@ BEGIN
    stim_proc: process
    begin	
 	
+		instruction <= x"FF";
 		reset <= '1';
 		wait for 100 ns;
 		reset <= '0';
 		wait for 100 ns;
-	
+		
 		input <= x"03";
 		instruction <= x"00";
+		wait for 500 ns;
+		
+		input <= x"06";
+		instruction <= x"01";
+		wait for 500 ns;
+		
+		input <= x"06";
+		instruction <= x"00";
+		wait for 500 ns;
+		
+		input <= x"06";
+		instruction <= x"01";
+		wait for 500 ns;
+		
+
 		
       wait;
    end process;

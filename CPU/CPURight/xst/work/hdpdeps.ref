@@ -1,21 +1,15 @@
-V3 9
-FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.vhd 2017/06/05.12:55:01 P.58f
-EN work/CPU 1496678119 FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.vhd \
-      PB ieee/std_logic_1164 1364358218 PB ieee/NUMERIC_STD 1364358223
-AR work/CPU/Behavioral 1496678120 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.vhd EN work/CPU 1496678119 \
-      AR work/Rom_asyn/arch_rom 1496678118
-FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Rom_asyn.vhd 2017/06/05.11:58:36 P.58f
-EN work/Rom_asyn 1496678117 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Rom_asyn.vhd \
-      PB ieee/std_logic_1164 1364358218 PB ieee/NUMERIC_STD 1364358223
-AR work/Rom_asyn/arch_rom 1496678118 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Rom_asyn.vhd \
-      EN work/Rom_asyn 1496678117
-FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/SingleRAM_syn.vhd 2017/06/05.10:16:09 P.58f
-EN work/SingleRAM_syn 1496671533 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/SingleRAM_syn.vhd \
-      PB ieee/std_logic_1164 1364358218 PB ieee/NUMERIC_STD 1364358223
-AR work/SingleRAM_syn/ram_arch 1496671534 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/SingleRAM_syn.vhd \
-      EN work/SingleRAM_syn 1496671533
+V3 6
+FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU.vhd 2017/06/08.17:21:27 P.20131013
+EN work/CPU 1496954268 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/CPU/Behavioral 1496954269 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU.vhd \
+      EN work/CPU 1496954268 AR work/Rom_asyn/arch_rom 1496954267
+FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Rom_asyn.vhd 2017/06/08.16:20:07 P.20131013
+EN work/Rom_asyn 1496954266 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Rom_asyn.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/Rom_asyn/arch_rom 1496954267 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Rom_asyn.vhd \
+      EN work/Rom_asyn 1496954266

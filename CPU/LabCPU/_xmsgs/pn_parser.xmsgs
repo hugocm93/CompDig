@@ -5,10 +5,31 @@
 <!--     behavior or data corruption.  It is strongly advised that -->
 <!--     users do not edit the contents of this file.              -->
 <!--                                                               -->
-<!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/aula/Downloads/CompDig/CPU/LabCPU/CPU.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/LabCPU/CPU.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/LabCPU/Rom_asyn.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/LabCPU/SingleRAM_asyn.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/LabCPU/SingleRAM_syn.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/LabCPU/alu8bit.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/LabCPU/register8.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/LabCPU/tri_state_buffer.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/LabCPU/up_counter_load.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
