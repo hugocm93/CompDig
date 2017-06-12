@@ -31,7 +31,7 @@ architecture arch_rom of Rom_asyn is
         "00000000", -- addr 1100
         "00000000", -- addr 1101
         "00000000", -- addr 1110
-        "00000000" -- addr 1111
+        "00000000"  -- addr 1111
     );
 
 begin

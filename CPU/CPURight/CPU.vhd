@@ -45,40 +45,40 @@ ROM : entity work.Rom_asyn(arch_rom) PORT MAP( -- RAM da CPU
 				PC_reg <= "00000000";
 				IR_reg <= "00000000";
 			elsif(clk' event and clk='1') then -- rising_edge(clk)
+				if(isUpdate = '0') then
+					instOld <= instruction;
+					instAux <= instruction;
 			end if;
-			
-			if(isUpdate = '0') then
-				instOld <= instruction;
-				instAux <= instruction;
+				
+			  case instAux is
+					when "00000000" => -- fetch
+						IR_reg <= input; 
+						PC_reg <= std_logic_vector(unsigned(PC_reg) + 1);
+						instAux <= "11111111";
+					
+					when "00000001" => -- add
+						rom_addr <= input;
+						AC_reg <= std_logic_vector(unsigned(rom_data) + unsigned(AC_reg));
+						PC_reg <= std_logic_vector(unsigned(PC_reg) + 1);
+						instAux <= "11111111";
+						
+						
+					when "00000010" => -- load
+						rom_addr <= input;
+						AC_reg <= std_logic_vector(unsigned(rom_data));
+						PC_reg <= std_logic_vector(unsigned(PC_reg) + 1);
+						instAux <= "11111111";
+						
+						
+					when "00000011" => -- bra
+						PC_reg <= input;
+						instAux <= "11111111";
+					
+					when "11111111" =>
+					
+					when others =>  
+			  end case;
+		  
 			end if;
-			
-        case instAux is
-            when "00000000" => -- fetch
-					IR_reg <= input; 
-					PC_reg <= std_logic_vector(unsigned(PC_reg) + 1);
-					instAux <= "11111111";
-				
-				when "00000001" => -- add
-					rom_addr <= input;
-					AC_reg <= std_logic_vector(unsigned(rom_data) + unsigned(AC_reg));
-					PC_reg <= std_logic_vector(unsigned(PC_reg) + 1);
-					instAux <= "11111111";
-					
-					
-				when "00000010" => -- load
-					rom_addr <= input;
-					AC_reg <= std_logic_vector(unsigned(rom_data));
-					PC_reg <= std_logic_vector(unsigned(PC_reg) + 1);
-					instAux <= "11111111";
-					
-					
-				when "00000011" => -- bra
-					PC_reg <= input;
-					instAux <= "11111111";
-				
-				when "11111111" =>
-				
-				when others =>  
-        end case;
     end process;
 end Behavioral;

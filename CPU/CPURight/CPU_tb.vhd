@@ -50,31 +50,29 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin	
-	
-		instruction <= x"FF";
-		reset <= '1';
+ 		reset <= '1';
 		wait for 100 ns;
+		
+		instruction <= x"FF";
 		reset <= '0';
 		wait for 100 ns;
 		
+		instruction <= x"00";
 		input <= x"03";
-		instruction <= x"00";
-		wait for 500 ns;
+		wait for 200 ns;
 		
-		input <= x"06";
 		instruction <= x"01";
-		wait for 500 ns;
-		
 		input <= x"06";
+		wait for 200 ns;
+		
 		instruction <= x"00";
-		wait for 500 ns;
-		
 		input <= x"06";
+		wait for 200 ns;
+		
 		instruction <= x"01";
-		wait for 500 ns;
-		
-
-		
+		input <= x"06";
+		wait for 200 ns;
+	
       wait;
    end process;
 

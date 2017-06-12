@@ -1,3 +1,0 @@
-vhdl work "Rom_asyn.vhd"
-vhdl work "CPU.vhd"
-vhdl work "CPU_tb.vhd"
