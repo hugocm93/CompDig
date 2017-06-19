@@ -5,6 +5,7 @@ use IEEE.numeric_std.all;
 entity CPU is
     Port ( reset, clk : in  STD_LOGIC;
 			  input : in std_logic_vector(7 downto 0);
+			  PCOut, ACOut : out std_logic_vector(7 downto 0);
 			  instruction : in std_logic_vector(7 downto 0));
 end CPU;
 
@@ -20,23 +21,15 @@ signal writeEn, isUpdate : std_logic := '0';
 
 begin
 
-isUpdate <= '1' when instruction = instOld else '0';
+PCOut <= PC_reg;
+ACOut <= AC_reg;
 
---    RAM : entity work.SingleRAM_syn(ram_arch)
---        GENERIC MAP(
---            ADDR_WIDTH => 8,
---            DATA_WIDTH => 8)
---        PORT MAP(
---            clk => clk,
---            we => writeEn,  
---            addr => input,
---            din => AC_reg,
---            dout => AC_reg);
-
-ROM : entity work.Rom_asyn(arch_rom) PORT MAP( -- RAM da CPU
+RAM : entity work.ROM_CPU(arch_rom) PORT MAP( 
 		addr => rom_addr,
 		data => rom_data
 	);
+
+isUpdate <= '1' when instruction = instOld else '0';
 
     process(reset, clk) 
 	 begin

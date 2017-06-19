@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU_tb_isim_beh.exe" -prj "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU_tb_beh.prj" "work.CPU_tb" 
+-intstyle "ise" -incremental -o "C:/Users/aula/Downloads/CompDig/CPU/CPURight/tb_lab5_isim_beh.exe" -prj "C:/Users/aula/Downloads/CompDig/CPU/CPURight/tb_lab5_beh.prj" "work.tb_lab5" 

@@ -1,0 +1,1 @@
+vhdtdtfi -prj CPURight -o C:/Users/aula/Downloads/CompDig/CPU/CPURight/Modulo_display.vhi -module Modulo_display -template C:/Xilinx/14.5/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mod_m_counter.vhd -lib work d_ff_reset.vhd -lib work display_7_seg.vhd -lib work Modulo_display.vhd 

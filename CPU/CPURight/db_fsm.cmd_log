@@ -1,0 +1,1 @@
+sch2vhdl -intstyle ise -family spartan3e -tionly -w C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.sch db_fsm.vhi 
