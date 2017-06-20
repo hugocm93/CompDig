@@ -1,0 +1,656 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: Control.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Control.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Control"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Control
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/d_ff_reset.vhd" in Library work.
+Architecture arch of Entity d_ff_reset is up to date.
+Compiling vhdl file "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/mod_m_counter.vhd" in Library work.
+Architecture arch of Entity mod_m_counter is up to date.
+Compiling vhdl file "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/display_7_seg.vhd" in Library work.
+Architecture arch of Entity display_7_seg is up to date.
+Compiling vhdl file "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/SingleRAM_syn.vhd" in Library work.
+Architecture ram_arch of Entity singleram_syn is up to date.
+Compiling vhdl file "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf" in Library work.
+Architecture behavioral of Entity ftce_mxilinx_db_fsm is up to date.
+Architecture behavioral of Entity cb16ce_mxilinx_db_fsm is up to date.
+Architecture behavioral of Entity db_fsm is up to date.
+Compiling vhdl file "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU.vhd" in Library work.
+Entity <cpu> compiled.
+Entity <cpu> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Rom_asyn.vhd" in Library work.
+Architecture arch_rom of Entity rom_asyn is up to date.
+Compiling vhdl file "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Modulo_display.vhd" in Library work.
+Architecture behavioral of Entity modulo_display is up to date.
+Compiling vhdl file "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Control.vhd" in Library work.
+Architecture behavioral of Entity control is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Control> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <db_fsm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CPU> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Rom_asyn> in library <work> (architecture <arch_rom>).
+
+Analyzing hierarchy for entity <Modulo_display> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CB16CE_MXILINX_db_fsm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SingleRAM_syn> in library <work> (architecture <ram_arch>) with generics.
+	ADDR_WIDTH = 8
+	DATA_WIDTH = 8
+
+Analyzing hierarchy for entity <d_ff_reset> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <mod_m_counter> in library <work> (architecture <arch>) with generics.
+	M = 500000
+	N = 19
+
+Analyzing hierarchy for entity <display_7_seg> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <FTCE_MXILINX_db_fsm> in library <work> (architecture <behavioral>) with generics.
+	INIT = '0'
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Control> in library <work> (Architecture <behavioral>).
+WARNING:Xst:795 - "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Control.vhd" line 82: Size of operands are different : result is <false>.
+Entity <Control> analyzed. Unit <Control> generated.
+
+Analyzing Entity <db_fsm> in library <work> (Architecture <behavioral>).
+    Set user-defined property "INIT =  0" for instance <XLXI_30> in unit <db_fsm>.
+    Set user-defined property "INIT =  0" for instance <XLXI_31> in unit <db_fsm>.
+    Set user-defined property "INIT =  0" for instance <XLXI_40> in unit <db_fsm>.
+WARNING:Xst:753 - "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf" line 487: Unconnected output port 'CEO' of component 'CB16CE_MXILINX_db_fsm'.
+WARNING:Xst:753 - "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf" line 487: Unconnected output port 'Q' of component 'CB16CE_MXILINX_db_fsm'.
+    Set user-defined property "HU_SET =  XLXI_46_16" for instance <XLXI_46> in unit <db_fsm>.
+Entity <db_fsm> analyzed. Unit <db_fsm> generated.
+
+Analyzing Entity <CB16CE_MXILINX_db_fsm> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  I_Q0_1" for instance <I_Q0> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q1_0" for instance <I_Q1> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q2_3" for instance <I_Q2> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q3_2" for instance <I_Q3> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q4_7" for instance <I_Q4> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q5_6" for instance <I_Q5> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q6_5" for instance <I_Q6> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q7_4" for instance <I_Q7> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q8_8" for instance <I_Q8> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q9_9" for instance <I_Q9> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q10_10" for instance <I_Q10> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q11_11" for instance <I_Q11> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q12_12" for instance <I_Q12> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q13_13" for instance <I_Q13> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q14_14" for instance <I_Q14> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q15_15" for instance <I_Q15> in unit <CB16CE_MXILINX_db_fsm>.
+Entity <CB16CE_MXILINX_db_fsm> analyzed. Unit <CB16CE_MXILINX_db_fsm> generated.
+
+Analyzing generic Entity <FTCE_MXILINX_db_fsm> in library <work> (Architecture <behavioral>).
+	INIT = '0'
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_db_fsm>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_db_fsm>.
+Entity <FTCE_MXILINX_db_fsm> analyzed. Unit <FTCE_MXILINX_db_fsm> generated.
+
+Analyzing Entity <CPU> in library <work> (Architecture <Behavioral>).
+INFO:Xst:2679 - Register <AC_reg> in unit <CPU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <PC_reg> in unit <CPU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <IR_reg> in unit <CPU> has a constant value of 00000000 during circuit operation. The register is replaced by logic.
+Entity <CPU> analyzed. Unit <CPU> generated.
+
+Analyzing generic Entity <SingleRAM_syn> in library <work> (Architecture <ram_arch>).
+	ADDR_WIDTH = 8
+	DATA_WIDTH = 8
+Entity <SingleRAM_syn> analyzed. Unit <SingleRAM_syn> generated.
+
+Analyzing Entity <Rom_asyn> in library <work> (Architecture <arch_rom>).
+WARNING:Xst:790 - "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Rom_asyn.vhd" line 38: Index value(s) does not match array range, simulation mismatch.
+Entity <Rom_asyn> analyzed. Unit <Rom_asyn> generated.
+
+Analyzing Entity <Modulo_display> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Modulo_display.vhd" line 26: Unconnected output port 'q' of component 'mod_m_counter'.
+Entity <Modulo_display> analyzed. Unit <Modulo_display> generated.
+
+Analyzing Entity <d_ff_reset> in library <work> (Architecture <arch>).
+Entity <d_ff_reset> analyzed. Unit <d_ff_reset> generated.
+
+Analyzing generic Entity <mod_m_counter> in library <work> (Architecture <arch>).
+	M = 500000
+	N = 19
+Entity <mod_m_counter> analyzed. Unit <mod_m_counter> generated.
+
+Analyzing Entity <display_7_seg> in library <work> (Architecture <arch>).
+Entity <display_7_seg> analyzed. Unit <display_7_seg> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Rom_asyn>.
+    Related source file is "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Rom_asyn.vhd".
+WARNING:Xst:647 - Input <addr<7:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16x8-bit ROM for signal <data$rom0000> created at line 38.
+    Summary:
+	inferred   1 ROM(s).
+Unit <Rom_asyn> synthesized.
+
+
+Synthesizing Unit <SingleRAM_syn>.
+    Related source file is "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/SingleRAM_syn.vhd".
+    Found 256x8-bit dual-port RAM <Mram_ram> for signal <ram>.
+    Found 8-bit register for signal <addr_reg>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <SingleRAM_syn> synthesized.
+
+
+Synthesizing Unit <d_ff_reset>.
+    Related source file is "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/d_ff_reset.vhd".
+    Found 1-bit register for signal <q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <d_ff_reset> synthesized.
+
+
+Synthesizing Unit <mod_m_counter>.
+    Related source file is "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/mod_m_counter.vhd".
+    Found 19-bit adder for signal <r_next$addsub0000> created at line 29.
+    Found 19-bit register for signal <r_reg>.
+    Summary:
+	inferred  19 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <mod_m_counter> synthesized.
+
+
+Synthesizing Unit <display_7_seg>.
+    Related source file is "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/display_7_seg.vhd".
+    Found 7-bit 16-to-1 multiplexer for signal <seg_h>.
+    Found 7-bit 16-to-1 multiplexer for signal <seg_l>.
+    Summary:
+	inferred  14 Multiplexer(s).
+Unit <display_7_seg> synthesized.
+
+
+Synthesizing Unit <CPU>.
+    Related source file is "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU.vhd".
+WARNING:Xst:647 - Input <portIn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <portOut> is never assigned. Tied to value 00000000.
+WARNING:Xst:647 - Input <input> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <writeEn> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <instAux> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <dataout_bus> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <datain_bus> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:653 - Signal <addr_bus> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:646 - Signal <IR_reg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <A0_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 8-bit register for signal <instOld>.
+    Found 8-bit comparator equal for signal <isUpdate$cmp_eq0000> created at line 35.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <CPU> synthesized.
+
+
+Synthesizing Unit <Modulo_display>.
+    Related source file is "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Modulo_display.vhd".
+Unit <Modulo_display> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_db_fsm>.
+    Related source file is "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf".
+Unit <FTCE_MXILINX_db_fsm> synthesized.
+
+
+Synthesizing Unit <CB16CE_MXILINX_db_fsm>.
+    Related source file is "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf".
+Unit <CB16CE_MXILINX_db_fsm> synthesized.
+
+
+Synthesizing Unit <db_fsm>.
+    Related source file is "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf".
+Unit <db_fsm> synthesized.
+
+
+Synthesizing Unit <Control>.
+    Related source file is "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Control.vhd".
+WARNING:Xst:646 - Signal <portOut> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <portIn> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+    Found 8-bit up counter for signal <addr>.
+    Found 1-bit register for signal <flag>.
+    Found 8-bit register for signal <input>.
+    Found 8-bit register for signal <instruction>.
+    Found 8-bit register for signal <instructionAux>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  25 D-type flip-flop(s).
+Unit <Control> synthesized.
+
+WARNING:Xst:524 - All outputs of the instance <RAM> of the block <SingleRAM_syn> are unconnected in block <CPU>.
+   This instance will be removed from the design along with all underlying logic
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 19-bit adder                                          : 1
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 6
+ 1-bit register                                        : 2
+ 19-bit register                                       : 1
+ 8-bit register                                        : 3
+# Multiplexers                                         : 2
+ 7-bit 16-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <PROGRAM> is unconnected in block <Control>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 19-bit adder                                          : 1
+# Counters                                             : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 64
+ Flip-Flops                                            : 64
+# Multiplexers                                         : 2
+ 7-bit 16-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <flag> of sequential type is unconnected in block <Control>.
+WARNING:Xst:2677 - Node <input_0> of sequential type is unconnected in block <Control>.
+WARNING:Xst:2677 - Node <input_1> of sequential type is unconnected in block <Control>.
+WARNING:Xst:2677 - Node <input_2> of sequential type is unconnected in block <Control>.
+WARNING:Xst:2677 - Node <input_3> of sequential type is unconnected in block <Control>.
+WARNING:Xst:2677 - Node <input_4> of sequential type is unconnected in block <Control>.
+WARNING:Xst:2677 - Node <input_5> of sequential type is unconnected in block <Control>.
+WARNING:Xst:2677 - Node <input_6> of sequential type is unconnected in block <Control>.
+WARNING:Xst:2677 - Node <input_7> of sequential type is unconnected in block <Control>.
+WARNING:Xst:2677 - Node <instructionAux_0> of sequential type is unconnected in block <Control>.
+WARNING:Xst:2677 - Node <instructionAux_1> of sequential type is unconnected in block <Control>.
+WARNING:Xst:2677 - Node <instructionAux_2> of sequential type is unconnected in block <Control>.
+WARNING:Xst:2677 - Node <instructionAux_3> of sequential type is unconnected in block <Control>.
+WARNING:Xst:2677 - Node <instructionAux_4> of sequential type is unconnected in block <Control>.
+WARNING:Xst:2677 - Node <instructionAux_5> of sequential type is unconnected in block <Control>.
+WARNING:Xst:2677 - Node <instructionAux_6> of sequential type is unconnected in block <Control>.
+WARNING:Xst:2677 - Node <instructionAux_7> of sequential type is unconnected in block <Control>.
+WARNING:Xst:2677 - Node <instruction_0> of sequential type is unconnected in block <Control>.
+WARNING:Xst:2677 - Node <instruction_1> of sequential type is unconnected in block <Control>.
+WARNING:Xst:2677 - Node <instruction_2> of sequential type is unconnected in block <Control>.
+WARNING:Xst:2677 - Node <instruction_3> of sequential type is unconnected in block <Control>.
+WARNING:Xst:2677 - Node <instruction_4> of sequential type is unconnected in block <Control>.
+WARNING:Xst:2677 - Node <instruction_5> of sequential type is unconnected in block <Control>.
+WARNING:Xst:2677 - Node <instruction_6> of sequential type is unconnected in block <Control>.
+WARNING:Xst:2677 - Node <instruction_7> of sequential type is unconnected in block <Control>.
+
+Optimizing unit <Control> ...
+
+Optimizing unit <SingleRAM_syn> ...
+
+Optimizing unit <mod_m_counter> ...
+
+Optimizing unit <FTCE_MXILINX_db_fsm> ...
+
+Optimizing unit <CB16CE_MXILINX_db_fsm> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Control, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 39
+ Flip-Flops                                            : 39
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Control.ngr
+Top Level Output File Name         : Control
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 19
+
+Cell Usage :
+# BELS                             : 123
+#      AND2                        : 5
+#      AND3                        : 4
+#      AND4                        : 4
+#      AND5                        : 3
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 18
+#      LUT2                        : 19
+#      LUT3                        : 1
+#      LUT4                        : 4
+#      MUXCY                       : 23
+#      VCC                         : 2
+#      XOR2                        : 17
+#      XORCY                       : 19
+# FlipFlops/Latches                : 39
+#      FD                          : 2
+#      FDC                         : 20
+#      FDCE                        : 16
+#      FDE                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 18
+#      IBUF                        : 2
+#      OBUF                        : 16
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       23  out of   4656     0%  
+ Number of Slice Flip Flops:             39  out of   9312     0%  
+ Number of 4 input LUTs:                 45  out of   9312     0%  
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of    232     8%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------------------------+------------------------+-------+
+Clock Signal                                              | Clock buffer(FF name)  | Load  |
+----------------------------------------------------------+------------------------+-------+
+DISPLAY/tick(DISPLAY/counter/r_next_cmp_eq0000_wg_cy<4>:O)| NONE(*)(DISPLAY/fd/q)  | 1     |
+clkPlaca                                                  | BUFGP                  | 38    |
+----------------------------------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+-------------------------------+-------+
+Control Signal                     | Buffer(FF name)               | Load  |
+-----------------------------------+-------------------------------+-------+
+reset                              | IBUF                          | 20    |
+UUT/XLXN_7(UUT/XLXI_9:O)           | NONE(UUT/XLXI_46/I_Q0/I_36_35)| 16    |
+-----------------------------------+-------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 8.780ns (Maximum Frequency: 113.895MHz)
+   Minimum input arrival time before clock: 1.946ns
+   Maximum output required time after clock: 4.310ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DISPLAY/tick'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            DISPLAY/fd/q (FF)
+  Destination:       DISPLAY/fd/q (FF)
+  Source Clock:      DISPLAY/tick rising
+  Destination Clock: DISPLAY/tick rising
+
+  Data Path: DISPLAY/fd/q to DISPLAY/fd/q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.447  DISPLAY/fd/q (DISPLAY/fd/q)
+     INV:I->O              1   0.704   0.420  DISPLAY/fd_not00001_INV_0 (DISPLAY/fd_not0000)
+     FDC:D                     0.308          DISPLAY/fd/q
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkPlaca'
+  Clock period: 8.780ns (frequency: 113.895MHz)
+  Total number of paths / destination ports: 961 / 54
+-------------------------------------------------------------------------
+Delay:               8.780ns (Levels of Logic = 7)
+  Source:            UUT/XLXI_46/I_Q0/I_36_35 (FF)
+  Destination:       UUT/XLXI_46/I_Q15/I_36_35 (FF)
+  Source Clock:      clkPlaca rising
+  Destination Clock: clkPlaca rising
+
+  Data Path: UUT/XLXI_46/I_Q0/I_36_35 to UUT/XLXI_46/I_Q15/I_36_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.591   0.633  I_36_35 (Q)
+     end scope: 'I_Q0'
+     AND4:I3->O            5   0.704   0.633  I_36_10 (T4)
+     AND5:I4->O            5   0.704   0.633  I_36_14 (T8)
+     AND5:I4->O            5   0.704   0.633  I_36_29 (T12)
+     AND5:I4->O            3   0.704   0.531  I_36_22 (TC)
+     end scope: 'UUT/XLXI_46'
+     INV:I->O             17   0.704   1.051  UUT/XLXI_41 (UUT/XLXN_23)
+     begin scope: 'UUT/XLXI_46'
+     begin scope: 'I_Q15'
+     FDCE:CE                   0.555          I_36_35
+    ----------------------------------------
+    Total                      8.780ns (4.666ns logic, 4.114ns route)
+                                       (53.1% logic, 46.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkPlaca'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.946ns (Levels of Logic = 1)
+  Source:            clk (PAD)
+  Destination:       UUT/XLXI_30 (FF)
+  Destination Clock: clkPlaca rising
+
+  Data Path: clk to UUT/XLXI_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.420  clk_IBUF (clk_IBUF)
+     FD:D                      0.308          UUT/XLXI_30
+    ----------------------------------------
+    Total                      1.946ns (1.526ns logic, 0.420ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DISPLAY/tick'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            DISPLAY/fd/q (FF)
+  Destination:       c (PAD)
+  Source Clock:      DISPLAY/tick rising
+
+  Data Path: DISPLAY/fd/q to c
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.447  DISPLAY/fd/q (DISPLAY/fd/q)
+     OBUF:I->O                 3.272          c_OBUF (c)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.90 secs
+ 
+--> 
+
+Total memory usage is 323848 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   45 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

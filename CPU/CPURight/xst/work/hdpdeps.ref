@@ -1,0 +1,82 @@
+V3 45
+FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Control.vhd 2017/06/20.19:02:28 P.20131013
+EN work/Control 1497996928 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Control.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/Control/Behavioral 1497996929 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Control.vhd \
+      EN work/Control 1497996928 CP db_fsm AR work/CPU/Behavioral 1497996923 \
+      AR work/Rom_asyn/arch_rom 1497996925 AR work/Modulo_display/behavioral 1497996927
+FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU.vhd 2017/06/20.19:14:56 P.20131013
+EN work/CPU 1497996922 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/CPU/Behavioral 1497996923 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU.vhd \
+      EN work/CPU 1497996922 AR work/SingleRAM_syn/ram_arch 1497996915
+FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf 2017/06/20.19:12:49 P.20131013
+EN work/FTCE_MXILINX_db_fsm 1497996916 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FTCE_MXILINX_db_fsm/BEHAVIORAL 1497996917 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf \
+      EN work/FTCE_MXILINX_db_fsm 1497996916 CP XOR2 CP FDCE
+EN work/CB16CE_MXILINX_db_fsm 1497996918 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CB16CE_MXILINX_db_fsm/BEHAVIORAL 1497996919 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf \
+      EN work/CB16CE_MXILINX_db_fsm 1497996918 CP FTCE_MXILINX_db_fsm CP AND3 \
+      CP AND2 CP VCC CP AND4 CP AND5
+EN work/db_fsm 1497996920 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/db_fsm/BEHAVIORAL 1497996921 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf \
+      EN work/db_fsm 1497996920 CP XOR2 CP FD CP FDE CP INV CP CB16CE_MXILINX_db_fsm
+FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/display_7_seg.vhd 2017/06/20.18:22:56 P.20131013
+EN work/display_7_seg 1497996912 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/display_7_seg.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/display_7_seg/arch 1497996913 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/display_7_seg.vhd \
+      EN work/display_7_seg 1497996912
+FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/d_ff_reset.vhd 2017/06/20.18:22:56 P.20131013
+EN work/d_ff_reset 1497996908 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/d_ff_reset.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/d_ff_reset/arch 1497996909 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/d_ff_reset.vhd \
+      EN work/d_ff_reset 1497996908
+FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Modulo_display.vhd 2017/06/20.18:22:56 P.20131013
+EN work/Modulo_display 1497996926 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Modulo_display.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/Modulo_display/behavioral 1497996927 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Modulo_display.vhd \
+      EN work/Modulo_display 1497996926 AR work/d_ff_reset/arch 1497996909 \
+      AR work/mod_m_counter/arch 1497996911 AR work/display_7_seg/arch 1497996913
+FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/mod_m_counter.vhd 2017/06/20.18:22:56 P.20131013
+EN work/mod_m_counter 1497996910 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/mod_m_counter.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/mod_m_counter/arch 1497996911 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/mod_m_counter.vhd \
+      EN work/mod_m_counter 1497996910
+FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Rom_asyn.vhd 2017/06/20.18:22:56 P.20131013
+EN work/Rom_asyn 1497996924 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Rom_asyn.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/Rom_asyn/arch_rom 1497996925 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Rom_asyn.vhd \
+      EN work/Rom_asyn 1497996924
+FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/SingleRAM_syn.vhd 2017/06/20.18:32:06 P.20131013
+EN work/SingleRAM_syn 1497996914 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/SingleRAM_syn.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/SingleRAM_syn/ram_arch 1497996915 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/SingleRAM_syn.vhd \
+      EN work/SingleRAM_syn 1497996914

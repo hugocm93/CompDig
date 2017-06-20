@@ -4,8 +4,8 @@ use ieee.numeric_std.all;
 
 entity SingleRAM_syn is
     generic(
-        ADDR_WIDTH: integer := 12;
-        DATA_WIDTH: integer := 9
+        ADDR_WIDTH: integer := 8;
+        DATA_WIDTH: integer := 8
     );
     port(
         clk, we : in std_logic;

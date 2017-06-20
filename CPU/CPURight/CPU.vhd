@@ -5,13 +5,13 @@ use IEEE.numeric_std.all;
 entity CPU is
     Port ( reset, clk : in  STD_LOGIC;
 			  input : in std_logic_vector(7 downto 0);
-			  PCOut, ACOut : out std_logic_vector(7 downto 0);
-			  instruction : in std_logic_vector(7 downto 0));
+			  PCOut, ACOut, portOut : out std_logic_vector(7 downto 0);
+			  instruction, portIn : in std_logic_vector(7 downto 0));
 end CPU;
 
 architecture Behavioral of CPU is
 
-signal PC_reg, AC_reg, IR_reg, rom_data, rom_addr : 
+signal PC_reg, AC_reg, IR_reg, A0_reg, datain_bus, dataout_bus, addr_bus : 
         std_logic_vector(7 downto 0) := (others => '0');
 		  
 signal instAux : std_logic_vector(7 downto 0) := (others => '0');
@@ -24,9 +24,12 @@ begin
 PCOut <= PC_reg;
 ACOut <= AC_reg;
 
-RAM : entity work.ROM_CPU(arch_rom) PORT MAP( 
-		addr => rom_addr,
-		data => rom_data
+	RAM : entity work.SingleRAM_syn(ram_arch) PORT MAP(
+		clk => clk,
+		we => writeEn,
+		addr => addr_bus,
+		din => datain_bus,
+		dout => dataout_bus
 	);
 
 isUpdate <= '1' when instruction = instOld else '0';
@@ -45,29 +48,80 @@ isUpdate <= '1' when instruction = instOld else '0';
 				
 			  case instAux is
 					when "00000000" => -- fetch
+					   writeEn <= '0';
 						IR_reg <= input; 
 						PC_reg <= std_logic_vector(unsigned(PC_reg) + 1);
 						instAux <= "11111111";
 					
 					when "00000001" => -- add
-						rom_addr <= input;
-						AC_reg <= std_logic_vector(unsigned(rom_data) + unsigned(AC_reg));
+						writeEn <= '0';
+						addr_bus <= input;
+						AC_reg <= std_logic_vector(unsigned(dataout_bus) + unsigned(AC_reg));
 						PC_reg <= std_logic_vector(unsigned(PC_reg) + 1);
 						instAux <= "11111111";
 						
 						
 					when "00000010" => -- load
-						rom_addr <= input;
-						AC_reg <= std_logic_vector(unsigned(rom_data));
+						writeEn <= '0';
+						addr_bus <= input;
+						AC_reg <= dataout_bus;
 						PC_reg <= std_logic_vector(unsigned(PC_reg) + 1);
 						instAux <= "11111111";
 						
 						
 					when "00000011" => -- bra
+						writeEn <= '0';
 						PC_reg <= input;
 						instAux <= "11111111";
 					
+					when "00000100" => -- store
+						addr_bus <= input;
+						writeEn <= '1';
+						datain_bus <= AC_reg;
+						PC_reg <= std_logic_vector(unsigned(PC_reg) + 1);
+						instAux <= "11111111";
+						
+					when "00000101" => -- brz
+					-- perguntar ao smith
+					-- perguntar tb se estamos usando a memoria da forma certa
+					-- parse error
+					
+					when "00000110" => -- move+
+						writeEn <= '0';
+						addr_bus <= A0_reg;
+						AC_reg <= dataout_bus;
+						A0_reg <= std_logic_vector(unsigned(A0_reg) + 1);
+						PC_reg <= std_logic_vector(unsigned(PC_reg) + 1);
+						instAux <= "11111111";
+						
+					when "00000111" => -- store+
+						writeEn <= '1';
+						addr_bus <= A0_reg;
+						datain_bus <= AC_reg;
+						A0_reg <= std_logic_vector(unsigned(A0_reg) + 1);
+						PC_reg <= std_logic_vector(unsigned(PC_reg) + 1);
+						instAux <= "11111111";
+						
+					when "00001000" => -- out
+						writeEn <= '0';
+						portOut <= AC_reg;
+						PC_reg <= std_logic_vector(unsigned(PC_reg) + 1);
+						instAux <= "11111111";
+						
+					when "00001001" => -- in
+						writeEn <= '0';
+						AC_reg <= portIn;
+						PC_reg <= std_logic_vector(unsigned(PC_reg) + 1);
+						instAux <= "11111111";
+						
+					when "00001010" => -- leaA0
+						writeEn <= '0';
+						A0_reg <= input;
+						PC_reg <= std_logic_vector(unsigned(PC_reg) + 1);
+						instAux <= "11111111";						
+					
 					when "11111111" =>
+						writeEn <= '0';
 					
 					when others =>  
 			  end case;

@@ -24,6 +24,8 @@ signal instruction : std_logic_vector(7 downto 0) := (others => '0');
 signal flag, clkDebounce : std_logic := '0';	
 signal PCOut : std_logic_vector(7 downto 0) := (others => '0');
 signal ACOut : std_logic_vector(7 downto 0) := (others => '0'); 
+signal portIn : std_logic_vector(7 downto 0) := (others => '0'); 
+signal portOut : std_logic_vector(7 downto 0) := (others => '0'); 
 signal instructionAux : std_logic_vector(7 downto 0) := (others => '0');
 
 begin
@@ -42,6 +44,8 @@ CPU : entity work.CPU(Behavioral) PORT MAP(
 		input => input,
 		PCOut => PCOut,
 		ACOut => ACOut,
+		portIn => portIn,
+		portOut => portOut,
 		instruction => instruction
 	);
 
