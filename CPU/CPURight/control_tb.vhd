@@ -27,14 +27,14 @@ ARCHITECTURE behavior OF Control_tb IS
  
 BEGIN
  
-	-- Instantiate the Unit Under Test (UUT)
+-- Instantiate the Unit Under Test (UUT)
    uut: Control PORT MAP (
           reset => reset,
           clk => clk,
 			 clkPlaca => clkPlaca
         );
 
-   -- Clock process definitions
+-- Clock process definitions
    clk_process :process
    begin
 		clk <= '0';
@@ -44,7 +44,7 @@ BEGIN
    end process;
  
 
-   -- Stimulus process
+-- Stimulus process
    stim_proc: process
    begin			
       wait;

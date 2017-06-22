@@ -28,7 +28,7 @@ begin
             end if;
         end if;
     end process;
-    dout <= ram(to_integer(unsigned(addr_reg)));
+    dout <= ram(to_integer(unsigned(addr)));
 end ram_arch;
 
 

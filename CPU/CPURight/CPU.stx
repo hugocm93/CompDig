@@ -1,0 +1,40 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/aula/Downloads/CompDig/CPU/CPURight/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.44 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/aula/Downloads/CompDig/CPU/CPURight/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.44 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/CPU is now defined in a different file.  It was defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU.vhd", and is now defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.vhd".
+WARNING:HDLParsers:3607 - Unit work/CPU/Behavioral is now defined in a different file.  It was defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU.vhd", and is now defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.vhd".
+WARNING:HDLParsers:3607 - Unit work/SingleRAM_syn is now defined in a different file.  It was defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/SingleRAM_syn.vhd", and is now defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/SingleRAM_syn.vhd".
+WARNING:HDLParsers:3607 - Unit work/SingleRAM_syn/ram_arch is now defined in a different file.  It was defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/SingleRAM_syn.vhd", and is now defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/SingleRAM_syn.vhd".
+Compiling vhdl file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/SingleRAM_syn.vhd" in Library work.
+Architecture ram_arch of Entity singleram_syn is up to date.
+Compiling vhdl file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.vhd" in Library work.
+Architecture behavioral of Entity cpu is up to date.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.05 secs
+ 
+--> 
+
+Total memory usage is 212376 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

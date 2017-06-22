@@ -1,0 +1,9 @@
+[Inputs]
+reset
+clk
+clkPlaca
+[Outputs]
+c
+=ac_out[6:0]=
+=pc_out[7:0]=
+[BiDir]

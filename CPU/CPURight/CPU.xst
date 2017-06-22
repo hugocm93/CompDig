@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/aula/Downloads/CompDig/CPU/CPURight/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/aula/Downloads/CompDig/CPU/CPURight/xst"
+elaborate
+-ifn CPU.prj
+-ifmt mixed

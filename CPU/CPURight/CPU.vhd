@@ -84,7 +84,8 @@ isUpdate <= '1' when instruction = instOld else '0';
 					when "00000101" => -- brz
 					-- perguntar ao smith
 					-- perguntar tb se estamos usando a memoria da forma certa
-					-- parse error
+					-- como iniciar
+					-- quais modulos juntar
 					
 					when "00000110" => -- move+
 						writeEn <= '0';
