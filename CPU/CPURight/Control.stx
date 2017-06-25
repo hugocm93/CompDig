@@ -1,0 +1,74 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/Control is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Control.vhd", and is now defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Control.vhd".
+WARNING:HDLParsers:3607 - Unit work/Control/Behavioral is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Control.vhd", and is now defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Control.vhd".
+WARNING:HDLParsers:3607 - Unit work/CPU is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.vhd", and is now defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU.vhd".
+WARNING:HDLParsers:3607 - Unit work/CPU/Behavioral is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.vhd", and is now defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU.vhd".
+WARNING:HDLParsers:3607 - Unit work/FTCE_MXILINX_db_fsm is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf", and is now defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf".
+WARNING:HDLParsers:3607 - Unit work/FTCE_MXILINX_db_fsm/BEHAVIORAL is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf", and is now defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf".
+WARNING:HDLParsers:3607 - Unit work/CB16CE_MXILINX_db_fsm is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf", and is now defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf".
+WARNING:HDLParsers:3607 - Unit work/CB16CE_MXILINX_db_fsm/BEHAVIORAL is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf", and is now defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf".
+WARNING:HDLParsers:3607 - Unit work/db_fsm is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf", and is now defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf".
+WARNING:HDLParsers:3607 - Unit work/db_fsm/BEHAVIORAL is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf", and is now defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf".
+WARNING:HDLParsers:3607 - Unit work/Modulo_display is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Modulo_display.vhd", and is now defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Modulo_display.vhd".
+WARNING:HDLParsers:3607 - Unit work/Modulo_display/behavioral is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Modulo_display.vhd", and is now defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Modulo_display.vhd".
+WARNING:HDLParsers:3607 - Unit work/Rom_asyn is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Rom_asyn.vhd", and is now defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Rom_asyn.vhd".
+WARNING:HDLParsers:3607 - Unit work/Rom_asyn/arch_rom is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Rom_asyn.vhd", and is now defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Rom_asyn.vhd".
+WARNING:HDLParsers:3607 - Unit work/display_7_seg is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/display_7_seg.vhd", and is now defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/display_7_seg.vhd".
+WARNING:HDLParsers:3607 - Unit work/display_7_seg/arch is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/display_7_seg.vhd", and is now defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/display_7_seg.vhd".
+WARNING:HDLParsers:3607 - Unit work/d_ff_reset is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/d_ff_reset.vhd", and is now defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/d_ff_reset.vhd".
+WARNING:HDLParsers:3607 - Unit work/d_ff_reset/arch is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/d_ff_reset.vhd", and is now defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/d_ff_reset.vhd".
+WARNING:HDLParsers:3607 - Unit work/mod_m_counter is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/mod_m_counter.vhd", and is now defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/mod_m_counter.vhd".
+WARNING:HDLParsers:3607 - Unit work/mod_m_counter/arch is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/mod_m_counter.vhd", and is now defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/mod_m_counter.vhd".
+WARNING:HDLParsers:3607 - Unit work/SingleRAM_syn is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/SingleRAM_syn.vhd", and is now defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/SingleRAM_syn.vhd".
+WARNING:HDLParsers:3607 - Unit work/SingleRAM_syn/ram_arch is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/SingleRAM_syn.vhd", and is now defined in "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/SingleRAM_syn.vhd".
+Compiling vhdl file "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/d_ff_reset.vhd" in Library work.
+Architecture arch of Entity d_ff_reset is up to date.
+Compiling vhdl file "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/mod_m_counter.vhd" in Library work.
+Architecture arch of Entity mod_m_counter is up to date.
+Compiling vhdl file "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/display_7_seg.vhd" in Library work.
+Architecture arch of Entity display_7_seg is up to date.
+Compiling vhdl file "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/SingleRAM_syn.vhd" in Library work.
+Architecture ram_arch of Entity singleram_syn is up to date.
+Compiling vhdl file "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf" in Library work.
+Architecture behavioral of Entity ftce_mxilinx_db_fsm is up to date.
+Architecture behavioral of Entity cb16ce_mxilinx_db_fsm is up to date.
+Architecture behavioral of Entity db_fsm is up to date.
+Compiling vhdl file "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU.vhd" in Library work.
+Architecture behavioral of Entity cpu is up to date.
+Compiling vhdl file "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Rom_asyn.vhd" in Library work.
+Architecture arch_rom of Entity rom_asyn is up to date.
+Compiling vhdl file "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Modulo_display.vhd" in Library work.
+Architecture behavioral of Entity modulo_display is up to date.
+Compiling vhdl file "D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Control.vhd" in Library work.
+Architecture behavioral of Entity control is up to date.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.53 secs
+ 
+--> 
+
+Total memory usage is 278564 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   23 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

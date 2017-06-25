@@ -1,90 +1,91 @@
 V3 54
-FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Control.vhd 2017/06/22.11:18:39 P.58f
-EN work/Control 1498142078 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Control.vhd \
+FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Control.vhd 2017/06/22.11:18:39 P.20131013
+FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.vhd 2017/06/22.11:34:03 P.20131013
+FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf 2017/06/22.11:34:15 P.20131013
+FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/display_7_seg.vhd 2017/06/22.11:18:39 P.20131013
+FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/d_ff_reset.vhd 2017/06/22.11:18:39 P.20131013
+FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Modulo_display.vhd 2017/06/22.11:18:39 P.20131013
+FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/mod_m_counter.vhd 2017/06/22.11:18:39 P.20131013
+FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Rom_asyn.vhd 2017/06/22.11:18:39 P.20131013
+FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/SingleRAM_syn.vhd 2017/06/22.11:18:39 P.20131013
+FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Control.vhd 2017/06/20.19:02:28 P.20131013
+EN work/Control 1498430391 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Control.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/Control/Behavioral 1498142079 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Control.vhd EN work/Control 1498142078 \
-      CP db_fsm AR work/CPU/Behavioral 1498142073 AR work/Rom_asyn/arch_rom 1498142075 \
-      AR work/Modulo_display/behavioral 1498142077
-FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.vhd 2017/06/22.11:34:03 P.58f
-EN work/CPU 1498142072 FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.vhd \
+AR work/Control/Behavioral 1498430392 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Control.vhd \
+      EN work/Control 1498430391 CP db_fsm AR work/CPU/Behavioral 1498430386 \
+      AR work/Rom_asyn/arch_rom 1498430388 AR work/Modulo_display/behavioral 1498430390
+FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU.vhd 2017/06/25.17:01:48 P.20131013
+EN work/CPU 1498430385 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/CPU/Behavioral 1498142073 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.vhd EN work/CPU 1498142072 \
-      AR work/SingleRAM_syn/ram_arch 1498142065
-FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf 2017/06/22.11:34:15 P.58f
-EN work/FTCE_MXILINX_db_fsm 1498142066 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf \
+AR work/CPU/Behavioral 1498430386 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU.vhd \
+      EN work/CPU 1498430385 AR work/SingleRAM_syn/ram_arch 1498430378
+FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf 2017/06/25.17:01:48 P.20131013
+EN work/FTCE_MXILINX_db_fsm 1498430379 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FTCE_MXILINX_db_fsm/BEHAVIORAL 1498142067 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf \
-      EN work/FTCE_MXILINX_db_fsm 1498142066 CP XOR2 CP FDCE
-EN work/CB16CE_MXILINX_db_fsm 1498142068 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf \
+AR work/FTCE_MXILINX_db_fsm/BEHAVIORAL 1498430380 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf \
+      EN work/FTCE_MXILINX_db_fsm 1498430379 CP XOR2 CP FDCE
+EN work/CB16CE_MXILINX_db_fsm 1498430381 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/CB16CE_MXILINX_db_fsm/BEHAVIORAL 1498142069 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf \
-      EN work/CB16CE_MXILINX_db_fsm 1498142068 CP FTCE_MXILINX_db_fsm CP AND3 \
+AR work/CB16CE_MXILINX_db_fsm/BEHAVIORAL 1498430382 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf \
+      EN work/CB16CE_MXILINX_db_fsm 1498430381 CP FTCE_MXILINX_db_fsm CP AND3 \
       CP AND2 CP VCC CP AND4 CP AND5
-EN work/db_fsm 1498142070 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf \
+EN work/db_fsm 1498430383 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/db_fsm/BEHAVIORAL 1498142071 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf EN work/db_fsm 1498142070 \
-      CP XOR2 CP FD CP FDE CP INV CP CB16CE_MXILINX_db_fsm
-FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/display_7_seg.vhd 2017/06/22.11:18:39 P.58f
-EN work/display_7_seg 1498142062 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/display_7_seg.vhd \
+AR work/db_fsm/BEHAVIORAL 1498430384 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf \
+      EN work/db_fsm 1498430383 CP XOR2 CP FD CP FDE CP INV CP CB16CE_MXILINX_db_fsm
+FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/display_7_seg.vhd 2017/06/20.18:22:56 P.20131013
+EN work/display_7_seg 1498430375 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/display_7_seg.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/display_7_seg/arch 1498142063 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/display_7_seg.vhd \
-      EN work/display_7_seg 1498142062
-FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/d_ff_reset.vhd 2017/06/22.11:18:39 P.58f
-EN work/d_ff_reset 1498142058 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/d_ff_reset.vhd \
+AR work/display_7_seg/arch 1498430376 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/display_7_seg.vhd \
+      EN work/display_7_seg 1498430375
+FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/d_ff_reset.vhd 2017/06/20.18:22:56 P.20131013
+EN work/d_ff_reset 1498430371 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/d_ff_reset.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/d_ff_reset/arch 1498142059 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/d_ff_reset.vhd \
-      EN work/d_ff_reset 1498142058
-FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Modulo_display.vhd 2017/06/22.11:18:39 P.58f
-EN work/Modulo_display 1498142076 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Modulo_display.vhd \
+AR work/d_ff_reset/arch 1498430372 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/d_ff_reset.vhd \
+      EN work/d_ff_reset 1498430371
+FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Modulo_display.vhd 2017/06/20.18:22:56 P.20131013
+EN work/Modulo_display 1498430389 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Modulo_display.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/Modulo_display/behavioral 1498142077 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Modulo_display.vhd \
-      EN work/Modulo_display 1498142076 AR work/d_ff_reset/arch 1498142059 \
-      AR work/mod_m_counter/arch 1498142061 AR work/display_7_seg/arch 1498142063
-FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/mod_m_counter.vhd 2017/06/22.11:18:39 P.58f
-EN work/mod_m_counter 1498142060 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/mod_m_counter.vhd \
+AR work/Modulo_display/behavioral 1498430390 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Modulo_display.vhd \
+      EN work/Modulo_display 1498430389 AR work/d_ff_reset/arch 1498430372 \
+      AR work/mod_m_counter/arch 1498430374 AR work/display_7_seg/arch 1498430376
+FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/mod_m_counter.vhd 2017/06/20.18:22:56 P.20131013
+EN work/mod_m_counter 1498430373 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/mod_m_counter.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/mod_m_counter/arch 1498142061 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/mod_m_counter.vhd \
-      EN work/mod_m_counter 1498142060
-FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Rom_asyn.vhd 2017/06/22.11:18:39 P.58f
-EN work/Rom_asyn 1498142074 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Rom_asyn.vhd \
+AR work/mod_m_counter/arch 1498430374 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/mod_m_counter.vhd \
+      EN work/mod_m_counter 1498430373
+FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Rom_asyn.vhd 2017/06/20.18:22:56 P.20131013
+EN work/Rom_asyn 1498430387 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Rom_asyn.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/Rom_asyn/arch_rom 1498142075 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Rom_asyn.vhd \
-      EN work/Rom_asyn 1498142074
-FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/SingleRAM_syn.vhd 2017/06/22.11:18:39 P.58f
-EN work/SingleRAM_syn 1498142064 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/SingleRAM_syn.vhd \
+AR work/Rom_asyn/arch_rom 1498430388 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Rom_asyn.vhd \
+      EN work/Rom_asyn 1498430387
+FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/SingleRAM_syn.vhd 2017/06/20.18:32:06 P.20131013
+EN work/SingleRAM_syn 1498430377 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/SingleRAM_syn.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/SingleRAM_syn/ram_arch 1498142065 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/SingleRAM_syn.vhd \
-      EN work/SingleRAM_syn 1498142064
-FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Control.vhd 2017/06/20.19:02:28 P.58f
-FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/CPU.vhd 2017/06/20.19:14:56 P.58f
-FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/db_fsm.vhf 2017/06/20.19:12:49 P.58f
-FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/display_7_seg.vhd 2017/06/20.18:22:56 P.58f
-FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/d_ff_reset.vhd 2017/06/20.18:22:56 P.58f
-FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Modulo_display.vhd 2017/06/20.18:22:56 P.58f
-FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/mod_m_counter.vhd 2017/06/20.18:22:56 P.58f
-FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Rom_asyn.vhd 2017/06/20.18:22:56 P.58f
-FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/SingleRAM_syn.vhd 2017/06/20.18:32:06 P.58f
+AR work/SingleRAM_syn/ram_arch 1498430378 \
+      FL D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/SingleRAM_syn.vhd \
+      EN work/SingleRAM_syn 1498430377
