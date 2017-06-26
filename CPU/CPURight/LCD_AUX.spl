@@ -1,0 +1,11 @@
+[Inputs]
+clk
+send_d
+reset
+=input[7:0]=
+[Outputs]
+rs
+rw
+ena
+=data_lcd[3:0]=
+[BiDir]

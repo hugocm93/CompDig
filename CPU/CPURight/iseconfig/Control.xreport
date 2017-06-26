@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-06-25T19:36:35</DateModified>
+  <DateModified>2017-06-26T10:53:00</DateModified>
   <ModuleName>Control</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/iseconfig/Control.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/aula/Downloads/CompDig/CPU/CPURight/iseconfig/Control.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/aula/Downloads/CompDig/CPU/CPURight\</ImplementationReportsDirectory>
   <DateInitialized>2017-06-20T18:23:24</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

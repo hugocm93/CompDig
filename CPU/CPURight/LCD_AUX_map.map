@@ -1,0 +1,81 @@
+Release 14.5 Map P.58f (nt64)
+Xilinx Map Application Log File for Design 'LCD_AUX'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off
+-c 100 -o LCD_AUX_map.ncd LCD_AUX.ngd LCD_AUX.pcf 
+Target Device  : xc3s500e
+Target Package : fg320
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Mon Jun 26 12:16:59 2017
+
+Mapping design into LUTs...
+Running directed packing...
+WARNING:Pack:266 - The function generator Mmux_vector_mem_s10111_SW1 failed to
+   merge with F5 multiplexer Mmux_vector_mem_s1067_SW2.  There is a conflict for
+   the FXMUX.  The design will exhibit suboptimal timing.
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net aux_cmp_eq0000 is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net stop_not0001 is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    3
+Logic Utilization:
+  Total Number Slice Registers:         207 out of   9,312    2%
+    Number used as Flip Flops:          167
+    Number used as Latches:              40
+  Number of 4 input LUTs:               774 out of   9,312    8%
+Logic Distribution:
+  Number of occupied Slices:            476 out of   4,656   10%
+    Number of Slices containing only related logic:     476 out of     476 100%
+    Number of Slices containing unrelated logic:          0 out of     476   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         879 out of   9,312    9%
+    Number used as logic:               774
+    Number used as a route-thru:        105
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 12 out of     232    5%
+  Number of BUFGMUXs:                     2 out of      24    8%
+
+  Number of RPM macros:           16
+Average Fanout of Non-Clock Nets:                3.60
+
+Peak Memory Usage:  258 MB
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   2 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "LCD_AUX_map.mrp" for details.

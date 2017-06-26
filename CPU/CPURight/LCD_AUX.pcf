@@ -1,0 +1,20 @@
+//! **************************************************************************
+// Written by: Map P.58f on Mon Jun 26 12:17:01 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "rs" LOCATE = SITE "L18" LEVEL 1;
+COMP "rw" LOCATE = SITE "L17" LEVEL 1;
+COMP "clk" LOCATE = SITE "C9" LEVEL 1;
+COMP "ena" LOCATE = SITE "M18" LEVEL 1;
+COMP "reset" LOCATE = SITE "H13" LEVEL 1;
+COMP "data_lcd<0>" LOCATE = SITE "R15" LEVEL 1;
+COMP "data_lcd<1>" LOCATE = SITE "R16" LEVEL 1;
+COMP "data_lcd<2>" LOCATE = SITE "P17" LEVEL 1;
+COMP "data_lcd<3>" LOCATE = SITE "M15" LEVEL 1;
+COMP "str_select<0>" LOCATE = SITE "N17" LEVEL 1;
+COMP "str_select<1>" LOCATE = SITE "H18" LEVEL 1;
+COMP "str_select<2>" LOCATE = SITE "L14" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

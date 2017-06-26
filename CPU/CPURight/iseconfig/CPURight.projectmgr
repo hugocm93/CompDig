@@ -7,18 +7,21 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Control - Behavioral C:|Users|aula|Downloads|CompDig|CPU|CPURight|Control.vhd</ClosedNode>
          <ClosedNode>/Control - Behavioral C:|Users|aula|Downloads|CompDig|CPU|CPURight|Control.vhd/CPU - CPU - Behavioral</ClosedNode>
+         <ClosedNode>/Control - Behavioral C:|Users|aula|Downloads|CompDig|CPU|CPURight|Control.vhd/DISPLAY - Modulo_display - behavioral</ClosedNode>
          <ClosedNode>/Control - Behavioral D:|Usuarios|marcos|Documentos|Faculdade|Computacao_Digital|CompDig|CPU|CPURight|Control.vhd/CPU - CPU - Behavioral</ClosedNode>
          <ClosedNode>/Control - Behavioral D:|Usuarios|marcos|Documentos|Faculdade|Computacao_Digital|CompDig|CPU|CPURight|Control.vhd/DISPLAY - Modulo_display - behavioral</ClosedNode>
+         <ClosedNode>/LCD_AUX - behavioral C:|Users|aula|Downloads|CompDig|CPU|CPURight|LCD_AUX.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Control - Behavioral (D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Control.vhd)</SelectedItem>
+         <SelectedItem>MOD_LCD - exemplo - behavioral (C:/Users/aula/Downloads/CompDig/CPU/CPURight/Exemplo.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000024e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000024e0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000262000000020000000000000000000000000200000064ffffffff000000810000000300000002000002620000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Control - Behavioral (D:/Usuarios/marcos/Documentos/Faculdade/Computacao_Digital/CompDig/CPU/CPURight/Control.vhd)</CurrentItem>
+      <CurrentItem>MOD_LCD - exemplo - behavioral (C:/Users/aula/Downloads/CompDig/CPU/CPURight/Exemplo.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -26,26 +29,26 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000185000000010000000100000000000000000000000064ffffffff000000810000000000000001000001850000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000177000000010000000100000000000000000000000064ffffffff000000810000000000000001000001770000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>SingleRAM_syn.vhd</SelectedItem>
+         <SelectedItem>Exemplo.vhd</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002e3000000040101000100000000000000000000000064ffffffff0000008100000000000000040000008a0000000100000000000000240000000100000000000000660000000100000000000001cf0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000178000000040101000100000000000000000000000064ffffffff0000008100000000000000040000008a0000000100000000000000240000000100000000000000660000000100000000000000640000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>SingleRAM_syn.vhd</CurrentItem>
+      <CurrentItem>Exemplo.vhd</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -54,7 +57,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000174000000010001000100000000000000000000000064ffffffff000000810000000000000001000001740000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000000f8000000010001000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
@@ -64,15 +67,16 @@
          <ClosedNode>Implement Design/Map</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
          <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Check Syntax</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >5</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000174000000010000000100000000000000000000000064ffffffff000000810000000000000001000001740000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000177000000010000000100000000000000000000000064ffffffff000000810000000000000001000001770000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Check Syntax</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -83,13 +87,13 @@
          <ClosedNode>/tb_lab5 - behavior C:|Users|aula|Downloads|CompDig|CPU|CPURight|tb_lab5.vhd/uut - Control - Behavioral/DISPLAY - Modulo_display - behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>PROGRAM - Rom_asyn - arch_rom (C:/Users/aula/Downloads/CompDig/CPU/CPURight/Rom_asyn.vhd)</SelectedItem>
+         <SelectedItem>preLCD_tb - behavior (C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD_tb.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >5</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >13</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ae000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ae0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000276000000020000000000000000000000000200000064ffffffff000000810000000300000002000002760000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>PROGRAM - Rom_asyn - arch_rom (C:/Users/aula/Downloads/CompDig/CPU/CPURight/Rom_asyn.vhd)</CurrentItem>
+      <CurrentItem>preLCD_tb - behavior (C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD_tb.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -110,13 +114,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Behavioral Check Syntax</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c7000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c70000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000177000000010000000100000000000000000000000064ffffffff000000810000000000000001000001770000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Behavioral Check Syntax</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011e0000013d01000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
@@ -127,13 +131,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c7000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c70000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000177000000010000000100000000000000000000000064ffffffff000000810000000000000001000001770000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
       <ClosedNodes>
@@ -144,7 +148,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000185000000010000000100000000000000000000000064ffffffff000000810000000000000001000001850000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000177000000010000000100000000000000000000000064ffffffff000000810000000000000001000001770000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>

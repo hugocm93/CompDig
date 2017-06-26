@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Reading design: Control.prj
 
@@ -120,8 +120,7 @@ Entity <cb16ce_mxilinx_db_fsm> (Architecture <behavioral>) compiled.
 Entity <db_fsm> compiled.
 Entity <db_fsm> (Architecture <behavioral>) compiled.
 Compiling vhdl file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.vhd" in Library work.
-Entity <cpu> compiled.
-Entity <cpu> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity cpu is up to date.
 Compiling vhdl file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Rom_asyn.vhd" in Library work.
 Architecture arch_rom of Entity rom_asyn is up to date.
 Compiling vhdl file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Modulo_display.vhd" in Library work.
@@ -758,8 +757,8 @@ Offset:              6.365ns (Levels of Logic = 3)
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.86 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.48 secs
  
 --> 
 

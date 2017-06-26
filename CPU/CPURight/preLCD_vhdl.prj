@@ -1,0 +1,5 @@
+vhdl work "C:\Users\aula\Downloads\CompDig\CPU\CPURight\PROCESADOR_LCD4BITS.vhd"
+vhdl work "C:\Users\aula\Downloads\CompDig\CPU\CPURight\COMMANDS_LCD4BITS.vhd"
+vhdl work "C:\Users\aula\Downloads\CompDig\CPU\CPURight\Exemplo.vhd"
+vhdl work "C:\Users\aula\Downloads\CompDig\CPU\CPURight\db_fsm.vhf"
+vhdl work "C:\Users\aula\Downloads\CompDig\CPU\CPURight\preLCD.vhd"

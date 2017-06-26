@@ -1,24 +1,22 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/Users/aula/Downloads/CompDig/CPU/CPURight/tb_lab5_isim_beh.exe" -prj "C:/Users/aula/Downloads/CompDig/CPU/CPURight/tb_lab5_beh.prj" "work.tb_lab5" 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD_tb_isim_beh.exe" -prj "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD_tb_beh.prj" "work.preLCD_tb" 
 ISim P.58f (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/SingleRAM_syn.vhd" into library work
-Parsing VHDL file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/mod_m_counter.vhd" into library work
-Parsing VHDL file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/d_ff_reset.vhd" into library work
-Parsing VHDL file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/display_7_seg.vhd" into library work
-Parsing VHDL file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Rom_asyn.vhd" into library work
-Parsing VHDL file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Modulo_display.vhd" into library work
-WARNING:HDLCompiler:946 - "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Modulo_display.vhd" Line 22: Actual for formal port d is neither a static name nor a globally static expression
+Parsing VHDL file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/PROCESADOR_LCD4BITS.vhd" into library work
+Parsing VHDL file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/COMMANDS_LCD4BITS.vhd" into library work
+Parsing VHDL file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Exemplo.vhd" into library work
 Parsing VHDL file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf" into library work
-Parsing VHDL file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.vhd" into library work
-Parsing VHDL file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Control.vhd" into library work
-Parsing VHDL file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/tb_lab5.vhd" into library work
+Parsing VHDL file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.vhd" into library work
+Parsing VHDL file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD_tb.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package commands_lcd4bits
 Compiling package vcomponents
 Compiling architecture xor2_v of entity XOR2 [xor2_default]
 Compiling architecture fd_v of entity FD [\FD('0')\]
@@ -33,18 +31,13 @@ Compiling architecture and4_v of entity AND4 [and4_default]
 Compiling architecture and5_v of entity AND5 [and5_default]
 Compiling architecture behavioral of entity CB16CE_MXILINX_db_fsm [cb16ce_mxilinx_db_fsm_default]
 Compiling architecture behavioral of entity db_fsm [db_fsm_default]
-Compiling architecture ram_arch of entity SingleRAM_syn [singleram_syn_default]
-Compiling architecture behavioral of entity CPU [cpu_default]
-Compiling architecture arch_rom of entity Rom_asyn [rom_asyn_default]
-Compiling architecture arch of entity d_ff_reset [d_ff_reset_default]
-Compiling architecture arch of entity mod_m_counter [\mod_m_counter(19,500000)\]
-Compiling architecture arch of entity display_7_seg [display_7_seg_default]
-Compiling architecture behavioral of entity Modulo_display [modulo_display_default]
-Compiling architecture behavioral of entity Control [control_default]
-Compiling architecture behavior of entity tb_lab5
+Compiling architecture behavioral of entity PROCESADOR_LCD4BITS [procesador_lcd4bits_default]
+Compiling architecture behavioral of entity exemplo [exemplo_default]
+Compiling architecture behavioral of entity preLCD [prelcd_default]
+Compiling architecture behavior of entity prelcd_tb
 Time Resolution for simulation is 1ps.
-Waiting for 10 sub-compilation(s) to finish...
-Compiled 47 VHDL Units
-Built simulation executable C:/Users/aula/Downloads/CompDig/CPU/CPURight/tb_lab5_isim_beh.exe
-Fuse Memory Usage: 48656 KB
-Fuse CPU Usage: 857 ms
+Waiting for 8 sub-compilation(s) to finish...
+Compiled 40 VHDL Units
+Built simulation executable C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD_tb_isim_beh.exe
+Fuse Memory Usage: 50148 KB
+Fuse CPU Usage: 889 ms

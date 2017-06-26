@@ -1,0 +1,4 @@
+vhdl work "PROCESADOR_LCD4BITS.vhd"
+vhdl work "db_fsm.vhf"
+vhdl work "COMMANDS_LCD4BITS.vhd"
+vhdl work "LCD_AUX.vhd"

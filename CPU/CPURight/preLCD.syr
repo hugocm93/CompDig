@@ -1,0 +1,866 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: preLCD.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "preLCD.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "preLCD"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : preLCD
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/COMMANDS_LCD4BITS.vhd" in Library work.
+Architecture commands_lcd4bits of Entity commands_lcd4bits is up to date.
+Compiling vhdl file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/PROCESADOR_LCD4BITS.vhd" in Library work.
+Architecture behavioral of Entity procesador_lcd4bits is up to date.
+Compiling vhdl file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf" in Library work.
+Architecture behavioral of Entity ftce_mxilinx_db_fsm is up to date.
+Architecture behavioral of Entity cb16ce_mxilinx_db_fsm is up to date.
+Architecture behavioral of Entity db_fsm is up to date.
+Compiling vhdl file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Exemplo.vhd" in Library work.
+Architecture behavioral of Entity exemplo is up to date.
+Compiling vhdl file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.vhd" in Library work.
+Entity <prelcd> compiled.
+Entity <prelcd> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <preLCD> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <db_fsm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <exemplo> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CB16CE_MXILINX_db_fsm> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <procesador_lcd4bits> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FTCE_MXILINX_db_fsm> in library <work> (architecture <behavioral>) with generics.
+	INIT = '0'
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <preLCD> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.vhd" line 55: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <stop>
+Entity <preLCD> analyzed. Unit <preLCD> generated.
+
+Analyzing Entity <db_fsm> in library <work> (Architecture <behavioral>).
+    Set user-defined property "INIT =  0" for instance <XLXI_30> in unit <db_fsm>.
+    Set user-defined property "INIT =  0" for instance <XLXI_31> in unit <db_fsm>.
+    Set user-defined property "INIT =  0" for instance <XLXI_40> in unit <db_fsm>.
+WARNING:Xst:753 - "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf" line 487: Unconnected output port 'CEO' of component 'CB16CE_MXILINX_db_fsm'.
+WARNING:Xst:753 - "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf" line 487: Unconnected output port 'Q' of component 'CB16CE_MXILINX_db_fsm'.
+    Set user-defined property "HU_SET =  XLXI_46_16" for instance <XLXI_46> in unit <db_fsm>.
+Entity <db_fsm> analyzed. Unit <db_fsm> generated.
+
+Analyzing Entity <CB16CE_MXILINX_db_fsm> in library <work> (Architecture <behavioral>).
+    Set user-defined property "HU_SET =  I_Q0_1" for instance <I_Q0> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q1_0" for instance <I_Q1> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q2_3" for instance <I_Q2> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q3_2" for instance <I_Q3> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q4_7" for instance <I_Q4> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q5_6" for instance <I_Q5> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q6_5" for instance <I_Q6> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q7_4" for instance <I_Q7> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q8_8" for instance <I_Q8> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q9_9" for instance <I_Q9> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q10_10" for instance <I_Q10> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q11_11" for instance <I_Q11> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q12_12" for instance <I_Q12> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q13_13" for instance <I_Q13> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q14_14" for instance <I_Q14> in unit <CB16CE_MXILINX_db_fsm>.
+    Set user-defined property "HU_SET =  I_Q15_15" for instance <I_Q15> in unit <CB16CE_MXILINX_db_fsm>.
+Entity <CB16CE_MXILINX_db_fsm> analyzed. Unit <CB16CE_MXILINX_db_fsm> generated.
+
+Analyzing generic Entity <FTCE_MXILINX_db_fsm> in library <work> (Architecture <behavioral>).
+	INIT = '0'
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCE_MXILINX_db_fsm>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCE_MXILINX_db_fsm>.
+Entity <FTCE_MXILINX_db_fsm> analyzed. Unit <FTCE_MXILINX_db_fsm> generated.
+
+Analyzing Entity <exemplo> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Exemplo.vhd" line 61: Unconnected output port 'bd_lcd' of component 'procesador_lcd4bits'.
+INFO:Xst:1433 - Contents of array <inst> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+WARNING:Xst:819 - "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Exemplo.vhd" line 94: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <newChar>, <input>
+Entity <exemplo> analyzed. Unit <exemplo> generated.
+
+Analyzing Entity <procesador_lcd4bits> in library <work> (Architecture <behavioral>).
+INFO:Xst:2679 - Register <RW> in unit <procesador_lcd4bits> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <procesador_lcd4bits> analyzed. Unit <procesador_lcd4bits> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <procesador_lcd4bits>.
+    Related source file is "C:/Users/aula/Downloads/CompDig/CPU/CPURight/PROCESADOR_LCD4BITS.vhd".
+WARNING:Xst:646 - Signal <VEC_POS<11:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <DATA_CHAR<11:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <CONTA_CHAR>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 16                                             |
+    | Inputs             | 1                                              |
+    | Outputs            | 7                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Clock enable       | CONTA_CHAR$cmp_eq0000     (positive)           |
+    | Power Up State     | 0001                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Using one-hot encoding for signal <ESTADO>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <ESTADO> of Case statement line 98 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <ESTADO> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Using one-hot encoding for signal <ESTADO_PRESENTE>.
+    Found 1-bit register for signal <ENA>.
+    Found 8-bit register for signal <BD_LCD>.
+    Found 1-bit register for signal <RS>.
+    Found 4-bit register for signal <DATA>.
+    Found 2-bit register for signal <CONF_CURSOR>.
+    Found 19-bit register for signal <CONTA_DELAY>.
+    Found 19-bit adder for signal <CONTA_DELAY$addsub0000>.
+    Found 12-bit register for signal <DATA_CHAR>.
+    Found 12-bit subtractor for signal <DATA_CHAR$addsub0000>.
+    Found 12-bit comparator greater for signal <DATA_CHAR$cmp_gt0000> created at line 112.
+    Found 12-bit comparator greater for signal <DATA_CHAR$cmp_gt0001> created at line 105.
+    Found 12-bit comparator lessequal for signal <DATA_CHAR$cmp_le0000> created at line 107.
+    Found 12-bit comparator less for signal <DATA_CHAR$cmp_lt0000> created at line 112.
+    Found 12-bit comparator less for signal <DATA_CHAR$cmp_lt0001> created at line 105.
+    Found 11-bit register for signal <DIR_BI>.
+    Found 19-bit comparator lessequal for signal <ENA$cmp_le0000> created at line 514.
+    Found 19-bit comparator less for signal <ENA$cmp_lt0000> created at line 167.
+    Found 20-bit register for signal <ESTADO>.
+    Found 12-bit comparator greatequal for signal <ESTADO$cmp_ge0000> created at line 105.
+    Found 12-bit comparator greatequal for signal <ESTADO$cmp_ge0001> created at line 112.
+    Found 12-bit comparator greatequal for signal <ESTADO$cmp_ge0002> created at line 117.
+    Found 12-bit comparator greatequal for signal <ESTADO$cmp_ge0003> created at line 138.
+    Found 12-bit comparator greatequal for signal <ESTADO$cmp_ge0004> created at line 141.
+    Found 12-bit comparator lessequal for signal <ESTADO$cmp_le0000> created at line 105.
+    Found 12-bit comparator lessequal for signal <ESTADO$cmp_le0001> created at line 112.
+    Found 12-bit comparator lessequal for signal <ESTADO$cmp_le0002> created at line 117.
+    Found 12-bit comparator lessequal for signal <ESTADO$cmp_le0003> created at line 138.
+    Found 12-bit comparator lessequal for signal <ESTADO$cmp_le0004> created at line 141.
+    Found 20-bit register for signal <ESTADO_FUTURO>.
+    Found 11-bit register for signal <ESTADO_PRESENTE>.
+    Found 11-bit register for signal <INC_DIR_S>.
+    Found 11-bit adder for signal <INC_DIR_S$share0000> created at line 98.
+    Found 1-bit register for signal <MANDAR_BAJO>.
+    Found 40-bit register for signal <VEC_C_CHAR>.
+    Found 40-bit 4-to-1 multiplexer for signal <VEC_C_CHAR$mux0000>.
+    Found 8-bit register for signal <VEC_L_RAM>.
+    Found 12-bit register for signal <VEC_POS>.
+    Found 12-bit comparator greater for signal <VEC_POS$cmp_gt0000> created at line 121.
+    Found 12-bit comparator greater for signal <VEC_POS$cmp_gt0001> created at line 117.
+    Found 12-bit comparator lessequal for signal <VEC_POS$cmp_le0000> created at line 121.
+    Found 12-bit comparator less for signal <VEC_POS$cmp_lt0000> created at line 122.
+    Found 12-bit comparator less for signal <VEC_POS$cmp_lt0001> created at line 117.
+    Found 12-bit subtractor for signal <VEC_POS$mux0000>.
+    Found 8-bit register for signal <VEC_RAM>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred 189 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred  22 Comparator(s).
+	inferred  40 Multiplexer(s).
+Unit <procesador_lcd4bits> synthesized.
+
+
+Synthesizing Unit <exemplo>.
+    Related source file is "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Exemplo.vhd".
+WARNING:Xst:1781 - Signal <inst<8:60>> is used but never assigned. Tied to default value.
+WARNING:Xst:737 - Found 8-bit latch for signal <aux>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Using one-hot encoding for signal <counterRow>.
+    Found 32-bit up counter for signal <counterCol>.
+    Found 2-bit register for signal <counterRow>.
+    Found 1-bit register for signal <newChar>.
+    Found 12-bit 61-to-1 multiplexer for signal <vector_mem_s>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred  12 Multiplexer(s).
+Unit <exemplo> synthesized.
+
+
+Synthesizing Unit <FTCE_MXILINX_db_fsm>.
+    Related source file is "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf".
+Unit <FTCE_MXILINX_db_fsm> synthesized.
+
+
+Synthesizing Unit <CB16CE_MXILINX_db_fsm>.
+    Related source file is "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf".
+Unit <CB16CE_MXILINX_db_fsm> synthesized.
+
+
+Synthesizing Unit <db_fsm>.
+    Related source file is "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf".
+Unit <db_fsm> synthesized.
+
+
+Synthesizing Unit <preLCD>.
+    Related source file is "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.vhd".
+WARNING:Xst:653 - Signal <s5> is used but never assigned. This sourceless signal will be automatically connected to value 01000101011100100111001001101111.
+WARNING:Xst:653 - Signal <s4> is used but never assigned. This sourceless signal will be automatically connected to value 010100000101011101000100.
+WARNING:Xst:653 - Signal <s3> is used but never assigned. This sourceless signal will be automatically connected to value 0100111101001011.
+WARNING:Xst:653 - Signal <s2> is used but never assigned. This sourceless signal will be automatically connected to value 0111001101100101011011100110100001100001.
+WARNING:Xst:653 - Signal <s1> is used but never assigned. This sourceless signal will be automatically connected to value 010000110010000001101111011101010010000001000001.
+WARNING:Xst:737 - Found 1-bit latch for signal <clkFake>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 8-bit register for signal <aux>.
+    Found 32-bit comparator less for signal <aux$cmp_lt0000> created at line 92.
+    Found 32-bit comparator less for signal <aux$cmp_lt0001> created at line 86.
+    Found 32-bit comparator less for signal <aux$cmp_lt0002> created at line 80.
+    Found 32-bit comparator less for signal <aux$cmp_lt0003> created at line 74.
+    Found 32-bit comparator less for signal <aux$cmp_lt0004> created at line 71.
+    Found 32-bit up counter for signal <positionCounter>.
+    Found 1-bit register for signal <stop>.
+    Found 32-bit comparator greatequal for signal <stop$cmp_ge0000> created at line 86.
+    Found 32-bit comparator greatequal for signal <stop$cmp_ge0001> created at line 80.
+    Found 32-bit comparator greatequal for signal <stop$cmp_ge0002> created at line 74.
+    Found 32-bit comparator greatequal for signal <stop$cmp_ge0003> created at line 71.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   9 Comparator(s).
+Unit <preLCD> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 11-bit adder                                          : 1
+ 12-bit subtractor                                     : 2
+ 19-bit adder                                          : 1
+# Counters                                             : 2
+ 32-bit up counter                                     : 2
+# Registers                                            : 21
+ 1-bit register                                        : 5
+ 11-bit register                                       : 3
+ 12-bit register                                       : 2
+ 19-bit register                                       : 1
+ 2-bit register                                        : 2
+ 20-bit register                                       : 2
+ 4-bit register                                        : 1
+ 40-bit register                                       : 1
+ 8-bit register                                        : 4
+# Latches                                              : 2
+ 1-bit latch                                           : 1
+ 8-bit latch                                           : 1
+# Comparators                                          : 31
+ 12-bit comparator greatequal                          : 5
+ 12-bit comparator greater                             : 4
+ 12-bit comparator less                                : 4
+ 12-bit comparator lessequal                           : 7
+ 19-bit comparator less                                : 1
+ 19-bit comparator lessequal                           : 1
+ 32-bit comparator greatequal                          : 4
+ 32-bit comparator less                                : 5
+# Multiplexers                                         : 2
+ 12-bit 61-to-1 multiplexer                            : 1
+ 40-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <MOD_LCD/inst_procesador_lcd4bits/CONTA_CHAR/FSM> on signal <CONTA_CHAR[1:3]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0001  | 000
+ 0010  | 001
+ 0011  | 010
+ 0100  | 011
+ 0101  | 100
+ 0110  | 101
+ 0111  | 110
+ 1000  | 111
+-------------------
+WARNING:Xst:1293 - FF/Latch <aux_7> has a constant value of 0 in block <preLCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <VEC_RAM_7> (without init value) has a constant value of 0 in block <inst_procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <VEC_RAM_2> (without init value) has a constant value of 0 in block <inst_procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <VEC_RAM_1> (without init value) has a constant value of 0 in block <inst_procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <VEC_RAM_0> (without init value) has a constant value of 0 in block <inst_procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ESTADO_FUTURO_19> has a constant value of 0 in block <inst_procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ESTADO_FUTURO_18> has a constant value of 0 in block <inst_procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ESTADO_FUTURO_12> has a constant value of 0 in block <inst_procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ESTADO_FUTURO_10> has a constant value of 0 in block <inst_procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ESTADO_FUTURO_9> has a constant value of 0 in block <inst_procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ESTADO_FUTURO_1> has a constant value of 0 in block <inst_procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <VEC_L_RAM_7> (without init value) has a constant value of 0 in block <inst_procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <VEC_L_RAM_6> (without init value) has a constant value of 0 in block <inst_procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <VEC_L_RAM_5> (without init value) has a constant value of 0 in block <inst_procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <VEC_L_RAM_4> (without init value) has a constant value of 0 in block <inst_procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <VEC_L_RAM_3> (without init value) has a constant value of 0 in block <inst_procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <DATA_CHAR_8> of sequential type is unconnected in block <inst_procesador_lcd4bits>.
+WARNING:Xst:2677 - Node <DATA_CHAR_9> of sequential type is unconnected in block <inst_procesador_lcd4bits>.
+WARNING:Xst:2677 - Node <DATA_CHAR_10> of sequential type is unconnected in block <inst_procesador_lcd4bits>.
+WARNING:Xst:2677 - Node <DATA_CHAR_11> of sequential type is unconnected in block <inst_procesador_lcd4bits>.
+WARNING:Xst:2677 - Node <VEC_POS_8> of sequential type is unconnected in block <inst_procesador_lcd4bits>.
+WARNING:Xst:2677 - Node <VEC_POS_9> of sequential type is unconnected in block <inst_procesador_lcd4bits>.
+WARNING:Xst:2677 - Node <VEC_POS_10> of sequential type is unconnected in block <inst_procesador_lcd4bits>.
+WARNING:Xst:2677 - Node <VEC_POS_11> of sequential type is unconnected in block <inst_procesador_lcd4bits>.
+WARNING:Xst:2677 - Node <DATA_CHAR_8> of sequential type is unconnected in block <procesador_lcd4bits>.
+WARNING:Xst:2677 - Node <DATA_CHAR_9> of sequential type is unconnected in block <procesador_lcd4bits>.
+WARNING:Xst:2677 - Node <DATA_CHAR_10> of sequential type is unconnected in block <procesador_lcd4bits>.
+WARNING:Xst:2677 - Node <DATA_CHAR_11> of sequential type is unconnected in block <procesador_lcd4bits>.
+WARNING:Xst:2677 - Node <ESTADO_PRESENTE_0> of sequential type is unconnected in block <procesador_lcd4bits>.
+WARNING:Xst:2677 - Node <ESTADO_PRESENTE_2> of sequential type is unconnected in block <procesador_lcd4bits>.
+WARNING:Xst:2677 - Node <VEC_POS_8> of sequential type is unconnected in block <procesador_lcd4bits>.
+WARNING:Xst:2677 - Node <VEC_POS_9> of sequential type is unconnected in block <procesador_lcd4bits>.
+WARNING:Xst:2677 - Node <VEC_POS_10> of sequential type is unconnected in block <procesador_lcd4bits>.
+WARNING:Xst:2677 - Node <VEC_POS_11> of sequential type is unconnected in block <procesador_lcd4bits>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 4
+ 11-bit adder                                          : 1
+ 12-bit subtractor                                     : 2
+ 19-bit adder                                          : 1
+# Counters                                             : 2
+ 32-bit up counter                                     : 2
+# Registers                                            : 210
+ Flip-Flops                                            : 210
+# Latches                                              : 2
+ 1-bit latch                                           : 1
+ 8-bit latch                                           : 1
+# Comparators                                          : 31
+ 12-bit comparator greatequal                          : 5
+ 12-bit comparator greater                             : 4
+ 12-bit comparator less                                : 4
+ 12-bit comparator lessequal                           : 7
+ 19-bit comparator less                                : 1
+ 19-bit comparator lessequal                           : 1
+ 32-bit comparator greatequal                          : 4
+ 32-bit comparator less                                : 5
+# Multiplexers                                         : 2
+ 12-bit 61-to-1 multiplexer                            : 1
+ 40-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <VEC_RAM_7> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_RAM_2> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_RAM_1> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_RAM_0> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ESTADO_PRESENTE_1> has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ESTADO_FUTURO_19> has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ESTADO_FUTURO_18> has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ESTADO_FUTURO_12> has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ESTADO_FUTURO_10> has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ESTADO_FUTURO_9> has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ESTADO_FUTURO_1> has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_L_RAM_7> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_L_RAM_6> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_L_RAM_5> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_L_RAM_4> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_L_RAM_3> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BD_LCD_7> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BD_LCD_6> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BD_LCD_5> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BD_LCD_4> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <aux_7> has a constant value of 0 in block <preLCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <aux_7> (without init value) has a constant value of 0 in block <exemplo>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <preLCD> ...
+
+Optimizing unit <procesador_lcd4bits> ...
+WARNING:Xst:1710 - FF/Latch <VEC_C_CHAR_20> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_21> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_22> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_23> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_24> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_25> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_26> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_27> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_28> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_29> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_30> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_31> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_32> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_33> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_34> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_35> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_36> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_37> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_38> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_39> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_0> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_1> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_2> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_3> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_4> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_5> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_6> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_7> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_8> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_9> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_10> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_11> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_12> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_13> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_14> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_15> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_16> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_17> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_18> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VEC_C_CHAR_19> (without init value) has a constant value of 0 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <VEC_RAM_6> (without init value) has a constant value of 1 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <VEC_RAM_6> (without init value) has a constant value of 1 in block <procesador_lcd4bits>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <FTCE_MXILINX_db_fsm> ...
+
+Optimizing unit <exemplo> ...
+
+Optimizing unit <CB16CE_MXILINX_db_fsm> ...
+WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/BD_LCD_0> of sequential type is unconnected in block <preLCD>.
+WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/BD_LCD_1> of sequential type is unconnected in block <preLCD>.
+WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/BD_LCD_2> of sequential type is unconnected in block <preLCD>.
+WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/BD_LCD_3> of sequential type is unconnected in block <preLCD>.
+WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/ESTADO_PRESENTE_3> of sequential type is unconnected in block <preLCD>.
+WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/ESTADO_PRESENTE_4> of sequential type is unconnected in block <preLCD>.
+WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/ESTADO_PRESENTE_5> of sequential type is unconnected in block <preLCD>.
+WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/ESTADO_PRESENTE_6> of sequential type is unconnected in block <preLCD>.
+WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/ESTADO_PRESENTE_7> of sequential type is unconnected in block <preLCD>.
+WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/ESTADO_PRESENTE_8> of sequential type is unconnected in block <preLCD>.
+WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/ESTADO_PRESENTE_9> of sequential type is unconnected in block <preLCD>.
+WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/ESTADO_PRESENTE_10> of sequential type is unconnected in block <preLCD>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block preLCD, actual ratio is 8.
+FlipFlop MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_0 has been replicated 1 time(s)
+FlipFlop MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_1 has been replicated 1 time(s)
+FlipFlop MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 206
+ Flip-Flops                                            : 206
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : preLCD.ngr
+Top Level Output File Name         : preLCD
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 12
+
+Cell Usage :
+# BELS                             : 1083
+#      AND2                        : 5
+#      AND3                        : 4
+#      AND4                        : 4
+#      AND5                        : 3
+#      GND                         : 1
+#      INV                         : 24
+#      LUT1                        : 104
+#      LUT2                        : 47
+#      LUT2_D                      : 2
+#      LUT2_L                      : 2
+#      LUT3                        : 85
+#      LUT3_D                      : 5
+#      LUT3_L                      : 5
+#      LUT4                        : 363
+#      LUT4_D                      : 19
+#      LUT4_L                      : 32
+#      MUXCY                       : 227
+#      MUXF5                       : 25
+#      VCC                         : 2
+#      XOR2                        : 17
+#      XORCY                       : 107
+# FlipFlops/Latches                : 214
+#      FD                          : 42
+#      FDC                         : 64
+#      FDCE                        : 18
+#      FDCE_1                      : 1
+#      FDE                         : 32
+#      FDE_1                       : 7
+#      FDPE                        : 1
+#      FDR                         : 1
+#      FDS                         : 32
+#      FDSE                        : 8
+#      LD_1                        : 1
+#      LDE                         : 7
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 12
+#      IBUF                        : 5
+#      OBUF                        : 7
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      389  out of   4656     8%  
+ Number of Slice Flip Flops:            214  out of   9312     2%  
+ Number of 4 input LUTs:                688  out of   9312     7%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    232     5%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------+------------------------+-------+
+Clock Signal                                       | Clock buffer(FF name)  | Load  |
+---------------------------------------------------+------------------------+-------+
+clkFake1                                           | BUFG                   | 75    |
+stop                                               | NONE(clkFake)          | 1     |
+clk                                                | IBUF+BUFG              | 131   |
+MOD_LCD/aux_cmp_eq0000(MOD_LCD/aux_cmp_eq0000211:O)| NONE(*)(MOD_LCD/aux_6) | 7     |
+---------------------------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------+------------------------------------+-------+
+Control Signal                                     | Buffer(FF name)                    | Load  |
+---------------------------------------------------+------------------------------------+-------+
+reset                                              | IBUF                               | 34    |
+resetDebounce(reset_db/XLXI_40:Q)                  | NONE(positionCounter_0)            | 33    |
+reset_db/XLXN_7(reset_db/XLXI_9:O)                 | NONE(reset_db/XLXI_46/I_Q0/I_36_35)| 16    |
+MOD_LCD/newChar_and0000(MOD_LCD/newChar_and00001:O)| NONE(MOD_LCD/newChar)              | 1     |
+---------------------------------------------------+------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 12.176ns (Maximum Frequency: 82.128MHz)
+   Minimum input arrival time before clock: 12.454ns
+   Maximum output required time after clock: 4.310ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkFake1'
+  Clock period: 9.206ns (frequency: 108.625MHz)
+  Total number of paths / destination ports: 4797 / 81
+-------------------------------------------------------------------------
+Delay:               9.206ns (Levels of Logic = 16)
+  Source:            positionCounter_1 (FF)
+  Destination:       aux_6 (FF)
+  Source Clock:      clkFake1 falling
+  Destination Clock: clkFake1 falling
+
+  Data Path: positionCounter_1 to aux_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             25   0.591   1.435  positionCounter_1 (positionCounter_1)
+     LUT1:I0->O            1   0.704   0.000  Mcompar_aux_cmp_lt0001_cy<0>_1_rt (Mcompar_aux_cmp_lt0001_cy<0>_1_rt)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_aux_cmp_lt0001_cy<0>_1 (Mcompar_aux_cmp_lt0001_cy<0>2)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_aux_cmp_lt0001_cy<1>_1 (Mcompar_aux_cmp_lt0001_cy<1>2)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_aux_cmp_lt0001_cy<2>_1 (Mcompar_aux_cmp_lt0001_cy<2>2)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_aux_cmp_lt0001_cy<3>_1 (Mcompar_aux_cmp_lt0001_cy<3>2)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_aux_cmp_lt0001_cy<4>_1 (Mcompar_aux_cmp_lt0001_cy<4>2)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_aux_cmp_lt0001_cy<5>_1 (Mcompar_aux_cmp_lt0001_cy<5>2)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_aux_cmp_lt0001_cy<6>_1 (Mcompar_aux_cmp_lt0001_cy<6>2)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_aux_cmp_lt0001_cy<7>_1 (Mcompar_aux_cmp_lt0001_cy<7>2)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_aux_cmp_lt0001_cy<8>_1 (Mcompar_aux_cmp_lt0001_cy<8>2)
+     MUXCY:CI->O           2   0.459   0.622  Mcompar_aux_cmp_lt0001_cy<9>_0 (Mcompar_aux_cmp_lt0001_cy<9>1)
+     LUT4_D:I0->LO         1   0.704   0.135  aux_and00031 (N298)
+     LUT3:I2->O            1   0.704   0.424  aux_mux0005<6>43 (aux_mux0005<6>43)
+     LUT4:I3->O            1   0.704   0.455  aux_mux0005<6>66 (aux_mux0005<6>66)
+     LUT4:I2->O            1   0.704   0.000  aux_mux0005<6>88_F (N277)
+     MUXF5:I0->O           1   0.321   0.000  aux_mux0005<6>88 (aux_mux0005<6>)
+     FDE_1:D                   0.308          aux_6
+    ----------------------------------------
+    Total                      9.206ns (6.135ns logic, 3.071ns route)
+                                       (66.6% logic, 33.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 12.176ns (frequency: 82.128MHz)
+  Total number of paths / destination ports: 19282 / 219
+-------------------------------------------------------------------------
+Delay:               12.176ns (Levels of Logic = 9)
+  Source:            MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_5 (FF)
+  Destination:       MOD_LCD/inst_procesador_lcd4bits/ESTADO_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_5 to MOD_LCD/inst_procesador_lcd4bits/ESTADO_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             15   0.591   1.192  MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_5 (MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_5)
+     LUT3_D:I0->O         35   0.704   1.267  MOD_LCD/aux_cmp_eq000011 (MOD_LCD/N2)
+     LUT4:I3->O           19   0.704   1.089  MOD_LCD/Mmux_vector_mem_s10112 (MOD_LCD/vector_mem_s<2>)
+     LUT4:I3->O            1   0.704   0.000  MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_lut<1> (MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_lut<1>)
+     MUXCY:S->O            1   0.464   0.000  MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<1> (MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<2> (MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<3> (MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<3>)
+     MUXCY:CI->O          13   0.459   1.158  MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<4> (MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<4>)
+     LUT2_D:I0->O         13   0.704   0.987  MOD_LCD/inst_procesador_lcd4bits/ESTADO_and00001 (MOD_LCD/inst_procesador_lcd4bits/ESTADO_and0000)
+     LUT4:I3->O            1   0.704   0.420  MOD_LCD/inst_procesador_lcd4bits/ESTADO_mux0000<8>14 (MOD_LCD/inst_procesador_lcd4bits/N28)
+     FDS:S                     0.911          MOD_LCD/inst_procesador_lcd4bits/ESTADO_0
+    ----------------------------------------
+    Total                     12.176ns (6.063ns logic, 6.113ns route)
+                                       (49.8% logic, 50.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkFake1'
+  Total number of paths / destination ports: 203 / 16
+-------------------------------------------------------------------------
+Offset:              6.650ns (Levels of Logic = 4)
+  Source:            str_select<1> (PAD)
+  Destination:       aux_0 (FF)
+  Destination Clock: clkFake1 falling
+
+  Data Path: str_select<1> to aux_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   1.218   0.899  str_select_1_IBUF (str_select_1_IBUF)
+     LUT4_D:I1->O          7   0.704   0.883  aux_and00021 (aux_and0002)
+     LUT2_L:I0->LO         1   0.704   0.275  aux_and00000 (aux_and00000)
+     LUT4:I0->O            7   0.704   0.708  aux_and000040 (aux_and0000)
+     FDE_1:CE                  0.555          aux_0
+    ----------------------------------------
+    Total                      6.650ns (3.885ns logic, 2.765ns route)
+                                       (58.4% logic, 41.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'stop'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.097ns (Levels of Logic = 2)
+  Source:            clk (PAD)
+  Destination:       clkFake (LATCH)
+  Destination Clock: stop rising
+
+  Data Path: clk to clkFake
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.447  clk_IBUF (clk_IBUF1)
+     INV:I->O              1   0.704   0.420  clkFake_not00011_INV_0 (clkFake_not0001)
+     LD_1:D                    0.308          clkFake
+    ----------------------------------------
+    Total                      3.097ns (2.230ns logic, 0.867ns route)
+                                       (72.0% logic, 28.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2530 / 68
+-------------------------------------------------------------------------
+Offset:              12.454ns (Levels of Logic = 10)
+  Source:            reset (PAD)
+  Destination:       MOD_LCD/inst_procesador_lcd4bits/ESTADO_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to MOD_LCD/inst_procesador_lcd4bits/ESTADO_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            52   1.218   1.444  reset_IBUF (reset_IBUF)
+     LUT4:I0->O            4   0.704   0.666  MOD_LCD/Mmux_vector_mem_s1085 (MOD_LCD/Mmux_vector_mem_s1085)
+     LUT4:I1->O           19   0.704   1.089  MOD_LCD/Mmux_vector_mem_s10112 (MOD_LCD/vector_mem_s<2>)
+     LUT4:I3->O            1   0.704   0.000  MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_lut<1> (MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_lut<1>)
+     MUXCY:S->O            1   0.464   0.000  MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<1> (MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<2> (MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<3> (MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<3>)
+     MUXCY:CI->O          13   0.459   1.158  MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<4> (MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<4>)
+     LUT2_D:I0->O         13   0.704   0.987  MOD_LCD/inst_procesador_lcd4bits/ESTADO_and00001 (MOD_LCD/inst_procesador_lcd4bits/ESTADO_and0000)
+     LUT4:I3->O            1   0.704   0.420  MOD_LCD/inst_procesador_lcd4bits/ESTADO_mux0000<8>14 (MOD_LCD/inst_procesador_lcd4bits/N28)
+     FDS:S                     0.911          MOD_LCD/inst_procesador_lcd4bits/ESTADO_0
+    ----------------------------------------
+    Total                     12.454ns (6.690ns logic, 5.764ns route)
+                                       (53.7% logic, 46.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            MOD_LCD/inst_procesador_lcd4bits/RS (FF)
+  Destination:       rs (PAD)
+  Source Clock:      clk rising
+
+  Data Path: MOD_LCD/inst_procesador_lcd4bits/RS to rs
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              2   0.591   0.447  MOD_LCD/inst_procesador_lcd4bits/RS (MOD_LCD/inst_procesador_lcd4bits/RS)
+     OBUF:I->O                 3.272          rs_OBUF (rs)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.20 secs
+ 
+--> 
+
+Total memory usage is 289068 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  126 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+
