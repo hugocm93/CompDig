@@ -2,12 +2,12 @@ Command line:
    preLCD_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  8286
+     -socket  43581
 
-Mon Jun 26 13:15:30 2017
+Wed Jun 28 10:55:23 2017
 
 
- Elaboration Time: 0.0468 sec
+ Elaboration Time: 0.0624 sec
 
  Current Memory Usage: 511.558 Meg
 
@@ -20,9 +20,9 @@ Mon Jun 26 13:15:30 2017
  Total Traceable Variables  : 105
  Total Scalar Nets and Variables : 2084
 
- Total Simulation Time: 0.1404 sec
+ Total Simulation Time: 0.202801 sec
 
  Current Memory Usage: 511.558 Meg
 
-Mon Jun 26 13:18:30 2017
+Wed Jun 28 10:56:21 2017
 

@@ -9,25 +9,25 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Mon Jun 26 13:06:21 2017
+Mapped Date    : Wed Jun 28 10:40:37 2017
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    1
+Number of warnings:    0
 Logic Utilization:
-  Total Number Slice Registers:         214 out of   9,312    2%
-    Number used as Flip Flops:          206
+  Total Number Slice Registers:         204 out of   9,312    2%
+    Number used as Flip Flops:          196
     Number used as Latches:               8
-  Number of 4 input LUTs:               605 out of   9,312    6%
+  Number of 4 input LUTs:               591 out of   9,312    6%
 Logic Distribution:
-  Number of occupied Slices:            398 out of   4,656    8%
-    Number of Slices containing only related logic:     398 out of     398 100%
-    Number of Slices containing unrelated logic:          0 out of     398   0%
+  Number of occupied Slices:            384 out of   4,656    8%
+    Number of Slices containing only related logic:     384 out of     384 100%
+    Number of Slices containing unrelated logic:          0 out of     384   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         709 out of   9,312    7%
-    Number used as logic:               605
-    Number used as a route-thru:        104
+  Total Number of 4 input LUTs:         690 out of   9,312    7%
+    Number used as logic:               591
+    Number used as a route-thru:         99
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
@@ -36,10 +36,10 @@ Logic Distribution:
   Number of BUFGMUXs:                     2 out of      24    8%
 
   Number of RPM macros:           16
-Average Fanout of Non-Clock Nets:                3.57
+Average Fanout of Non-Clock Nets:                3.55
 
 Peak Memory Usage:  257 MB
-Total REAL time to MAP completion:  2 secs 
+Total REAL time to MAP completion:  9 secs 
 Total CPU time to MAP completion:   2 secs 
 
 NOTES:
@@ -81,9 +81,6 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
-WARNING:PhysDesignRules:372 - Gated clock. Clock net MOD_LCD/aux_cmp_eq0000 is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
 
 Section 3 - Informational
 -------------------------

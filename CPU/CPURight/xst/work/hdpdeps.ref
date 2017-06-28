@@ -1,12 +1,12 @@
 V3 70
-FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/COMMANDS_LCD4BITS.vhd 2017/06/26.10:42:59 P.58f
-PH work/COMMANDS_LCD4BITS 1498493162 \
+FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/COMMANDS_LCD4BITS.vhd 2017/06/28.10:29:14 P.58f
+PH work/COMMANDS_LCD4BITS 1498657213 \
       FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/COMMANDS_LCD4BITS.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
       PB ieee/STD_LOGIC_UNSIGNED 1364358221
-PB work/COMMANDS_LCD4BITS 1498493163 \
+PB work/COMMANDS_LCD4BITS 1498657214 \
       FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/COMMANDS_LCD4BITS.vhd \
-      PH work/COMMANDS_LCD4BITS 1498493162
+      PH work/COMMANDS_LCD4BITS 1498657213
 FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Control.vhd 2017/06/26.10:42:59 P.58f
 EN work/Control 1498488604 \
       FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Control.vhd \
@@ -21,28 +21,28 @@ EN work/CPU 1498488598 FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.vhd \
 AR work/CPU/Behavioral 1498488599 \
       FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/CPU.vhd EN work/CPU 1498488598 \
       AR work/SingleRAM_syn/ram_arch 1498488591
-FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf 2017/06/26.11:49:39 P.58f
-EN work/FTCE_MXILINX_db_fsm 1498493166 \
+FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf 2017/06/28.10:40:04 P.58f
+EN work/FTCE_MXILINX_db_fsm 1498657217 \
       FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/FTCE_MXILINX_db_fsm/BEHAVIORAL 1498493167 \
+AR work/FTCE_MXILINX_db_fsm/BEHAVIORAL 1498657218 \
       FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf \
-      EN work/FTCE_MXILINX_db_fsm 1498493166 CP XOR2 CP FDCE
-EN work/CB16CE_MXILINX_db_fsm 1498493168 \
+      EN work/FTCE_MXILINX_db_fsm 1498657217 CP XOR2 CP FDCE
+EN work/CB16CE_MXILINX_db_fsm 1498657219 \
       FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/CB16CE_MXILINX_db_fsm/BEHAVIORAL 1498493169 \
+AR work/CB16CE_MXILINX_db_fsm/BEHAVIORAL 1498657220 \
       FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf \
-      EN work/CB16CE_MXILINX_db_fsm 1498493168 CP FTCE_MXILINX_db_fsm CP AND3 \
+      EN work/CB16CE_MXILINX_db_fsm 1498657219 CP FTCE_MXILINX_db_fsm CP AND3 \
       CP AND2 CP VCC CP AND4 CP AND5
-EN work/db_fsm 1498493170 \
+EN work/db_fsm 1498657221 \
       FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
       PH unisim/VCOMPONENTS 1381692182
-AR work/db_fsm/BEHAVIORAL 1498493171 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf EN work/db_fsm 1498493170 \
+AR work/db_fsm/BEHAVIORAL 1498657222 \
+      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf EN work/db_fsm 1498657221 \
       CP XOR2 CP FD CP FDE CP INV CP CB16CE_MXILINX_db_fsm
 FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/display_7_seg.vhd 2017/06/26.10:42:59 P.58f
 EN work/display_7_seg 1498488588 \
@@ -58,19 +58,19 @@ EN work/d_ff_reset 1498488584 \
 AR work/d_ff_reset/arch 1498488585 \
       FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/d_ff_reset.vhd \
       EN work/d_ff_reset 1498488584
-FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Exemplo.vhd 2017/06/26.12:36:40 P.58f
-EN work/exemplo 1498493172 \
+FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Exemplo.vhd 2017/06/28.10:38:55 P.58f
+EN work/exemplo 1498657223 \
       FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Exemplo.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
-      PB work/COMMANDS_LCD4BITS 1498493163
-AR work/exemplo/behavioral 1498493173 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Exemplo.vhd EN work/exemplo 1498493172 \
+      PB work/COMMANDS_LCD4BITS 1498657214
+AR work/exemplo/behavioral 1498657224 \
+      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Exemplo.vhd EN work/exemplo 1498657223 \
       CP procesador_lcd4bits
 FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/LCD_AUX.vhd 2017/06/26.12:16:27 P.58f
 EN work/LCD_AUX 1498490210 \
       FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/LCD_AUX.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
-      PB work/COMMANDS_LCD4BITS 1498493163
+      PB work/COMMANDS_LCD4BITS 1498657214
 AR work/LCD_AUX/behavioral 1498490211 \
       FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/LCD_AUX.vhd EN work/LCD_AUX 1498490210 \
       CP db_fsm CP procesador_lcd4bits
@@ -89,21 +89,21 @@ EN work/mod_m_counter 1498488586 \
 AR work/mod_m_counter/arch 1498488587 \
       FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/mod_m_counter.vhd \
       EN work/mod_m_counter 1498488586
-FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.vhd 2017/06/26.13:05:55 P.58f
-EN work/preLCD 1498493174 \
+FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.vhd 2017/06/28.10:29:15 P.58f
+EN work/preLCD 1498657225 \
       FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/preLCD/behavioral 1498493175 \
-      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.vhd EN work/preLCD 1498493174 \
-      CP db_fsm AR work/exemplo/behavioral 1498493173
-FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/PROCESADOR_LCD4BITS.vhd 2017/06/26.10:51:12 P.58f
-EN work/PROCESADOR_LCD4BITS 1498493164 \
+AR work/preLCD/behavioral 1498657226 \
+      FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.vhd EN work/preLCD 1498657225 \
+      CP db_fsm AR work/exemplo/behavioral 1498657224
+FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/PROCESADOR_LCD4BITS.vhd 2017/06/28.10:29:15 P.58f
+EN work/PROCESADOR_LCD4BITS 1498657215 \
       FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/PROCESADOR_LCD4BITS.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
       PB ieee/STD_LOGIC_UNSIGNED 1364358221
-AR work/PROCESADOR_LCD4BITS/Behavioral 1498493165 \
+AR work/PROCESADOR_LCD4BITS/Behavioral 1498657216 \
       FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/PROCESADOR_LCD4BITS.vhd \
-      EN work/PROCESADOR_LCD4BITS 1498493164
+      EN work/PROCESADOR_LCD4BITS 1498657215
 FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Rom_asyn.vhd 2017/06/26.10:42:59 P.58f
 EN work/Rom_asyn 1498488600 \
       FL C:/Users/aula/Downloads/CompDig/CPU/CPURight/Rom_asyn.vhd \

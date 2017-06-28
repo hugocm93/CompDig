@@ -45,7 +45,7 @@ Setup/Hold to clock clk
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-reset       |   10.294(R)|    0.142(R)|clk_IBUF          |   0.000|
+reset       |   11.322(R)|   -0.483(R)|clk_IBUF          |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -53,12 +53,12 @@ Clock clk to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-data_lcd<0> |   10.362(R)|clk_IBUF          |   0.000|
-data_lcd<1> |   10.693(R)|clk_IBUF          |   0.000|
-data_lcd<2> |    9.449(R)|clk_IBUF          |   0.000|
-data_lcd<3> |    9.654(R)|clk_IBUF          |   0.000|
-ena         |    9.667(R)|clk_IBUF          |   0.000|
-rs          |    9.852(R)|clk_IBUF          |   0.000|
+data_lcd<0> |   10.886(R)|clk_IBUF          |   0.000|
+data_lcd<1> |   10.656(R)|clk_IBUF          |   0.000|
+data_lcd<2> |   10.284(R)|clk_IBUF          |   0.000|
+data_lcd<3> |   10.536(R)|clk_IBUF          |   0.000|
+ena         |    9.085(R)|clk_IBUF          |   0.000|
+rs          |   10.529(R)|clk_IBUF          |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -66,18 +66,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   10.019|         |         |         |
+clk            |   10.949|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Jun 26 13:06:46 2017 
+Analysis completed Wed Jun 28 10:41:25 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 177 MB
+Peak Memory Usage: 176 MB
 
 
 

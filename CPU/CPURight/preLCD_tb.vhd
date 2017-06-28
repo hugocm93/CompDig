@@ -33,7 +33,7 @@ ARCHITECTURE behavior OF preLCD_tb IS
    signal data_lcd : std_logic_vector(3 downto 0);
 
    -- Clock period definitions
-   constant clk_period : time := 10 ns;
+   constant clk_period : time := 1 ns;
  
 BEGIN
  
