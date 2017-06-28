@@ -46,3 +46,50 @@ bitgen -intstyle ise -f preLCD.ut preLCD.ncd
 xst -intstyle ise -ifn "D:/Repos/compDig/CPU/CPURight/preLCD.xst" -ofn "D:/Repos/compDig/CPU/CPURight/preLCD.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc preLCD.ucf -p xc3s500e-fg320-4 preLCD.ngc preLCD.ngd  
 map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o preLCD_map.ncd preLCD.ngd preLCD.pcf 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc preLCD.ucf -p xc3s500e-fg320-4 preLCD.ngc preLCD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o preLCD_map.ncd preLCD.ngd preLCD.pcf 
+par -w -intstyle ise -ol high -t 1 preLCD_map.ncd preLCD.ncd preLCD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml preLCD.twx preLCD.ncd -o preLCD.twr preLCD.pcf -ucf preLCD.ucf 
+bitgen -intstyle ise -f preLCD.ut preLCD.ncd 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc preLCD.ucf -p xc3s500e-fg320-4 preLCD.ngc preLCD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o preLCD_map.ncd preLCD.ngd preLCD.pcf 
+par -w -intstyle ise -ol high -t 1 preLCD_map.ncd preLCD.ncd preLCD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml preLCD.twx preLCD.ncd -o preLCD.twr preLCD.pcf -ucf preLCD.ucf 
+bitgen -intstyle ise -f preLCD.ut preLCD.ncd 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc preLCD.ucf -p xc3s500e-fg320-4 preLCD.ngc preLCD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o preLCD_map.ncd preLCD.ngd preLCD.pcf 
+par -w -intstyle ise -ol high -t 1 preLCD_map.ncd preLCD.ncd preLCD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml preLCD.twx preLCD.ncd -o preLCD.twr preLCD.pcf -ucf preLCD.ucf 
+bitgen -intstyle ise -f preLCD.ut preLCD.ncd 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc preLCD.ucf -p xc3s500e-fg320-4 preLCD.ngc preLCD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o preLCD_map.ncd preLCD.ngd preLCD.pcf 
+par -w -intstyle ise -ol high -t 1 preLCD_map.ncd preLCD.ncd preLCD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml preLCD.twx preLCD.ncd -o preLCD.twr preLCD.pcf -ucf preLCD.ucf 
+bitgen -intstyle ise -f preLCD.ut preLCD.ncd 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc preLCD.ucf -p xc3s500e-fg320-4 preLCD.ngc preLCD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o preLCD_map.ncd preLCD.ngd preLCD.pcf 
+par -w -intstyle ise -ol high -t 1 preLCD_map.ncd preLCD.ncd preLCD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml preLCD.twx preLCD.ncd -o preLCD.twr preLCD.pcf -ucf preLCD.ucf 
+bitgen -intstyle ise -f preLCD.ut preLCD.ncd 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.syr" 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc preLCD.ucf -p xc3s500e-fg320-4 preLCD.ngc preLCD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o preLCD_map.ncd preLCD.ngd preLCD.pcf 
+par -w -intstyle ise -ol high -t 1 preLCD_map.ncd preLCD.ncd preLCD.pcf 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc preLCD.ucf -p xc3s500e-fg320-4 preLCD.ngc preLCD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o preLCD_map.ncd preLCD.ngd preLCD.pcf 
+par -w -intstyle ise -ol high -t 1 preLCD_map.ncd preLCD.ncd preLCD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml preLCD.twx preLCD.ncd -o preLCD.twr preLCD.pcf -ucf preLCD.ucf 
+bitgen -intstyle ise -f preLCD.ut preLCD.ncd 
+xst -intstyle ise -ifn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.xst" -ofn "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc preLCD.ucf -p xc3s500e-fg320-4 preLCD.ngc preLCD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o preLCD_map.ncd preLCD.ngd preLCD.pcf 
+par -w -intstyle ise -ol high -t 1 preLCD_map.ncd preLCD.ncd preLCD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml preLCD.twx preLCD.ncd -o preLCD.twr preLCD.pcf -ucf preLCD.ucf 
+bitgen -intstyle ise -f preLCD.ut preLCD.ncd 

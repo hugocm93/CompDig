@@ -4,9 +4,9 @@ use ieee.numeric_std.all;
 
 entity preLCD is
 port( clk : in std_logic;
-		reset : in std_logic;
+		reset, envio : in std_logic;
 		str_select : in std_logic_vector(2 downto 0);
-		rs : out std_logic;
+		rs  : out std_logic;
 		rw : out std_logic;
 		ena : out std_logic;
 		data_lcd : out std_logic_vector(3 downto 0)		
@@ -21,7 +21,7 @@ architecture behavioral of preLCD is
           clk	:	IN	STD_LOGIC);
    END COMPONENT;
 	
-	signal resetDebounce, clkFake : std_logic;
+	signal resetDebounce, clkFake : std_logic := '0';
 	signal positionCounter, clockCounter : integer := 0;
 	signal stop : std_logic := '0';
 	signal aux : std_logic_vector(7 downto 0) := x"00";
@@ -59,22 +59,23 @@ if(clk' event and clk = '1') then
 	clockCounter <= clockCounter + 1;
 end if;
 
-if(stop = '0' and clockCounter = 5000) then
+if(stop = '0' and clockCounter = 500000) then
 	clkFake <= not clkFake;
 	clockCounter <= 0;
 end if;
 
 end process;
 
-process(clkFake, resetDebounce)
+process(envio, resetDebounce)
 begin
 
 if (resetDebounce = '1') then
 	positionCounter <= 0;
 	stop <= '0';
-elsif(clkFake' event and clkFake = '0') then
+elsif(envio' event and envio = '0') then
 	if (str_select="000" and positionCounter < 6) then
-		aux <= s1(47 - 8*positionCounter downto 40 - 8*positionCounter);
+		--aux <= s1(47 - 8*positionCounter downto 40 - 8*positionCounter);
+		aux <= "01000011";
 		if(positionCounter = 5) then
 			stop <= '1';
 		end if;

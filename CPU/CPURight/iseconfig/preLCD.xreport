@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-06-28T11:11:40</DateModified>
+  <DateModified>2017-06-28T16:15:53</DateModified>
   <ModuleName>preLCD</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/Repos/compDig/CPU/CPURight/iseconfig/preLCD.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/Repos/compDig/CPU/CPURight\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/aula/Downloads/CompDig/CPU/CPURight/iseconfig/preLCD.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/aula/Downloads/CompDig/CPU/CPURight\</ImplementationReportsDirectory>
   <DateInitialized>2017-06-28T10:30:01</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

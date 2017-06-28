@@ -5,7 +5,7 @@ C:\Xilinx\14.5\ISE_DS\ISE\.
    "preLCD" is an NCD, version 3.2, device xc3s500e, package fg320, speed -4
 Opened constraints file preLCD.pcf.
 
-Wed Jun 28 10:41:29 2017
+Wed Jun 28 16:48:19 2017
 
 C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:1 -g ProgPin:PullUp -g DonePin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g DCMShutdown:Disable -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:Yes -g DriveDone:No preLCD.ncd 
 
@@ -90,7 +90,11 @@ There were 0 CONFIG constraint(s) processed from preLCD.pcf.
 
 
 Running DRC.
-DRC detected 0 errors and 0 warnings.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net MOD_LCD/aux_cmp_eq0000 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+DRC detected 0 errors and 1 warnings.  Please see the previously displayed
+individual error or warning messages for more details.
 Creating bit map...
 Saving bit stream in "prelcd.bit".
 Bitstream generation is complete.

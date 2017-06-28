@@ -36,8 +36,8 @@ Compiling architecture behavioral of entity exemplo [exemplo_default]
 Compiling architecture behavioral of entity preLCD [prelcd_default]
 Compiling architecture behavior of entity prelcd_tb
 Time Resolution for simulation is 1ps.
-Waiting for 8 sub-compilation(s) to finish...
+Waiting for 4 sub-compilation(s) to finish...
 Compiled 40 VHDL Units
 Built simulation executable C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD_tb_isim_beh.exe
-Fuse Memory Usage: 50124 KB
-Fuse CPU Usage: 982 ms
+Fuse Memory Usage: 50104 KB
+Fuse CPU Usage: 967 ms

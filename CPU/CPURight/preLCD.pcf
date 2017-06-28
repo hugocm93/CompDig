@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.58f on Wed Jun 28 10:40:45 2017
+// Written by: Map P.58f on Wed Jun 28 16:47:48 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -7,7 +7,10 @@ COMP "rs" LOCATE = SITE "L18" LEVEL 1;
 COMP "rw" LOCATE = SITE "L17" LEVEL 1;
 COMP "clk" LOCATE = SITE "C9" LEVEL 1;
 COMP "ena" LOCATE = SITE "M18" LEVEL 1;
-COMP "reset" LOCATE = SITE "H13" LEVEL 1;
+COMP "envio" LOCATE = SITE "D18" LEVEL 1;
+PIN envio_pin<0> = BEL "envio" PINNAME PAD;
+PIN "envio_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "reset" LOCATE = SITE "K17" LEVEL 1;
 COMP "data_lcd<0>" LOCATE = SITE "R15" LEVEL 1;
 COMP "data_lcd<1>" LOCATE = SITE "R16" LEVEL 1;
 COMP "data_lcd<2>" LOCATE = SITE "P17" LEVEL 1;
@@ -15,5 +18,7 @@ COMP "data_lcd<3>" LOCATE = SITE "M15" LEVEL 1;
 COMP "str_select<0>" LOCATE = SITE "N17" LEVEL 1;
 COMP "str_select<1>" LOCATE = SITE "H18" LEVEL 1;
 COMP "str_select<2>" LOCATE = SITE "L14" LEVEL 1;
+NET "envio_BUFGP/IBUFG" BEL "envio_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
 SCHEMATIC END;
 
