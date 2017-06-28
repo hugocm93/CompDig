@@ -5,23 +5,65 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.vhd</arg>&quot; line <arg fmt="%d" index="2">55</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-<arg fmt="%s" index="3">&lt;stop&gt;</arg>
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/preLCD</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/Repos/compDig/CPU/CPURight/preLCD.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf</arg>&quot; line <arg fmt="%d" index="2">487</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB16CE_MXILINX_db_fsm</arg>&apos;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/preLCD/behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/Repos/compDig/CPU/CPURight/preLCD.vhd</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf</arg>&quot; line <arg fmt="%d" index="2">487</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB16CE_MXILINX_db_fsm</arg>&apos;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/FTCE_MXILINX_db_fsm</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/Repos/compDig/CPU/CPURight/db_fsm.vhf</arg>&quot;.
 </msg>
 
-<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/aula/Downloads/CompDig/CPU/CPURight/Exemplo.vhd</arg>&quot; line <arg fmt="%d" index="2">61</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">bd_lcd</arg>&apos; of component &apos;<arg fmt="%s" index="4">procesador_lcd4bits</arg>&apos;.
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/FTCE_MXILINX_db_fsm/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/Repos/compDig/CPU/CPURight/db_fsm.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/CB16CE_MXILINX_db_fsm</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/Repos/compDig/CPU/CPURight/db_fsm.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/CB16CE_MXILINX_db_fsm/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/Repos/compDig/CPU/CPURight/db_fsm.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/db_fsm</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/Repos/compDig/CPU/CPURight/db_fsm.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/db_fsm/BEHAVIORAL</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/Repos/compDig/CPU/CPURight/db_fsm.vhf</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/exemplo</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/aula/Downloads/CompDig/CPU/CPURight/Exemplo.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/Repos/compDig/CPU/CPURight/Exemplo.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/exemplo/behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/aula/Downloads/CompDig/CPU/CPURight/Exemplo.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/Repos/compDig/CPU/CPURight/Exemplo.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/COMMANDS_LCD4BITS</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/aula/Downloads/CompDig/CPU/CPURight/COMMANDS_LCD4BITS.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/Repos/compDig/CPU/CPURight/COMMANDS_LCD4BITS.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/COMMANDS_LCD4BITS</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/aula/Downloads/CompDig/CPU/CPURight/COMMANDS_LCD4BITS.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/Repos/compDig/CPU/CPURight/COMMANDS_LCD4BITS.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/PROCESADOR_LCD4BITS</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/aula/Downloads/CompDig/CPU/CPURight/PROCESADOR_LCD4BITS.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/Repos/compDig/CPU/CPURight/PROCESADOR_LCD4BITS.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/PROCESADOR_LCD4BITS/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/aula/Downloads/CompDig/CPU/CPURight/PROCESADOR_LCD4BITS.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/Repos/compDig/CPU/CPURight/PROCESADOR_LCD4BITS.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">D:/Repos/compDig/CPU/CPURight/preLCD.vhd</arg>&quot; line <arg fmt="%d" index="2">55</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;stop&gt;, &lt;clockCounter&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/Repos/compDig/CPU/CPURight/db_fsm.vhf</arg>&quot; line <arg fmt="%d" index="2">487</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CEO</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB16CE_MXILINX_db_fsm</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/Repos/compDig/CPU/CPURight/db_fsm.vhf</arg>&quot; line <arg fmt="%d" index="2">487</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Q</arg>&apos; of component &apos;<arg fmt="%s" index="4">CB16CE_MXILINX_db_fsm</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">D:/Repos/compDig/CPU/CPURight/Exemplo.vhd</arg>&quot; line <arg fmt="%d" index="2">61</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">bd_lcd</arg>&apos; of component &apos;<arg fmt="%s" index="4">procesador_lcd4bits</arg>&apos;.
 </msg>
 
 <msg type="info" file="Xst" num="1433" delta="old" >Contents of array &lt;<arg fmt="%s" index="1">inst</arg>&gt; may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/aula/Downloads/CompDig/CPU/CPURight/Exemplo.vhd</arg>&quot; line <arg fmt="%d" index="2">94</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">D:/Repos/compDig/CPU/CPURight/Exemplo.vhd</arg>&quot; line <arg fmt="%d" index="2">94</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;newChar&gt;, &lt;input&gt;</arg>
 </msg>
 
@@ -41,9 +83,6 @@
 </msg>
 
 <msg type="warning" file="Xst" num="1781" delta="old" >Signal &lt;<arg fmt="%s" index="1">inst&lt;8:60&gt;</arg>&gt; is used but never assigned. Tied to default value.
-</msg>
-
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">dir&lt;10:6&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">8</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">aux</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -73,7 +112,7 @@
 <msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">aux_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">preLCD</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">7</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">7</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">VEC_RAM_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">inst_procesador_lcd4bits</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -238,7 +277,7 @@
 <msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">aux_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">preLCD</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">aux_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">exemplo</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">aux_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">exemplo</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">VEC_C_CHAR_20</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">procesador_lcd4bits</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -379,21 +418,6 @@
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MOD_LCD/inst_procesador_lcd4bits/BD_LCD_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">preLCD</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">preLCD</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">preLCD</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">preLCD</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">preLCD</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">preLCD</arg>&gt;.
-</msg>
-
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MOD_LCD/inst_procesador_lcd4bits/ESTADO_PRESENTE_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">preLCD</arg>&gt;.
 </msg>
 
@@ -416,21 +440,6 @@
 </msg>
 
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">MOD_LCD/inst_procesador_lcd4bits/ESTADO_PRESENTE_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">preLCD</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">MOD_LCD/inst_procesador_lcd4bits/DIR_BI_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">preLCD</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">MOD_LCD/inst_procesador_lcd4bits/DIR_BI_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">preLCD</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">MOD_LCD/inst_procesador_lcd4bits/DIR_BI_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">preLCD</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">MOD_LCD/inst_procesador_lcd4bits/DIR_BI_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">preLCD</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">MOD_LCD/inst_procesador_lcd4bits/DIR_BI_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">preLCD</arg>&gt;.
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.

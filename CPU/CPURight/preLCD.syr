@@ -1,16 +1,16 @@
-Release 14.5 - xst P.58f (nt64)
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.43 secs
+Total CPU time to Xst completion: 0.30 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.43 secs
+Total CPU time to Xst completion: 0.34 secs
  
 --> Reading design: preLCD.prj
 
@@ -104,22 +104,36 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/COMMANDS_LCD4BITS.vhd" in Library work.
+WARNING:HDLParsers:3607 - Unit work/preLCD is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.vhd", and is now defined in "D:/Repos/compDig/CPU/CPURight/preLCD.vhd".
+WARNING:HDLParsers:3607 - Unit work/preLCD/behavioral is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.vhd", and is now defined in "D:/Repos/compDig/CPU/CPURight/preLCD.vhd".
+WARNING:HDLParsers:3607 - Unit work/FTCE_MXILINX_db_fsm is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf", and is now defined in "D:/Repos/compDig/CPU/CPURight/db_fsm.vhf".
+WARNING:HDLParsers:3607 - Unit work/FTCE_MXILINX_db_fsm/BEHAVIORAL is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf", and is now defined in "D:/Repos/compDig/CPU/CPURight/db_fsm.vhf".
+WARNING:HDLParsers:3607 - Unit work/CB16CE_MXILINX_db_fsm is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf", and is now defined in "D:/Repos/compDig/CPU/CPURight/db_fsm.vhf".
+WARNING:HDLParsers:3607 - Unit work/CB16CE_MXILINX_db_fsm/BEHAVIORAL is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf", and is now defined in "D:/Repos/compDig/CPU/CPURight/db_fsm.vhf".
+WARNING:HDLParsers:3607 - Unit work/db_fsm is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf", and is now defined in "D:/Repos/compDig/CPU/CPURight/db_fsm.vhf".
+WARNING:HDLParsers:3607 - Unit work/db_fsm/BEHAVIORAL is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf", and is now defined in "D:/Repos/compDig/CPU/CPURight/db_fsm.vhf".
+WARNING:HDLParsers:3607 - Unit work/exemplo is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Exemplo.vhd", and is now defined in "D:/Repos/compDig/CPU/CPURight/Exemplo.vhd".
+WARNING:HDLParsers:3607 - Unit work/exemplo/behavioral is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Exemplo.vhd", and is now defined in "D:/Repos/compDig/CPU/CPURight/Exemplo.vhd".
+WARNING:HDLParsers:3607 - Unit work/COMMANDS_LCD4BITS is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/COMMANDS_LCD4BITS.vhd", and is now defined in "D:/Repos/compDig/CPU/CPURight/COMMANDS_LCD4BITS.vhd".
+WARNING:HDLParsers:3607 - Unit work/COMMANDS_LCD4BITS is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/COMMANDS_LCD4BITS.vhd", and is now defined in "D:/Repos/compDig/CPU/CPURight/COMMANDS_LCD4BITS.vhd".
+WARNING:HDLParsers:3607 - Unit work/PROCESADOR_LCD4BITS is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/PROCESADOR_LCD4BITS.vhd", and is now defined in "D:/Repos/compDig/CPU/CPURight/PROCESADOR_LCD4BITS.vhd".
+WARNING:HDLParsers:3607 - Unit work/PROCESADOR_LCD4BITS/Behavioral is now defined in a different file.  It was defined in "C:/Users/aula/Downloads/CompDig/CPU/CPURight/PROCESADOR_LCD4BITS.vhd", and is now defined in "D:/Repos/compDig/CPU/CPURight/PROCESADOR_LCD4BITS.vhd".
+Compiling vhdl file "D:/Repos/compDig/CPU/CPURight/COMMANDS_LCD4BITS.vhd" in Library work.
 Architecture commands_lcd4bits of Entity commands_lcd4bits is up to date.
-Compiling vhdl file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/PROCESADOR_LCD4BITS.vhd" in Library work.
+Compiling vhdl file "D:/Repos/compDig/CPU/CPURight/PROCESADOR_LCD4BITS.vhd" in Library work.
 Architecture behavioral of Entity procesador_lcd4bits is up to date.
-Compiling vhdl file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf" in Library work.
+Compiling vhdl file "D:/Repos/compDig/CPU/CPURight/db_fsm.vhf" in Library work.
 Entity <ftce_mxilinx_db_fsm> compiled.
 Entity <ftce_mxilinx_db_fsm> (Architecture <behavioral>) compiled.
 Entity <cb16ce_mxilinx_db_fsm> compiled.
 Entity <cb16ce_mxilinx_db_fsm> (Architecture <behavioral>) compiled.
 Entity <db_fsm> compiled.
 Entity <db_fsm> (Architecture <behavioral>) compiled.
-Compiling vhdl file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Exemplo.vhd" in Library work.
-Entity <exemplo> compiled.
-Entity <exemplo> (Architecture <behavioral>) compiled.
-Compiling vhdl file "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.vhd" in Library work.
-Architecture behavioral of Entity prelcd is up to date.
+Compiling vhdl file "D:/Repos/compDig/CPU/CPURight/Exemplo.vhd" in Library work.
+Architecture behavioral of Entity exemplo is up to date.
+Compiling vhdl file "D:/Repos/compDig/CPU/CPURight/preLCD.vhd" in Library work.
+Entity <prelcd> compiled.
+Entity <prelcd> (Architecture <behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -142,16 +156,16 @@ Analyzing hierarchy for entity <FTCE_MXILINX_db_fsm> in library <work> (architec
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <preLCD> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.vhd" line 55: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <stop>
+WARNING:Xst:819 - "D:/Repos/compDig/CPU/CPURight/preLCD.vhd" line 55: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <stop>, <clockCounter>
 Entity <preLCD> analyzed. Unit <preLCD> generated.
 
 Analyzing Entity <db_fsm> in library <work> (Architecture <behavioral>).
     Set user-defined property "INIT =  0" for instance <XLXI_30> in unit <db_fsm>.
     Set user-defined property "INIT =  0" for instance <XLXI_31> in unit <db_fsm>.
     Set user-defined property "INIT =  0" for instance <XLXI_40> in unit <db_fsm>.
-WARNING:Xst:753 - "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf" line 487: Unconnected output port 'CEO' of component 'CB16CE_MXILINX_db_fsm'.
-WARNING:Xst:753 - "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf" line 487: Unconnected output port 'Q' of component 'CB16CE_MXILINX_db_fsm'.
+WARNING:Xst:753 - "D:/Repos/compDig/CPU/CPURight/db_fsm.vhf" line 487: Unconnected output port 'CEO' of component 'CB16CE_MXILINX_db_fsm'.
+WARNING:Xst:753 - "D:/Repos/compDig/CPU/CPURight/db_fsm.vhf" line 487: Unconnected output port 'Q' of component 'CB16CE_MXILINX_db_fsm'.
     Set user-defined property "HU_SET =  XLXI_46_16" for instance <XLXI_46> in unit <db_fsm>.
 Entity <db_fsm> analyzed. Unit <db_fsm> generated.
 
@@ -181,9 +195,9 @@ Analyzing generic Entity <FTCE_MXILINX_db_fsm> in library <work> (Architecture <
 Entity <FTCE_MXILINX_db_fsm> analyzed. Unit <FTCE_MXILINX_db_fsm> generated.
 
 Analyzing Entity <exemplo> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Exemplo.vhd" line 61: Unconnected output port 'bd_lcd' of component 'procesador_lcd4bits'.
+WARNING:Xst:753 - "D:/Repos/compDig/CPU/CPURight/Exemplo.vhd" line 61: Unconnected output port 'bd_lcd' of component 'procesador_lcd4bits'.
 INFO:Xst:1433 - Contents of array <inst> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
-WARNING:Xst:819 - "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Exemplo.vhd" line 94: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "D:/Repos/compDig/CPU/CPURight/Exemplo.vhd" line 94: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <newChar>, <input>
 Entity <exemplo> analyzed. Unit <exemplo> generated.
 
@@ -199,7 +213,7 @@ Entity <procesador_lcd4bits> analyzed. Unit <procesador_lcd4bits> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <procesador_lcd4bits>.
-    Related source file is "C:/Users/aula/Downloads/CompDig/CPU/CPURight/PROCESADOR_LCD4BITS.vhd".
+    Related source file is "D:/Repos/compDig/CPU/CPURight/PROCESADOR_LCD4BITS.vhd".
 WARNING:Xst:646 - Signal <VEC_POS<11:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <DATA_CHAR<11:8>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found finite state machine <FSM_0> for signal <CONTA_CHAR>.
@@ -274,9 +288,8 @@ Unit <procesador_lcd4bits> synthesized.
 
 
 Synthesizing Unit <exemplo>.
-    Related source file is "C:/Users/aula/Downloads/CompDig/CPU/CPURight/Exemplo.vhd".
+    Related source file is "D:/Repos/compDig/CPU/CPURight/Exemplo.vhd".
 WARNING:Xst:1781 - Signal <inst<8:60>> is used but never assigned. Tied to default value.
-WARNING:Xst:646 - Signal <dir<10:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:737 - Found 8-bit latch for signal <aux>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Using one-hot encoding for signal <counterRow>.
     Found 32-bit up counter for signal <counterCol>.
@@ -291,22 +304,22 @@ Unit <exemplo> synthesized.
 
 
 Synthesizing Unit <FTCE_MXILINX_db_fsm>.
-    Related source file is "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf".
+    Related source file is "D:/Repos/compDig/CPU/CPURight/db_fsm.vhf".
 Unit <FTCE_MXILINX_db_fsm> synthesized.
 
 
 Synthesizing Unit <CB16CE_MXILINX_db_fsm>.
-    Related source file is "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf".
+    Related source file is "D:/Repos/compDig/CPU/CPURight/db_fsm.vhf".
 Unit <CB16CE_MXILINX_db_fsm> synthesized.
 
 
 Synthesizing Unit <db_fsm>.
-    Related source file is "C:/Users/aula/Downloads/CompDig/CPU/CPURight/db_fsm.vhf".
+    Related source file is "D:/Repos/compDig/CPU/CPURight/db_fsm.vhf".
 Unit <db_fsm> synthesized.
 
 
 Synthesizing Unit <preLCD>.
-    Related source file is "C:/Users/aula/Downloads/CompDig/CPU/CPURight/preLCD.vhd".
+    Related source file is "D:/Repos/compDig/CPU/CPURight/preLCD.vhd".
 WARNING:Xst:653 - Signal <s5> is used but never assigned. This sourceless signal will be automatically connected to value 01000101011100100111001001101111.
 WARNING:Xst:653 - Signal <s4> is used but never assigned. This sourceless signal will be automatically connected to value 010100000101011101000100.
 WARNING:Xst:653 - Signal <s3> is used but never assigned. This sourceless signal will be automatically connected to value 0100111101001011.
@@ -314,19 +327,20 @@ WARNING:Xst:653 - Signal <s2> is used but never assigned. This sourceless signal
 WARNING:Xst:653 - Signal <s1> is used but never assigned. This sourceless signal will be automatically connected to value 010000110010000001101111011101010010000001000001.
 WARNING:Xst:737 - Found 1-bit latch for signal <clkFake>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Found 8-bit register for signal <aux>.
-    Found 32-bit comparator less for signal <aux$cmp_lt0000> created at line 92.
-    Found 32-bit comparator less for signal <aux$cmp_lt0001> created at line 86.
-    Found 32-bit comparator less for signal <aux$cmp_lt0002> created at line 80.
-    Found 32-bit comparator less for signal <aux$cmp_lt0003> created at line 74.
-    Found 32-bit comparator less for signal <aux$cmp_lt0004> created at line 71.
+    Found 32-bit comparator less for signal <aux$cmp_lt0000> created at line 97.
+    Found 32-bit comparator less for signal <aux$cmp_lt0001> created at line 91.
+    Found 32-bit comparator less for signal <aux$cmp_lt0002> created at line 85.
+    Found 32-bit comparator less for signal <aux$cmp_lt0003> created at line 79.
+    Found 32-bit comparator less for signal <aux$cmp_lt0004> created at line 76.
+    Found 32-bit up counter for signal <clockCounter>.
     Found 32-bit up counter for signal <positionCounter>.
     Found 1-bit register for signal <stop>.
-    Found 32-bit comparator greatequal for signal <stop$cmp_ge0000> created at line 86.
-    Found 32-bit comparator greatequal for signal <stop$cmp_ge0001> created at line 80.
-    Found 32-bit comparator greatequal for signal <stop$cmp_ge0002> created at line 74.
-    Found 32-bit comparator greatequal for signal <stop$cmp_ge0003> created at line 71.
+    Found 32-bit comparator greatequal for signal <stop$cmp_ge0000> created at line 91.
+    Found 32-bit comparator greatequal for signal <stop$cmp_ge0001> created at line 85.
+    Found 32-bit comparator greatequal for signal <stop$cmp_ge0002> created at line 79.
+    Found 32-bit comparator greatequal for signal <stop$cmp_ge0003> created at line 76.
     Summary:
-	inferred   1 Counter(s).
+	inferred   2 Counter(s).
 	inferred   9 D-type flip-flop(s).
 	inferred   9 Comparator(s).
 Unit <preLCD> synthesized.
@@ -341,8 +355,8 @@ Macro Statistics
  11-bit adder                                          : 1
  12-bit subtractor                                     : 2
  19-bit adder                                          : 1
-# Counters                                             : 2
- 32-bit up counter                                     : 2
+# Counters                                             : 3
+ 32-bit up counter                                     : 3
 # Registers                                            : 21
  1-bit register                                        : 5
  11-bit register                                       : 3
@@ -434,8 +448,8 @@ Macro Statistics
  11-bit adder                                          : 1
  12-bit subtractor                                     : 2
  19-bit adder                                          : 1
-# Counters                                             : 2
- 32-bit up counter                                     : 2
+# Counters                                             : 3
+ 32-bit up counter                                     : 3
 # Registers                                            : 210
  Flip-Flops                                            : 210
 # Latches                                              : 2
@@ -537,11 +551,6 @@ WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/BD_LCD_0> of sequentia
 WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/BD_LCD_1> of sequential type is unconnected in block <preLCD>.
 WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/BD_LCD_2> of sequential type is unconnected in block <preLCD>.
 WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/BD_LCD_3> of sequential type is unconnected in block <preLCD>.
-WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_6> of sequential type is unconnected in block <preLCD>.
-WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_7> of sequential type is unconnected in block <preLCD>.
-WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_8> of sequential type is unconnected in block <preLCD>.
-WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_9> of sequential type is unconnected in block <preLCD>.
-WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_10> of sequential type is unconnected in block <preLCD>.
 WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/ESTADO_PRESENTE_3> of sequential type is unconnected in block <preLCD>.
 WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/ESTADO_PRESENTE_4> of sequential type is unconnected in block <preLCD>.
 WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/ESTADO_PRESENTE_5> of sequential type is unconnected in block <preLCD>.
@@ -550,11 +559,6 @@ WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/ESTADO_PRESENTE_7> of 
 WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/ESTADO_PRESENTE_8> of sequential type is unconnected in block <preLCD>.
 WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/ESTADO_PRESENTE_9> of sequential type is unconnected in block <preLCD>.
 WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/ESTADO_PRESENTE_10> of sequential type is unconnected in block <preLCD>.
-WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/DIR_BI_6> of sequential type is unconnected in block <preLCD>.
-WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/DIR_BI_7> of sequential type is unconnected in block <preLCD>.
-WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/DIR_BI_8> of sequential type is unconnected in block <preLCD>.
-WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/DIR_BI_9> of sequential type is unconnected in block <preLCD>.
-WARNING:Xst:2677 - Node <MOD_LCD/inst_procesador_lcd4bits/DIR_BI_10> of sequential type is unconnected in block <preLCD>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -569,8 +573,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 196
- Flip-Flops                                            : 196
+# Registers                                            : 238
+ Flip-Flops                                            : 238
 
 =========================================================================
 
@@ -599,45 +603,45 @@ Design Statistics
 # IOs                              : 12
 
 Cell Usage :
-# BELS                             : 1045
+# BELS                             : 1197
 #      AND2                        : 5
 #      AND3                        : 4
 #      AND4                        : 4
 #      AND5                        : 3
 #      GND                         : 1
-#      INV                         : 24
-#      LUT1                        : 99
-#      LUT2                        : 40
-#      LUT2_D                      : 3
-#      LUT2_L                      : 1
+#      INV                         : 26
+#      LUT1                        : 135
+#      LUT2                        : 48
+#      LUT2_D                      : 2
+#      LUT2_L                      : 2
 #      LUT3                        : 86
-#      LUT3_D                      : 5
-#      LUT3_L                      : 9
-#      LUT4                        : 354
-#      LUT4_D                      : 18
-#      LUT4_L                      : 29
-#      MUXCY                       : 221
-#      MUXF5                       : 18
+#      LUT3_D                      : 4
+#      LUT3_L                      : 5
+#      LUT4                        : 371
+#      LUT4_D                      : 19
+#      LUT4_L                      : 33
+#      MUXCY                       : 266
+#      MUXF5                       : 25
 #      VCC                         : 2
 #      XOR2                        : 17
-#      XORCY                       : 102
-# FlipFlops/Latches                : 204
+#      XORCY                       : 139
+# FlipFlops/Latches                : 246
 #      FD                          : 42
-#      FDC                         : 64
+#      FDC                         : 96
 #      FDCE                        : 18
 #      FDCE_1                      : 1
-#      FDE                         : 27
+#      FDE                         : 32
 #      FDE_1                       : 7
 #      FDPE                        : 1
 #      FDR                         : 1
-#      FDS                         : 27
+#      FDS                         : 32
 #      FDSE                        : 8
-#      LD                          : 7
-#      LD_1                        : 1
+#      LDE                         : 8
 # Clock Buffers                    : 2
-#      BUFG                        : 2
-# IO Buffers                       : 12
-#      IBUF                        : 5
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 4
 #      OBUF                        : 7
 =========================================================================
 
@@ -646,9 +650,9 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                      378  out of   4656     8%  
- Number of Slice Flip Flops:            204  out of   9312     2%  
- Number of 4 input LUTs:                668  out of   9312     7%  
+ Number of Slices:                      410  out of   4656     8%  
+ Number of Slice Flip Flops:            246  out of   9312     2%  
+ Number of 4 input LUTs:                731  out of   9312     7%  
  Number of IOs:                          12
  Number of bonded IOBs:                  12  out of    232     5%  
  Number of GCLKs:                         2  out of     24     8%  
@@ -671,33 +675,37 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-clkFake1                           | BUFG                   | 75    |
-stop                               | NONE(clkFake)          | 1     |
-clk                                | IBUF+BUFG              | 121   |
-MOD_LCD/newChar                    | NONE(MOD_LCD/aux_6)    | 7     |
------------------------------------+------------------------+-------+
+---------------------------------------------------+------------------------+-------+
+Clock Signal                                       | Clock buffer(FF name)  | Load  |
+---------------------------------------------------+------------------------+-------+
+clkFake1                                           | BUFG                   | 75    |
+clkFake_cmp_eq0000(clkFake_cmp_eq0000_wg_cy<7>:O)  | NONE(*)(clkFake)       | 1     |
+clk                                                | BUFGP                  | 163   |
+MOD_LCD/aux_cmp_eq0000(MOD_LCD/aux_cmp_eq0000211:O)| NONE(*)(MOD_LCD/aux_6) | 7     |
+---------------------------------------------------+------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
------------------------------------+------------------------------------+-------+
-Control Signal                     | Buffer(FF name)                    | Load  |
------------------------------------+------------------------------------+-------+
-reset                              | IBUF                               | 34    |
-resetDebounce(reset_db/XLXI_40:Q)  | NONE(positionCounter_0)            | 33    |
-reset_db/XLXN_7(reset_db/XLXI_9:O) | NONE(reset_db/XLXI_46/I_Q0/I_36_35)| 16    |
-MOD_LCD/newChar(MOD_LCD/newChar:Q) | NONE(MOD_LCD/newChar)              | 1     |
------------------------------------+------------------------------------+-------+
+---------------------------------------------------+------------------------------------+-------+
+Control Signal                                     | Buffer(FF name)                    | Load  |
+---------------------------------------------------+------------------------------------+-------+
+reset                                              | IBUF                               | 34    |
+resetDebounce(reset_db/XLXI_40:Q)                  | NONE(positionCounter_0)            | 33    |
+clockCounter_and0000(clockCounter_and00001:O)      | NONE(clockCounter_0)               | 32    |
+reset_db/XLXN_7(reset_db/XLXI_9:O)                 | NONE(reset_db/XLXI_46/I_Q0/I_36_35)| 16    |
+MOD_LCD/newChar_and0000(MOD_LCD/newChar_and00001:O)| NONE(MOD_LCD/newChar)              | 1     |
+---------------------------------------------------+------------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 12.484ns (Maximum Frequency: 80.100MHz)
-   Minimum input arrival time before clock: 13.172ns
+   Minimum period: 12.176ns (Maximum Frequency: 82.128MHz)
+   Minimum input arrival time before clock: 12.454ns
    Maximum output required time after clock: 4.310ns
    Maximum combinational path delay: No path found
 
@@ -708,7 +716,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clkFake1'
   Clock period: 9.206ns (frequency: 108.625MHz)
-  Total number of paths / destination ports: 4705 / 81
+  Total number of paths / destination ports: 4797 / 81
 -------------------------------------------------------------------------
 Delay:               9.206ns (Levels of Logic = 16)
   Source:            positionCounter_1 (FF)
@@ -721,21 +729,21 @@ Delay:               9.206ns (Levels of Logic = 16)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q             25   0.591   1.435  positionCounter_1 (positionCounter_1)
-     LUT1:I0->O            1   0.704   0.000  Mcompar_aux_cmp_lt0001_cy<0>_1_rt (Mcompar_aux_cmp_lt0001_cy<0>_1_rt)
-     MUXCY:S->O            1   0.464   0.000  Mcompar_aux_cmp_lt0001_cy<0>_1 (Mcompar_aux_cmp_lt0001_cy<0>2)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_aux_cmp_lt0001_cy<1>_1 (Mcompar_aux_cmp_lt0001_cy<1>2)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_aux_cmp_lt0001_cy<2>_1 (Mcompar_aux_cmp_lt0001_cy<2>2)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_aux_cmp_lt0001_cy<3>_1 (Mcompar_aux_cmp_lt0001_cy<3>2)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_aux_cmp_lt0001_cy<4>_1 (Mcompar_aux_cmp_lt0001_cy<4>2)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_aux_cmp_lt0001_cy<5>_1 (Mcompar_aux_cmp_lt0001_cy<5>2)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_aux_cmp_lt0001_cy<6>_1 (Mcompar_aux_cmp_lt0001_cy<6>2)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_aux_cmp_lt0001_cy<7>_1 (Mcompar_aux_cmp_lt0001_cy<7>2)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_aux_cmp_lt0001_cy<8>_1 (Mcompar_aux_cmp_lt0001_cy<8>2)
+     LUT1:I0->O            1   0.704   0.000  Mcompar_aux_cmp_lt0001_cy<0>_2_rt (Mcompar_aux_cmp_lt0001_cy<0>_2_rt)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_aux_cmp_lt0001_cy<0>_2 (Mcompar_aux_cmp_lt0001_cy<0>3)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_aux_cmp_lt0001_cy<1>_2 (Mcompar_aux_cmp_lt0001_cy<1>3)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_aux_cmp_lt0001_cy<2>_2 (Mcompar_aux_cmp_lt0001_cy<2>3)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_aux_cmp_lt0001_cy<3>_2 (Mcompar_aux_cmp_lt0001_cy<3>3)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_aux_cmp_lt0001_cy<4>_2 (Mcompar_aux_cmp_lt0001_cy<4>3)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_aux_cmp_lt0001_cy<5>_2 (Mcompar_aux_cmp_lt0001_cy<5>3)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_aux_cmp_lt0001_cy<6>_2 (Mcompar_aux_cmp_lt0001_cy<6>3)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_aux_cmp_lt0001_cy<7>_2 (Mcompar_aux_cmp_lt0001_cy<7>3)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_aux_cmp_lt0001_cy<8>_2 (Mcompar_aux_cmp_lt0001_cy<8>3)
      MUXCY:CI->O           2   0.459   0.622  Mcompar_aux_cmp_lt0001_cy<9>_0 (Mcompar_aux_cmp_lt0001_cy<9>1)
-     LUT4_D:I0->LO         1   0.704   0.135  aux_and00031 (N311)
+     LUT4_D:I0->LO         1   0.704   0.135  aux_and00031 (N296)
      LUT3:I2->O            1   0.704   0.424  aux_mux0005<6>43 (aux_mux0005<6>43)
      LUT4:I3->O            1   0.704   0.455  aux_mux0005<6>66 (aux_mux0005<6>66)
-     LUT4:I2->O            1   0.704   0.000  aux_mux0005<6>88_F (N286)
+     LUT4:I2->O            1   0.704   0.000  aux_mux0005<6>88_F (N275)
      MUXF5:I0->O           1   0.321   0.000  aux_mux0005<6>88 (aux_mux0005<6>)
      FDE_1:D                   0.308          aux_6
     ----------------------------------------
@@ -743,36 +751,60 @@ Delay:               9.206ns (Levels of Logic = 16)
                                        (66.6% logic, 33.4% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 12.484ns (frequency: 80.100MHz)
-  Total number of paths / destination ports: 19007 / 199
+Timing constraint: Default period analysis for Clock 'clkFake_cmp_eq0000'
+  Clock period: 2.555ns (frequency: 391.389MHz)
+  Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Delay:               12.484ns (Levels of Logic = 7)
-  Source:            MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_5 (FF)
-  Destination:       MOD_LCD/inst_procesador_lcd4bits/ESTADO_12 (FF)
-  Source Clock:      clk rising
-  Destination Clock: clk rising
+Delay:               2.555ns (Levels of Logic = 1)
+  Source:            clkFake (LATCH)
+  Destination:       clkFake (LATCH)
+  Source Clock:      clkFake_cmp_eq0000 falling
+  Destination Clock: clkFake_cmp_eq0000 falling
 
-  Data Path: MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_5 to MOD_LCD/inst_procesador_lcd4bits/ESTADO_12
+  Data Path: clkFake to clkFake
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q             12   0.591   1.136  MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_5 (MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_5)
-     LUT3_D:I0->O         42   0.704   1.269  MOD_LCD/Mmux_vector_mem_s1011 (MOD_LCD/N2)
-     LUT4:I3->O           25   0.704   1.264  MOD_LCD/Mmux_vector_mem_s27 (MOD_LCD/inst_procesador_lcd4bits/VEC_C_CHAR_and0000)
-     LUT4_L:I3->LO         1   0.704   0.104  MOD_LCD/inst_procesador_lcd4bits/ESTADO_cmp_eq000521_SW0 (N86)
-     LUT4:I3->O            8   0.704   0.792  MOD_LCD/inst_procesador_lcd4bits/ESTADO_cmp_eq00051 (MOD_LCD/inst_procesador_lcd4bits/ESTADO_cmp_eq0005)
-     LUT3_L:I2->LO         1   0.704   0.104  MOD_LCD/inst_procesador_lcd4bits/ESTADO_mux0000<13>1111_SW0_SW0 (N172)
-     LUT4:I3->O           12   0.704   0.965  MOD_LCD/inst_procesador_lcd4bits/ESTADO_mux0000<13>111 (MOD_LCD/inst_procesador_lcd4bits/N49)
-     LUT4:I3->O            1   0.704   0.420  MOD_LCD/inst_procesador_lcd4bits/ESTADO_mux0000<7>_SW0 (N61)
-     FDS:S                     0.911          MOD_LCD/inst_procesador_lcd4bits/ESTADO_12
+     LDE:G->Q              2   0.676   0.447  clkFake (clkFake1)
+     INV:I->O              1   0.704   0.420  clkFake_LUT1_INV_0 (clkFake_LUT1)
+     LDE:D                     0.308          clkFake
     ----------------------------------------
-    Total                     12.484ns (6.430ns logic, 6.054ns route)
-                                       (51.5% logic, 48.5% route)
+    Total                      2.555ns (1.688ns logic, 0.867ns route)
+                                       (66.1% logic, 33.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 12.176ns (frequency: 82.128MHz)
+  Total number of paths / destination ports: 19810 / 251
+-------------------------------------------------------------------------
+Delay:               12.176ns (Levels of Logic = 9)
+  Source:            MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_5 (FF)
+  Destination:       MOD_LCD/inst_procesador_lcd4bits/ESTADO_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_5 to MOD_LCD/inst_procesador_lcd4bits/ESTADO_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             15   0.591   1.192  MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_5 (MOD_LCD/inst_procesador_lcd4bits/INC_DIR_S_5)
+     LUT3_D:I0->O         35   0.704   1.267  MOD_LCD/aux_cmp_eq000011 (MOD_LCD/N2)
+     LUT4:I3->O           19   0.704   1.089  MOD_LCD/Mmux_vector_mem_s10112 (MOD_LCD/vector_mem_s<2>)
+     LUT4:I3->O            1   0.704   0.000  MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_lut<1> (MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_lut<1>)
+     MUXCY:S->O            1   0.464   0.000  MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<1> (MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<2> (MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<3> (MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<3>)
+     MUXCY:CI->O          13   0.459   1.158  MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<4> (MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<4>)
+     LUT2_D:I0->O         13   0.704   0.987  MOD_LCD/inst_procesador_lcd4bits/ESTADO_and00001 (MOD_LCD/inst_procesador_lcd4bits/ESTADO_and0000)
+     LUT4:I3->O            1   0.704   0.420  MOD_LCD/inst_procesador_lcd4bits/ESTADO_mux0000<8>14 (MOD_LCD/inst_procesador_lcd4bits/N28)
+     FDS:S                     0.911          MOD_LCD/inst_procesador_lcd4bits/ESTADO_0
+    ----------------------------------------
+    Total                     12.176ns (6.063ns logic, 6.113ns route)
+                                       (49.8% logic, 50.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clkFake1'
-  Total number of paths / destination ports: 194 / 16
+  Total number of paths / destination ports: 203 / 16
 -------------------------------------------------------------------------
 Offset:              6.650ns (Levels of Logic = 4)
   Source:            str_select<1> (PAD)
@@ -793,50 +825,32 @@ Offset:              6.650ns (Levels of Logic = 4)
                                        (58.4% logic, 41.6% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'stop'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              3.097ns (Levels of Logic = 2)
-  Source:            clk (PAD)
-  Destination:       clkFake (LATCH)
-  Destination Clock: stop rising
-
-  Data Path: clk to clkFake
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             2   1.218   0.447  clk_IBUF (clk_IBUF1)
-     INV:I->O              1   0.704   0.420  clkFake_not00011_INV_0 (clkFake_not0001)
-     LD_1:D                    0.308          clkFake
-    ----------------------------------------
-    Total                      3.097ns (2.230ns logic, 0.867ns route)
-                                       (72.0% logic, 28.0% route)
-
-=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 2596 / 68
+  Total number of paths / destination ports: 2530 / 68
 -------------------------------------------------------------------------
-Offset:              13.172ns (Levels of Logic = 8)
+Offset:              12.454ns (Levels of Logic = 10)
   Source:            reset (PAD)
-  Destination:       MOD_LCD/inst_procesador_lcd4bits/ESTADO_12 (FF)
+  Destination:       MOD_LCD/inst_procesador_lcd4bits/ESTADO_0 (FF)
   Destination Clock: clk rising
 
-  Data Path: reset to MOD_LCD/inst_procesador_lcd4bits/ESTADO_12
+  Data Path: reset to MOD_LCD/inst_procesador_lcd4bits/ESTADO_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            52   1.218   1.348  reset_IBUF (reset_IBUF)
-     LUT2:I1->O            3   0.704   0.706  MOD_LCD/Mmux_vector_mem_s392 (MOD_LCD/Mmux_vector_mem_s392)
-     LUT4:I0->O            2   0.704   0.622  MOD_LCD/Mmux_vector_mem_s3126_SW0 (N189)
-     LUT4:I0->O           13   0.704   1.158  MOD_LCD/Mmux_vector_mem_s3126 (MOD_LCD/vector_mem_s<0>)
-     LUT4:I0->O            8   0.704   0.792  MOD_LCD/inst_procesador_lcd4bits/ESTADO_cmp_eq00051 (MOD_LCD/inst_procesador_lcd4bits/ESTADO_cmp_eq0005)
-     LUT3_L:I2->LO         1   0.704   0.104  MOD_LCD/inst_procesador_lcd4bits/ESTADO_mux0000<13>1111_SW0_SW0 (N172)
-     LUT4:I3->O           12   0.704   0.965  MOD_LCD/inst_procesador_lcd4bits/ESTADO_mux0000<13>111 (MOD_LCD/inst_procesador_lcd4bits/N49)
-     LUT4:I3->O            1   0.704   0.420  MOD_LCD/inst_procesador_lcd4bits/ESTADO_mux0000<7>_SW0 (N61)
-     FDS:S                     0.911          MOD_LCD/inst_procesador_lcd4bits/ESTADO_12
+     IBUF:I->O            52   1.218   1.444  reset_IBUF (reset_IBUF)
+     LUT4:I0->O            4   0.704   0.666  MOD_LCD/Mmux_vector_mem_s1085 (MOD_LCD/Mmux_vector_mem_s1085)
+     LUT4:I1->O           19   0.704   1.089  MOD_LCD/Mmux_vector_mem_s10112 (MOD_LCD/vector_mem_s<2>)
+     LUT4:I3->O            1   0.704   0.000  MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_lut<1> (MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_lut<1>)
+     MUXCY:S->O            1   0.464   0.000  MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<1> (MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<2> (MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<3> (MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<3>)
+     MUXCY:CI->O          13   0.459   1.158  MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<4> (MOD_LCD/inst_procesador_lcd4bits/Mcompar_VEC_POS_cmp_lt0001_cy<4>)
+     LUT2_D:I0->O         13   0.704   0.987  MOD_LCD/inst_procesador_lcd4bits/ESTADO_and00001 (MOD_LCD/inst_procesador_lcd4bits/ESTADO_and0000)
+     LUT4:I3->O            1   0.704   0.420  MOD_LCD/inst_procesador_lcd4bits/ESTADO_mux0000<8>14 (MOD_LCD/inst_procesador_lcd4bits/N28)
+     FDS:S                     0.911          MOD_LCD/inst_procesador_lcd4bits/ESTADO_0
     ----------------------------------------
-    Total                     13.172ns (7.057ns logic, 6.115ns route)
-                                       (53.6% logic, 46.4% route)
+    Total                     12.454ns (6.690ns logic, 5.764ns route)
+                                       (53.7% logic, 46.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -860,14 +874,14 @@ Offset:              4.310ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 12.40 secs
+Total REAL time to Xst completion: 33.00 secs
+Total CPU time to Xst completion: 32.86 secs
  
 --> 
 
-Total memory usage is 289900 kilobytes
+Total memory usage is 325284 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  137 (   0 filtered)
+Number of warnings :  140 (   0 filtered)
 Number of infos    :    5 (   0 filtered)
 

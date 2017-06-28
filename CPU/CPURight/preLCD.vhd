@@ -22,7 +22,7 @@ architecture behavioral of preLCD is
    END COMPONENT;
 	
 	signal resetDebounce, clkFake : std_logic;
-	signal positionCounter : integer := 0;
+	signal positionCounter, clockCounter : integer := 0;
 	signal stop : std_logic := '0';
 	signal aux : std_logic_vector(7 downto 0) := x"00";
 	
@@ -55,8 +55,13 @@ MOD_LCD : entity work.exemplo(behavioral) PORT MAP(
 process(clk)
 begin
 
-if(stop = '0') then
-	clkFake <= not clk;
+if(clk' event and clk = '1') then
+	clockCounter <= clockCounter + 1;
+end if;
+
+if(stop = '0' and clockCounter = 5000) then
+	clkFake <= not clkFake;
+	clockCounter <= 0;
 end if;
 
 end process;
